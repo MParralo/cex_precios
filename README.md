@@ -21,4 +21,4 @@ GitHub → Settings → Secrets and variables → Actions:
 
 - El listado `/boxes` está bloqueado por Cloudflare; el sitemap + `/detail` lo sustituyen.
 - La primera vez que un SKU entra por sitemap **no** spamea WhatsApp; solo avisa al **cambiar el precio** (o si aparece en feeds como novedad).
-- Cada corrida rechequea ~220 precios; con el tiempo cubre todo el historial en rotación.
+- Cada corrida rechequea ~350 precios; con el tiempo cubre todo el historial en rotación.
