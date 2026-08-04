@@ -1,0 +1,36 @@
+name: Escáner CeX 24/7
+
+on:
+  schedule:
+    # Cada 10 minutos
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check-cex:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar escáner CeX
+        env:
+          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+        run: python monitor_cex.py
+
+      - name: Guardar historial
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "actualizar historial CeX [skip ci]"
+          file_pattern: vistos.json estado.json
