@@ -86,10 +86,11 @@ def enviar_whatsapp(mensaje):
     )
     try:
         r = SESSION.get(url, timeout=15)
-        if r.status_code == 200:
-            print("📲 Alerta enviada por WhatsApp correctamente.")
+        # CallMeBot: 200 = enviado; 210 = en cola por rate-limit (también OK)
+        if r.status_code in (200, 210):
+            print("📲 Alerta enviada/encolada por WhatsApp correctamente.")
         else:
-            print(f"⚠️ Error enviando WhatsApp: {r.status_code}")
+            print(f"⚠️ Error enviando WhatsApp: {r.status_code} | {r.text[:160]}")
     except Exception as e:
         print(f"❌ Error al enviar mensaje: {e}")
 
