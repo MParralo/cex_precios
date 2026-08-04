@@ -32,8 +32,11 @@ FILTROS_INCLUIR = (
 )
 FILTROS_EXCLUIR = (
     "accesor",
+    "accessor",
     "cable",
     "basics",
+    "mandos",
+    "dvd portatil",
 )
 
 SITEMAPS_PRODUCTOS = [
