@@ -7,26 +7,38 @@ import requests
 
 API_BASE = "https://wss2.cex.es.webuy.io/v3"
 WEB_BASE = "https://es.webuy.com"
+SITEMAP_INDEX = f"{WEB_BASE}/sitemap.xml"
 
-# Feeds públicos que suelen estar accesibles sin Cloudflare
+# Feeds públicos (productos calientes / novedades)
 FEEDS = ("hotproducts", "topsellers", "mostwanted")
 
-# Categorías prioritarias (IDs reales de CeX ES) para el barrido rotatorio
-CATEGORIAS = [
-    {"id": 921, "nombre": "Móviles - iPhone"},
-    {"id": 984, "nombre": "Móviles - Android"},
-    {"id": 920, "nombre": "Móviles - Libre"},
-    {"id": 967, "nombre": "Apple iPad"},
-    {"id": 1078, "nombre": "PS5 Consolas"},
-    {"id": 1079, "nombre": "PS5 Juegos"},
-    {"id": 1032, "nombre": "Switch Consolas"},
-    {"id": 1031, "nombre": "Switch Juegos"},
-    {"id": 1112, "nombre": "Switch 2 Consolas"},
-    {"id": 1113, "nombre": "Switch 2 Juegos"},
-    {"id": 1081, "nombre": "Xbox Series Consolas"},
-    {"id": 1083, "nombre": "Xbox Series Juegos"},
-    {"id": 850, "nombre": "Portátiles - Apple"},
-    {"id": 1085, "nombre": "PC Gaming Portátil"},
+# Filtros sobre la ruta de imagen del sitemap (categorías interesantes)
+FILTROS_INCLUIR = (
+    "iphone",
+    "android",
+    "moviles -",
+    "móviles -",
+    "telefonos moviles",
+    "teléfonos moviles",
+    "ipad",
+    "portatil",
+    "portátil",
+    "portatiles",
+    "portátiles",
+    "macbook",
+    "ps5",
+    "switch",
+    "xbox series",
+)
+FILTROS_EXCLUIR = (
+    "accesor",
+    "cable",
+    "basics",
+)
+
+SITEMAPS_PRODUCTOS = [
+    f"{WEB_BASE}/sitemaps/cex/es/sitemap-es-products-{i}.xml"
+    for i in range(1, 6)
 ]
 
 ARCHIVO_HISTORIAL = "vistos.json"
@@ -35,10 +47,9 @@ ARCHIVO_ESTADO = "estado.json"
 WHATSAPP_PHONE = os.getenv("WHATSAPP_PHONE", "34613484447")
 WHATSAPP_APIKEY = os.getenv("WHATSAPP_APIKEY", "4010754")
 
-# Por corrida: páginas de catálogo (si /boxes responde) + rechequeo de SKUs conocidos
-BOXES_POR_PAGINA = 50
-PAGINAS_POR_CORRIDA = 3
-RECHECK_POR_CORRIDA = 40
+# Rechequeo de precios vía /detail (este endpoint SÍ funciona)
+RECHECK_POR_CORRIDA = 220
+PAUSA_DETAIL = 0.2
 
 SESSION = requests.Session()
 SESSION.headers.update({
@@ -54,6 +65,11 @@ SESSION.headers.update({
 
 RE_GRADO_FINAL = re.compile(
     r"(?:,\s*)?(Perfecto|Bueno|Razonable|Aceptable|A\+|A|B|C)\s*$",
+    re.IGNORECASE,
+)
+RE_SITEMAP_ITEM = re.compile(
+    r"product-detail/\?id=([^<]+)</loc>\s*"
+    r"<image:image>\s*<image:loc>([^<]+)</image:loc>",
     re.IGNORECASE,
 )
 
@@ -76,10 +92,7 @@ def enviar_whatsapp(mensaje):
 
 
 def api_get(path, params=None, timeout=25, raw_query=None):
-    """GET a la API WeBuy ES. Devuelve data o None si falla.
-
-    raw_query: querystring literal (sin encodear), necesario para arrays tipo [1,2,3].
-    """
+    """GET a la API WeBuy ES. Devuelve data o None si falla."""
     url = path if path.startswith("http") else f"{API_BASE}{path}"
     if raw_query:
         url = f"{url}?{raw_query}"
@@ -138,7 +151,7 @@ def link_producto(box_id, category_name=None):
 
 
 def normalizar_box(box):
-    """Unifica feeds y /boxes en una ficha común."""
+    """Unifica feeds y detalle en una ficha común."""
     box_id = box.get("boxId")
     if not box_id:
         return None
@@ -171,6 +184,47 @@ def guardar_json(ruta, datos):
         json.dump(datos, f, ensure_ascii=False, indent=2)
 
 
+def categoria_interesante(ruta_imagen):
+    ruta = urllib.parse.unquote(ruta_imagen or "").lower()
+    # Corregir mojibake habitual del sitemap (MÃ³viles -> móviles)
+    try:
+        ruta = ruta.encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        pass
+    if any(f in ruta for f in FILTROS_EXCLUIR):
+        return False
+    return any(f in ruta for f in FILTROS_INCLUIR)
+
+
+def descubrir_desde_sitemap(sitemap_url):
+    """Extrae SKUs interesantes de un sitemap de productos CeX."""
+    try:
+        r = SESSION.get(sitemap_url, timeout=120)
+        if r.status_code != 200:
+            print(f"⚠️ Sitemap no disponible: {sitemap_url} ({r.status_code})")
+            return []
+        encontrados = []
+        for sku, img in RE_SITEMAP_ITEM.findall(r.text):
+            if categoria_interesante(img):
+                # categoría aproximada desde la ruta de imagen
+                partes = urllib.parse.unquote(img).split("/product_images/")
+                categoria = ""
+                if len(partes) > 1:
+                    trozos = partes[1].split("/")
+                    if len(trozos) >= 2:
+                        categoria = f"{trozos[0]} / {trozos[1]}"
+                encontrados.append({
+                    "sku": sku,
+                    "categoria": categoria,
+                    "link": link_producto(sku),
+                })
+        print(f"🗺️ Sitemap {sitemap_url.split('/')[-1]}: {len(encontrados)} SKUs interesantes")
+        return encontrados
+    except Exception as e:
+        print(f"⚠️ Error leyendo sitemap: {e}")
+        return []
+
+
 def fetch_feed(nombre):
     data = api_get(f"/boxlists/{nombre}")
     if not data:
@@ -181,20 +235,6 @@ def fetch_feed(nombre):
     return boxes
 
 
-def fetch_boxes_categoria(category_id, first_record=1, count=BOXES_POR_PAGINA):
-    """Intenta listar productos de una categoría. Puede fallar por Cloudflare."""
-    q = (
-        f"categoryIds=[{category_id}]"
-        f"&firstRecord={first_record}"
-        f"&count={count}"
-        f"&sortBy=relevance&sortOrder=desc"
-    )
-    data = api_get("/boxes", raw_query=q)
-    if not data:
-        return None
-    return data.get("boxes") or []
-
-
 def fetch_detalle(sku):
     data = api_get(f"/boxes/{sku}/detail")
     if not data:
@@ -203,29 +243,34 @@ def fetch_detalle(sku):
     return details[0] if details else None
 
 
-def procesar_ficha(ficha, vistos, primer_arranque, avisos):
-    """Actualiza historial y decide si avisar (nuevo / cambio de precio)."""
+def precio_valido(precio):
+    return bool(precio) and precio not in ("N/A", "PENDIENTE", "")
+
+
+def procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False):
+    """Actualiza historial y avisa de novedad (opcional) o cambio de precio."""
     sku = ficha["sku"]
     precio = ficha["precio"]
     entrada = {
         "precio": precio,
         "precio_num": ficha.get("precio_num"),
-        "nombre": ficha["nombre"],
-        "grado": ficha["grado"],
-        "categoria": ficha.get("categoria", ""),
-        "link": ficha["link"],
+        "nombre": ficha.get("nombre") or "",
+        "grado": ficha.get("grado") or "N/A",
+        "categoria": ficha.get("categoria") or "",
+        "link": ficha.get("link") or link_producto(sku),
+        "origen": ficha.get("origen") or "api",
     }
 
     if sku not in vistos:
-        if not primer_arranque:
-            print(f"🆕 Nuevo: {ficha['nombre']} ({precio}) [SKU {sku}]")
+        if avisar_nuevo and precio_valido(precio):
+            print(f"🆕 Nuevo: {entrada['nombre']} ({precio}) [SKU {sku}]")
             msg = (
-                f"📦 [CeX] Producto nuevo: {ficha['nombre']}\n"
+                f"📦 [CeX] Producto nuevo: {entrada['nombre']}\n"
                 f"🔢 SKU: {sku}\n"
-                f"🏷️ Grado: {ficha['grado']}\n"
-                f"📁 Categoría: {ficha.get('categoria') or 'N/A'}\n"
+                f"🏷️ Grado: {entrada['grado']}\n"
+                f"📁 Categoría: {entrada['categoria'] or 'N/A'}\n"
                 f"💰 Precio: {precio}\n\n"
-                f"🔗 Link: {ficha['link']}"
+                f"🔗 Link: {entrada['link']}"
             )
             enviar_whatsapp(msg)
             avisos["nuevos"] += 1
@@ -235,134 +280,152 @@ def procesar_ficha(ficha, vistos, primer_arranque, avisos):
 
     prev = vistos[sku] if isinstance(vistos[sku], dict) else {}
     precio_prev = prev.get("precio")
+
+    # Primera vez que obtenemos precio real de un SKU descubierto por sitemap
+    if not precio_valido(precio_prev) and precio_valido(precio):
+        vistos[sku] = {**prev, **entrada}
+        return
+
     if (
-        precio_prev
-        and precio_prev != "N/A"
-        and precio != "N/A"
+        precio_valido(precio_prev)
+        and precio_valido(precio)
         and precio != precio_prev
     ):
-        print(f"📉 Cambio: {ficha['nombre']} ({precio_prev} ➡️ {precio}) [SKU {sku}]")
+        nombre = entrada["nombre"] or prev.get("nombre") or sku
+        print(f"📉 Cambio: {nombre} ({precio_prev} ➡️ {precio}) [SKU {sku}]")
         msg = (
             f"📉 [CeX] ¡CAMBIO DE PRECIO! 📉\n\n"
-            f"📦 Producto: {ficha['nombre']}\n"
+            f"📦 Producto: {nombre}\n"
             f"🔢 SKU: {sku}\n"
-            f"🏷️ Grado: {ficha['grado']}\n"
+            f"🏷️ Grado: {entrada['grado']}\n"
             f"💵 Precio anterior: {precio_prev}\n"
             f"💰 Nuevo precio: {precio}\n\n"
-            f"🔗 Link: {ficha['link']}"
+            f"🔗 Link: {entrada['link']}"
         )
         enviar_whatsapp(msg)
         avisos["cambios"] += 1
         time.sleep(1)
 
-    vistos[sku] = entrada
+    # Conservar nombre previo si el detalle viniera vacío
+    if not entrada["nombre"] and prev.get("nombre"):
+        entrada["nombre"] = prev["nombre"]
+    vistos[sku] = {**prev, **entrada}
 
 
 def comprobar_tienda():
     vistos = cargar_json(ARCHIVO_HISTORIAL, {})
     estado = cargar_json(ARCHIVO_ESTADO, {
-        "cat_index": 0,
-        "first_record": 1,
+        "sitemap_index": 0,
         "recheck_offset": 0,
-        "boxes_disponible": None,
     })
 
-    primer_arranque = len(vistos) == 0
-    avisos = {"nuevos": 0, "cambios": 0}
-    vistos_boxes = []
+    avisos = {"nuevos": 0, "cambios": 0, "sitemap_nuevos": 0}
+    habia_historial = len(vistos) > 0
 
     # ----------------------------------------------------
-    # FASE 1: Feeds públicos (hot / topsellers / mostwanted)
+    # FASE 1: Descubrir catálogo interesante vía sitemap
     # ----------------------------------------------------
-    print("🔄 Fase 1: feeds CeX")
+    print("🔄 Fase 1: descubrimiento por sitemap")
+    sm_idx = int(estado.get("sitemap_index", 0)) % len(SITEMAPS_PRODUCTOS)
+    sitemap_url = SITEMAPS_PRODUCTOS[sm_idx]
+    descubiertos = descubrir_desde_sitemap(sitemap_url)
+    for item in descubiertos:
+        sku = item["sku"]
+        if sku in vistos:
+            continue
+        vistos[sku] = {
+            "precio": "PENDIENTE",
+            "precio_num": None,
+            "nombre": "",
+            "grado": "N/A",
+            "categoria": item.get("categoria", ""),
+            "link": item["link"],
+            "origen": "sitemap",
+        }
+        avisos["sitemap_nuevos"] += 1
+    estado["sitemap_index"] = (sm_idx + 1) % len(SITEMAPS_PRODUCTOS)
+    print(
+        f"🆕 SKUs nuevos desde sitemap: {avisos['sitemap_nuevos']} | "
+        f"Historial total: {len(vistos)}"
+    )
+
+    # ----------------------------------------------------
+    # FASE 2: Feeds públicos (aquí sí avisamos productos nuevos)
+    # ----------------------------------------------------
+    print("🔄 Fase 2: feeds CeX")
     for feed in FEEDS:
         for box in fetch_feed(feed):
             ficha = normalizar_box(box)
-            if ficha:
-                vistos_boxes.append(ficha)
-        time.sleep(0.4)
+            if not ficha:
+                continue
+            ficha["origen"] = f"feed:{feed}"
+            # Solo avisar "nuevo" si ya había historial previo
+            procesar_ficha(
+                ficha,
+                vistos,
+                avisos,
+                avisar_nuevo=habia_historial,
+            )
+        time.sleep(0.3)
 
     # ----------------------------------------------------
-    # FASE 2: Barrido rotatorio por categoría (/boxes)
+    # FASE 3: Rechequeo masivo de precios por /detail
+    # Prioriza SKUs sin precio y luego rota por todo el historial
     # ----------------------------------------------------
-    print("🔄 Fase 2: catálogo por categorías")
-    cat_idx = estado.get("cat_index", 0) % len(CATEGORIAS)
-    first_record = max(1, int(estado.get("first_record", 1)))
-    cat = CATEGORIAS[cat_idx]
-    print(
-        f"📁 Categoría: {cat['nombre']} "
-        f"(id {cat['id']}, desde registro {first_record})"
-    )
-
-    boxes_ok = False
-    paginas_ok = 0
-    for i in range(PAGINAS_POR_CORRIDA):
-        fr = first_record + i * BOXES_POR_PAGINA
-        boxes = fetch_boxes_categoria(cat["id"], first_record=fr)
-        if boxes is None:
-            print("⚠️ /boxes no disponible (posible Cloudflare). Se omite catálogo en esta corrida.")
-            estado["boxes_disponible"] = False
-            break
-        boxes_ok = True
-        estado["boxes_disponible"] = True
-        if not boxes:
-            estado["cat_index"] = (cat_idx + 1) % len(CATEGORIAS)
-            estado["first_record"] = 1
-            paginas_ok = 0
-            break
-        for box in boxes:
-            ficha = normalizar_box(box)
-            if ficha:
-                vistos_boxes.append(ficha)
-        paginas_ok += 1
-        time.sleep(0.5)
-    else:
-        if boxes_ok:
-            estado["cat_index"] = cat_idx
-            estado["first_record"] = first_record + paginas_ok * BOXES_POR_PAGINA
-
-    # ----------------------------------------------------
-    # FASE 3: Rechequeo de SKUs ya conocidos vía /detail
-    # ----------------------------------------------------
-    print("🔄 Fase 3: rechequeo de precios por SKU")
+    print("🔄 Fase 3: rechequeo de precios (catálogo completo)")
     skus = list(vistos.keys())
     if skus:
-        offset = int(estado.get("recheck_offset", 0)) % len(skus)
+        pendientes = [
+            s for s in skus
+            if not precio_valido((vistos[s] or {}).get("precio") if isinstance(vistos[s], dict) else None)
+        ]
+        resto = [s for s in skus if s not in set(pendientes)]
+
+        offset = int(estado.get("recheck_offset", 0)) % max(len(resto), 1)
         lote = []
-        for i in range(min(RECHECK_POR_CORRIDA, len(skus))):
-            lote.append(skus[(offset + i) % len(skus)])
-        estado["recheck_offset"] = (offset + len(lote)) % len(skus)
+        # Primero rellenar precios pendientes
+        lote.extend(pendientes[: max(80, RECHECK_POR_CORRIDA // 2)])
+        # Luego rotar el resto del catálogo
+        cupo = max(0, RECHECK_POR_CORRIDA - len(lote))
+        if resto and cupo:
+            for i in range(cupo):
+                lote.append(resto[(offset + i) % len(resto)])
+            estado["recheck_offset"] = (offset + cupo) % len(resto)
+
+        print(
+            f"🔎 Rechequeando {len(lote)} SKUs "
+            f"(pendientes prioritarios: {min(len(pendientes), len(lote))})"
+        )
 
         for sku in lote:
             detalle = fetch_detalle(sku)
             if not detalle:
+                # Producto retirado / sin detalle: marcar para no insistir eternamente
+                prev = vistos.get(sku) if isinstance(vistos.get(sku), dict) else {}
+                if prev.get("precio") == "PENDIENTE":
+                    prev["precio"] = "N/A"
+                    vistos[sku] = prev
                 continue
             ficha = normalizar_box(detalle)
             if ficha:
-                vistos_boxes.append(ficha)
-            time.sleep(0.25)
-
-    # Deduplicar por SKU (última aparición gana)
-    unicos = {}
-    for ficha in vistos_boxes:
-        unicos[ficha["sku"]] = ficha
-
-    print(f"🧮 Productos a procesar en esta corrida: {len(unicos)}")
-    for ficha in unicos.values():
-        procesar_ficha(ficha, vistos, primer_arranque, avisos)
+                ficha["origen"] = "detail"
+                procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False)
+            time.sleep(PAUSA_DETAIL)
 
     guardar_json(ARCHIVO_HISTORIAL, vistos)
     guardar_json(ARCHIVO_ESTADO, estado)
 
     hora = time.strftime("%H:%M:%S")
-    if primer_arranque:
-        print(f"[{hora}] Base inicial CeX cargada con {len(vistos)} productos (sin spam WhatsApp).")
-    else:
-        print(
-            f"[{hora}] Escaneo CeX finalizado. "
-            f"Nuevos: {avisos['nuevos']} | Cambios: {avisos['cambios']} | "
-            f"Historial: {len(vistos)}"
-        )
+    pendientes_final = sum(
+        1 for v in vistos.values()
+        if isinstance(v, dict) and not precio_valido(v.get("precio"))
+    )
+    print(
+        f"[{hora}] Escaneo CeX finalizado. "
+        f"WhatsApp nuevos: {avisos['nuevos']} | Cambios: {avisos['cambios']} | "
+        f"Historial: {len(vistos)} | Sin precio aún: {pendientes_final} | "
+        f"Próximo sitemap: #{estado['sitemap_index'] + 1}"
+    )
 
 
 if __name__ == "__main__":
