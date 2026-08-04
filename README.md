@@ -5,10 +5,11 @@ Avisa por WhatsApp cuando aparecen productos nuevos o bajan/suben de precio en [
 ## Cómo funciona
 
 - Lee la API WeBuy (`wss2.cex.es.webuy.io`)
-- Feeds: `hotproducts`, `topsellers`, `mostwanted`
-- Intenta barrido por categorías (`/boxes`); si Cloudflare lo bloquea, sigue con feeds + rechequeo por SKU
+- Feeds: `hotproducts`, `topsellers`, `mostwanted` (~275 productos calientes)
+- Intenta barrido por categorías (`/boxes`); Cloudflare suele bloquearlo, y entonces sigue con feeds + rechequeo de precios por SKU (`/detail`)
 - Guarda historial en `vistos.json` (clave = SKU CeX)
 - GitHub Actions cada 10 minutos
+- Repo: https://github.com/MParralo/cex_precios
 
 ## Secrets del repo
 
