@@ -6,9 +6,9 @@ Avisa por WhatsApp cuando aparecen productos nuevos o cambian de precio en [CeX 
 
 1. **Sitemap** — descubre el catálogo interesante (móviles, iPad, portátiles, PS5, Switch, Xbox Series…) desde los sitemaps oficiales (~decenas de miles de SKUs).
 2. **Feeds** — `hotproducts` / `topsellers` / `mostwanted` para novedades calientes (sí avisan por WhatsApp).
-3. **Rechequeo de precios** — consulta `/detail` por SKU a turnos y avisa si el precio cambia.
+3. **Rechequeo de precios** — consulta `/detail` en paralelo (~6500 SKUs/corrida × 20 hilos). Con el disparador cada 3 h, el catálogo se cubre en **~1 día**.
 
-Repo: https://github.com/MParralo/cex_precios
+El cron lo lanza [precios_disparador](https://github.com/MParralo/precios_disparador).
 
 ## Secrets del repo
 
@@ -21,4 +21,4 @@ GitHub → Settings → Secrets and variables → Actions:
 
 - El listado `/boxes` está bloqueado por Cloudflare; el sitemap + `/detail` lo sustituyen.
 - La primera vez que un SKU entra por sitemap **no** spamea WhatsApp; solo avisa al **cambiar el precio** (o si aparece en feeds como novedad).
-- Cada corrida rechequea ~350 precios; con el tiempo cubre todo el historial en rotación.
+- Errores temporales (403/429) no marcan el SKU como `N/A`; se reintenta en la siguiente corrida.

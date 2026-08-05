@@ -2,7 +2,10 @@ import os
 import re
 import json
 import time
+import threading
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 import requests
 
 API_BASE = "https://wss2.cex.es.webuy.io/v3"
@@ -51,9 +54,9 @@ WHATSAPP_PHONE = os.getenv("WHATSAPP_PHONE", "34613484447")
 WHATSAPP_APIKEY = os.getenv("WHATSAPP_APIKEY", "4010754")
 
 # Rechequeo de precios vía /detail (este endpoint SÍ funciona).
-# Cupo moderado para caber en el plan gratis de Actions (~2-3 min/corrida).
-RECHECK_POR_CORRIDA = 120
-PAUSA_DETAIL = 0.12
+# ~50k SKUs / (6500 × 8 corridas/día) ≈ cobertura completa en ~1 día.
+RECHECK_POR_CORRIDA = 6500
+WORKERS_DETAIL = 20
 
 SESSION = requests.Session()
 SESSION.headers.update({
@@ -66,6 +69,19 @@ SESSION.headers.update({
     "Origin": WEB_BASE,
     "Referer": f"{WEB_BASE}/",
 })
+
+_THREAD_LOCAL = threading.local()
+_HISTORIAL_LOCK = threading.Lock()
+
+
+def _session():
+    """Session por hilo (requests.Session no es thread-safe)."""
+    s = getattr(_THREAD_LOCAL, "session", None)
+    if s is None:
+        s = requests.Session()
+        s.headers.update(SESSION.headers)
+        _THREAD_LOCAL.session = s
+    return s
 
 RE_GRADO_FINAL = re.compile(
     r"(?:,\s*)?(Perfecto|Bueno|Razonable|Aceptable|A\+|A|B|C)\s*$",
@@ -98,24 +114,34 @@ def enviar_whatsapp(mensaje):
 
 def api_get(path, params=None, timeout=25, raw_query=None):
     """GET a la API WeBuy ES. Devuelve data o None si falla."""
+    status, data = api_get_result(path, params=params, timeout=timeout, raw_query=raw_query)
+    return data if status == "ok" else None
+
+
+def api_get_result(path, params=None, timeout=25, raw_query=None):
+    """GET con estado: ok | not_found | error (no marcar N/A si es error temporal)."""
     url = path if path.startswith("http") else f"{API_BASE}{path}"
     if raw_query:
         url = f"{url}?{raw_query}"
         params = None
     try:
-        r = SESSION.get(url, params=params, timeout=timeout)
+        r = _session().get(url, params=params, timeout=timeout)
+        if r.status_code in (403, 429) or r.status_code >= 500:
+            return "error", None
+        if r.status_code == 404:
+            return "not_found", None
         if r.status_code != 200:
-            return None
+            return "error", None
         if "application/json" not in (r.headers.get("content-type") or ""):
-            return None
+            return "error", None
         payload = r.json()
         resp = payload.get("response") or {}
         if resp.get("ack") != "Success":
-            return None
-        return resp.get("data")
+            return "not_found", None
+        return "ok", resp.get("data")
     except Exception as e:
         print(f"⚠️ API error ({path}): {e}")
-        return None
+        return "error", None
 
 
 def formatear_precio(valor):
@@ -248,6 +274,17 @@ def fetch_detalle(sku):
     return details[0] if details else None
 
 
+def fetch_detalle_result(sku):
+    """Devuelve (status, box|None) con status ok|not_found|error."""
+    status, data = api_get_result(f"/boxes/{sku}/detail")
+    if status != "ok":
+        return status, None
+    details = (data or {}).get("boxDetails") or []
+    if not details:
+        return "not_found", None
+    return "ok", details[0]
+
+
 def precio_valido(precio):
     return bool(precio) and precio not in ("N/A", "PENDIENTE", "")
 
@@ -266,55 +303,77 @@ def procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False):
         "origen": ficha.get("origen") or "api",
     }
 
-    if sku not in vistos:
-        if avisar_nuevo and precio_valido(precio):
-            print(f"🆕 Nuevo: {entrada['nombre']} ({precio}) [SKU {sku}]")
+    with _HISTORIAL_LOCK:
+        if sku not in vistos:
+            if avisar_nuevo and precio_valido(precio):
+                print(f"🆕 Nuevo: {entrada['nombre']} ({precio}) [SKU {sku}]")
+                msg = (
+                    f"📦 [CeX] Producto nuevo: {entrada['nombre']}\n"
+                    f"🔢 SKU: {sku}\n"
+                    f"🏷️ Grado: {entrada['grado']}\n"
+                    f"📁 Categoría: {entrada['categoria'] or 'N/A'}\n"
+                    f"💰 Precio: {precio}\n\n"
+                    f"🔗 Link: {entrada['link']}"
+                )
+                enviar_whatsapp(msg)
+                avisos["nuevos"] += 1
+                time.sleep(1)
+            vistos[sku] = entrada
+            return
+
+        prev = vistos[sku] if isinstance(vistos[sku], dict) else {}
+        precio_prev = prev.get("precio")
+
+        # Primera vez que obtenemos precio real de un SKU descubierto por sitemap
+        if not precio_valido(precio_prev) and precio_valido(precio):
+            vistos[sku] = {**prev, **entrada}
+            return
+
+        if (
+            precio_valido(precio_prev)
+            and precio_valido(precio)
+            and precio != precio_prev
+        ):
+            nombre = entrada["nombre"] or prev.get("nombre") or sku
+            print(f"📉 Cambio: {nombre} ({precio_prev} ➡️ {precio}) [SKU {sku}]")
             msg = (
-                f"📦 [CeX] Producto nuevo: {entrada['nombre']}\n"
+                f"📉 [CeX] ¡CAMBIO DE PRECIO! 📉\n\n"
+                f"📦 Producto: {nombre}\n"
                 f"🔢 SKU: {sku}\n"
                 f"🏷️ Grado: {entrada['grado']}\n"
-                f"📁 Categoría: {entrada['categoria'] or 'N/A'}\n"
-                f"💰 Precio: {precio}\n\n"
+                f"💵 Precio anterior: {precio_prev}\n"
+                f"💰 Nuevo precio: {precio}\n\n"
                 f"🔗 Link: {entrada['link']}"
             )
             enviar_whatsapp(msg)
-            avisos["nuevos"] += 1
+            avisos["cambios"] += 1
             time.sleep(1)
-        vistos[sku] = entrada
-        return
 
-    prev = vistos[sku] if isinstance(vistos[sku], dict) else {}
-    precio_prev = prev.get("precio")
-
-    # Primera vez que obtenemos precio real de un SKU descubierto por sitemap
-    if not precio_valido(precio_prev) and precio_valido(precio):
+        # Conservar nombre previo si el detalle viniera vacío
+        if not entrada["nombre"] and prev.get("nombre"):
+            entrada["nombre"] = prev["nombre"]
         vistos[sku] = {**prev, **entrada}
-        return
 
-    if (
-        precio_valido(precio_prev)
-        and precio_valido(precio)
-        and precio != precio_prev
-    ):
-        nombre = entrada["nombre"] or prev.get("nombre") or sku
-        print(f"📉 Cambio: {nombre} ({precio_prev} ➡️ {precio}) [SKU {sku}]")
-        msg = (
-            f"📉 [CeX] ¡CAMBIO DE PRECIO! 📉\n\n"
-            f"📦 Producto: {nombre}\n"
-            f"🔢 SKU: {sku}\n"
-            f"🏷️ Grado: {entrada['grado']}\n"
-            f"💵 Precio anterior: {precio_prev}\n"
-            f"💰 Nuevo precio: {precio}\n\n"
-            f"🔗 Link: {entrada['link']}"
-        )
-        enviar_whatsapp(msg)
-        avisos["cambios"] += 1
-        time.sleep(1)
 
-    # Conservar nombre previo si el detalle viniera vacío
-    if not entrada["nombre"] and prev.get("nombre"):
-        entrada["nombre"] = prev["nombre"]
-    vistos[sku] = {**prev, **entrada}
+def _recheck_sku(sku, vistos, avisos):
+    """Obtiene detalle de un SKU y actualiza historial (seguro entre hilos)."""
+    status, detalle = fetch_detalle_result(sku)
+    if status == "error":
+        # Fallo temporal (403/429/red): no tocar historial, se reintenta luego
+        return "error"
+    if status == "not_found" or not detalle:
+        with _HISTORIAL_LOCK:
+            prev = vistos.get(sku) if isinstance(vistos.get(sku), dict) else {}
+            if not precio_valido(prev.get("precio")) or prev.get("precio") == "PENDIENTE":
+                prev = {**prev, "precio": "N/A", "precio_num": None}
+                vistos[sku] = prev
+        return "fail"
+    ficha = normalizar_box(detalle)
+    if ficha:
+        ficha["origen"] = "detail"
+        procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False)
+        return "ok"
+    return "fail"
 
 
 def comprobar_tienda():
@@ -374,10 +433,10 @@ def comprobar_tienda():
         time.sleep(0.3)
 
     # ----------------------------------------------------
-    # FASE 3: Rechequeo masivo de precios por /detail
+    # FASE 3: Rechequeo masivo de precios por /detail (en paralelo)
     # Prioriza SKUs sin precio y luego rota por todo el historial
     # ----------------------------------------------------
-    print("🔄 Fase 3: rechequeo de precios (catálogo completo)")
+    print("🔄 Fase 3: rechequeo de precios (catálogo completo, paralelo)")
     skus = list(vistos.keys())
     if skus:
         pendientes = [
@@ -388,9 +447,8 @@ def comprobar_tienda():
 
         offset = int(estado.get("recheck_offset", 0)) % max(len(resto), 1)
         lote = []
-        # Primero rellenar precios pendientes
-        lote.extend(pendientes[: max(80, RECHECK_POR_CORRIDA // 2)])
-        # Luego rotar el resto del catálogo
+        # Primero rellenar TODOS los pendientes que quepan en el cupo
+        lote.extend(pendientes[:RECHECK_POR_CORRIDA])
         cupo = max(0, RECHECK_POR_CORRIDA - len(lote))
         if resto and cupo:
             for i in range(cupo):
@@ -398,24 +456,33 @@ def comprobar_tienda():
             estado["recheck_offset"] = (offset + cupo) % len(resto)
 
         print(
-            f"🔎 Rechequeando {len(lote)} SKUs "
+            f"🔎 Rechequeando {len(lote)} SKUs con {WORKERS_DETAIL} hilos "
             f"(pendientes prioritarios: {min(len(pendientes), len(lote))})"
         )
 
-        for sku in lote:
-            detalle = fetch_detalle(sku)
-            if not detalle:
-                # Producto retirado / sin detalle: marcar para no insistir eternamente
-                prev = vistos.get(sku) if isinstance(vistos.get(sku), dict) else {}
-                if prev.get("precio") == "PENDIENTE":
-                    prev["precio"] = "N/A"
-                    vistos[sku] = prev
-                continue
-            ficha = normalizar_box(detalle)
-            if ficha:
-                ficha["origen"] = "detail"
-                procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False)
-            time.sleep(PAUSA_DETAIL)
+        t0 = time.time()
+        ok = fail = errors = 0
+        with ThreadPoolExecutor(max_workers=WORKERS_DETAIL) as pool:
+            futures = [
+                pool.submit(_recheck_sku, sku, vistos, avisos)
+                for sku in lote
+            ]
+            for fut in as_completed(futures):
+                try:
+                    result = fut.result()
+                except Exception:
+                    errors += 1
+                    continue
+                if result == "ok":
+                    ok += 1
+                elif result == "error":
+                    errors += 1
+                else:
+                    fail += 1
+        print(
+            f"✅ Rechequeo terminado en {time.time() - t0:.1f}s "
+            f"(ok={ok} | sin ficha={fail} | errores temporales={errors})"
+        )
 
     guardar_json(ARCHIVO_HISTORIAL, vistos)
     guardar_json(ARCHIVO_ESTADO, estado)
