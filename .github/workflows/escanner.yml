@@ -19,6 +19,7 @@ jobs:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
         run: python monitor_cex.py
+      # Sin commit aquí: solo artifact → evita choques de push con merge
       - uses: actions/upload-artifact@v4
         with:
           name: cex-base
@@ -53,13 +54,17 @@ jobs:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
         run: python monitor_cex.py
+      - name: Empaquetar delta plano
+        run: |
+          mkdir -p out
+          cp "deltas/delta_${{ matrix.shard }}.json" "out/delta_${{ matrix.shard }}.json"
+          if [ -f estado.json ]; then cp estado.json out/estado.json; fi
+          ls -la out/
       - uses: actions/upload-artifact@v4
         with:
           name: delta-${{ matrix.shard }}
-          path: |
-            deltas/delta_${{ matrix.shard }}.json
-            estado.json
-          if-no-files-found: warn
+          path: out/
+          if-no-files-found: error
 
   merge:
     needs: recheck
@@ -68,9 +73,13 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/download-artifact@v4
         with:
           path: artifacts
+      - name: Listar artifacts
+        run: find artifacts -type f | sort | head -50
       - name: Fusionar deltas en vistos.json
         run: |
           python3 <<'PY'
@@ -78,6 +87,8 @@ jobs:
           from pathlib import Path
 
           base = Path("artifacts/cex-base/vistos.json")
+          if not base.exists():
+              raise SystemExit(f"Falta base: {base}")
           vistos = json.loads(base.read_text(encoding="utf-8"))
 
           estado_src = Path("artifacts/delta-0/estado.json")
@@ -87,22 +98,38 @@ jobs:
               Path("estado.json").write_text(estado_src.read_text(encoding="utf-8"), encoding="utf-8")
               print(f"estado desde {estado_src}")
 
+          paths = sorted(glob.glob("artifacts/delta-*/delta_*.json"))
+          if not paths:
+              paths = sorted(glob.glob("artifacts/**/delta_*.json", recursive=True))
+
           n = 0
-          paths = sorted(glob.glob("artifacts/**/delta_*.json", recursive=True))
           for path in paths:
               delta = json.loads(Path(path).read_text(encoding="utf-8"))
               vistos.update(delta)
               n += len(delta)
               print(f"merge {path}: {len(delta)} SKUs")
 
-          Path("vistos.json").write_text(json.dumps(vistos, ensure_ascii=False, indent=2), encoding="utf-8")
-          pend = sum(1 for v in vistos.values() if isinstance(v, dict) and v.get("precio") in (None, "", "N/A", "PENDIENTE"))
-          print(f"Total historial={len(vistos)} | actualizados≈{n} | sin precio={pend}")
+          Path("vistos.json").write_text(
+              json.dumps(vistos, ensure_ascii=False, indent=2), encoding="utf-8"
+          )
+          pend = sum(
+              1 for v in vistos.values()
+              if isinstance(v, dict) and v.get("precio") in (None, "", "N/A", "PENDIENTE")
+          )
+          print(f"Total historial={len(vistos)} | actualizados={n} | sin precio={pend}")
           if n == 0:
               raise SystemExit("No se encontraron deltas para fusionar")
           PY
-      - name: Guardar historial fusionado
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "actualizar historial CeX shards [skip ci]"
-          file_pattern: vistos.json estado.json
+      - name: Commit y push del historial
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add vistos.json estado.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "actualizar historial CeX shards [skip ci]"
+          git push origin HEAD:main
