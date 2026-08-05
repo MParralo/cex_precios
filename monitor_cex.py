@@ -179,11 +179,18 @@ def normalizar_box(box):
     if not box_id:
         return None
     precio_raw = box.get("sellPrice")
+    compra_raw = box.get("cashPrice")
+    cambio_raw = box.get("exchangePrice")
     return {
         "sku": str(box_id),
         "nombre": (box.get("boxName") or "").strip(),
         "precio": formatear_precio(precio_raw),
         "precio_num": precio_raw,
+        # cashPrice = a cuánto te lo compran en efectivo; exchangePrice = en vale
+        "compra": formatear_precio(compra_raw) if compra_raw is not None else None,
+        "compra_num": compra_raw,
+        "cambio": formatear_precio(cambio_raw) if cambio_raw is not None else None,
+        "cambio_num": cambio_raw,
         "grado": extraer_grado(box),
         "categoria": box.get("categoryFriendlyName") or box.get("categoryName") or "",
         "super_cat": box.get("superCatFriendlyName") or box.get("superCatName") or "",
@@ -269,6 +276,16 @@ def precio_valido(precio):
     return bool(precio) and precio not in ("N/A", "PENDIENTE", "")
 
 
+def _aplicar_precios_compra(entrada, ficha):
+    """Añade compra/cambio solo si la API los trae (no pisa caché con None)."""
+    if ficha.get("compra_num") is not None:
+        entrada["compra"] = ficha.get("compra")
+        entrada["compra_num"] = ficha.get("compra_num")
+    if ficha.get("cambio_num") is not None:
+        entrada["cambio"] = ficha.get("cambio")
+        entrada["cambio_num"] = ficha.get("cambio_num")
+
+
 def procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False):
     sku = ficha["sku"]
     precio = ficha["precio"]
@@ -281,16 +298,19 @@ def procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False):
         "link": ficha.get("link") or link_producto(sku),
         "origen": ficha.get("origen") or "api",
     }
+    _aplicar_precios_compra(entrada, ficha)
 
     if sku not in vistos:
         if avisar_nuevo and precio_valido(precio):
             print(f"🆕 Nuevo: {entrada['nombre']} ({precio}) [SKU {sku}]")
+            compra_txt = entrada.get("compra") or "N/A"
             msg = (
                 f"📦 [CeX] Producto nuevo: {entrada['nombre']}\n"
                 f"🔢 SKU: {sku}\n"
                 f"🏷️ Grado: {entrada['grado']}\n"
                 f"📁 Categoría: {entrada['categoria'] or 'N/A'}\n"
-                f"💰 Precio: {precio}\n\n"
+                f"💰 Venta: {precio}\n"
+                f"🏦 Compra CeX: {compra_txt}\n\n"
                 f"🔗 Link: {entrada['link']}"
             )
             enviar_whatsapp(msg)
@@ -313,13 +333,15 @@ def procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False):
     ):
         nombre = entrada["nombre"] or prev.get("nombre") or sku
         print(f"📉 Cambio: {nombre} ({precio_prev} ➡️ {precio}) [SKU {sku}]")
+        compra_txt = entrada.get("compra") or prev.get("compra") or "N/A"
         msg = (
             f"📉 [CeX] ¡CAMBIO DE PRECIO! 📉\n\n"
             f"📦 Producto: {nombre}\n"
             f"🔢 SKU: {sku}\n"
             f"🏷️ Grado: {entrada['grado']}\n"
             f"💵 Precio anterior: {precio_prev}\n"
-            f"💰 Nuevo precio: {precio}\n\n"
+            f"💰 Nuevo precio: {precio}\n"
+            f"🏦 Compra CeX: {compra_txt}\n\n"
             f"🔗 Link: {entrada['link']}"
         )
         enviar_whatsapp(msg)
@@ -375,18 +397,26 @@ def construir_lote(vistos, estado):
             (vistos[s] or {}).get("precio") if isinstance(vistos[s], dict) else None
         )
     ]
-    resto = [s for s in skus if s not in set(pendientes)]
-    offset = int(estado.get("recheck_offset", 0)) % max(len(resto), 1)
+    # Priorizar SKUs sin precio de compra cacheado (relleno gradual, sin más llamadas)
+    sin_compra = [
+        s for s in skus
+        if s not in set(pendientes)
+        and isinstance(vistos.get(s), dict)
+        and vistos[s].get("compra_num") is None
+    ]
+    resto = [s for s in skus if s not in set(pendientes) and s not in set(sin_compra)]
+    cola = sin_compra + resto
+    offset = int(estado.get("recheck_offset", 0)) % max(len(cola), 1)
 
     cupo_oleada = RECHECK_POR_SHARD * SHARD_TOTAL
     lote = []
     lote.extend(pendientes[:cupo_oleada])
     falta = max(0, cupo_oleada - len(lote))
-    if resto and falta:
+    if cola and falta:
         for i in range(falta):
-            lote.append(resto[(offset + i) % len(resto)])
+            lote.append(cola[(offset + i) % len(cola)])
         if SHARD_INDEX == 0:
-            estado["recheck_offset"] = (offset + falta) % len(resto)
+            estado["recheck_offset"] = (offset + falta) % len(cola)
 
     return lote[SHARD_INDEX::SHARD_TOTAL], len(pendientes)
 

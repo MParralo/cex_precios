@@ -10,6 +10,8 @@ Avisa por WhatsApp cuando aparecen productos nuevos o cambian de precio en [CeX 
 
 Oleada: **12 × 500 = 6000 SKUs**. Con disparo cada 2 h → catálogo (~50k) en **~1 día**.
 
+En `vistos.json`, además del precio de venta, se guarda la **compra** CeX (`compra` / `compra_num` = cashPrice) y el vale (`cambio` / `cambio_num`). El rechequeo prioriza SKUs sin compra cacheada.
+
 Cron: [precios_disparador](https://github.com/MParralo/precios_disparador).
 
 ## Secrets
