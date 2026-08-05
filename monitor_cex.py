@@ -54,9 +54,13 @@ WHATSAPP_PHONE = os.getenv("WHATSAPP_PHONE", "34613484447")
 WHATSAPP_APIKEY = os.getenv("WHATSAPP_APIKEY", "4010754")
 
 # Rechequeo de precios vía /detail (este endpoint SÍ funciona).
-# ~50k SKUs / (6500 × 8 corridas/día) ≈ cobertura completa en ~1 día.
-RECHECK_POR_CORRIDA = 6500
-WORKERS_DETAIL = 20
+# Ritmo contenido: la API corta con 403 si hay demasiados hilos.
+# 4000 SKUs × 12 corridas/día (cada 2 h) ≈ catálogo completo en ~1 día.
+RECHECK_POR_CORRIDA = 4000
+WORKERS_DETAIL = 4
+# Máximo de peticiones /detail en vuelo + pausa entre arranques
+MAX_IN_FLIGHT = 3
+PAUSA_ENTRE_DETAIL = 0.08
 
 SESSION = requests.Session()
 SESSION.headers.update({
@@ -72,6 +76,9 @@ SESSION.headers.update({
 
 _THREAD_LOCAL = threading.local()
 _HISTORIAL_LOCK = threading.Lock()
+_DETAIL_GATE = threading.Semaphore(MAX_IN_FLIGHT)
+_DETAIL_PACING = threading.Lock()
+_LAST_DETAIL_AT = 0.0
 
 
 def _session():
@@ -82,6 +89,17 @@ def _session():
         s.headers.update(SESSION.headers)
         _THREAD_LOCAL.session = s
     return s
+
+
+def _pace_detail():
+    """Evita ráfagas que provocan 403/429 en la API CeX."""
+    global _LAST_DETAIL_AT
+    with _DETAIL_PACING:
+        now = time.time()
+        wait = PAUSA_ENTRE_DETAIL - (now - _LAST_DETAIL_AT)
+        if wait > 0:
+            time.sleep(wait)
+        _LAST_DETAIL_AT = time.time()
 
 RE_GRADO_FINAL = re.compile(
     r"(?:,\s*)?(Perfecto|Bueno|Razonable|Aceptable|A\+|A|B|C)\s*$",
@@ -276,7 +294,9 @@ def fetch_detalle(sku):
 
 def fetch_detalle_result(sku):
     """Devuelve (status, box|None) con status ok|not_found|error."""
-    status, data = api_get_result(f"/boxes/{sku}/detail")
+    _pace_detail()
+    with _DETAIL_GATE:
+        status, data = api_get_result(f"/boxes/{sku}/detail")
     if status != "ok":
         return status, None
     details = (data or {}).get("boxDetails") or []
@@ -457,7 +477,8 @@ def comprobar_tienda():
 
         print(
             f"🔎 Rechequeando {len(lote)} SKUs con {WORKERS_DETAIL} hilos "
-            f"(pendientes prioritarios: {min(len(pendientes), len(lote))})"
+            f"(max {MAX_IN_FLIGHT} en vuelo; pendientes prioritarios: "
+            f"{min(len(pendientes), len(lote))})"
         )
 
         t0 = time.time()

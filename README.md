@@ -6,7 +6,7 @@ Avisa por WhatsApp cuando aparecen productos nuevos o cambian de precio en [CeX 
 
 1. **Sitemap** — descubre el catálogo interesante (móviles, iPad, portátiles, PS5, Switch, Xbox Series…) desde los sitemaps oficiales (~decenas de miles de SKUs).
 2. **Feeds** — `hotproducts` / `topsellers` / `mostwanted` para novedades calientes (sí avisan por WhatsApp).
-3. **Rechequeo de precios** — consulta `/detail` en paralelo (~6500 SKUs/corrida × 20 hilos). Con el disparador cada 3 h, el catálogo se cubre en **~1 día**.
+3. **Rechequeo de precios** — consulta `/detail` en paralelo controlado (~4000 SKUs/corrida). Con el disparador cada 2 h, el catálogo se cubre en **~1 día**.
 
 El cron lo lanza [precios_disparador](https://github.com/MParralo/precios_disparador).
 
