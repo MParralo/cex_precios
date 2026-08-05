@@ -7,8 +7,6 @@ on:
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,11 +19,6 @@ jobs:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
         run: python monitor_cex.py
-      - name: Guardar prepare
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "cex prepare sitemap/feeds [skip ci]"
-          file_pattern: vistos.json estado.json
       - uses: actions/upload-artifact@v4
         with:
           name: cex-base
@@ -95,7 +88,8 @@ jobs:
               print(f"estado desde {estado_src}")
 
           n = 0
-          for path in sorted(glob.glob("artifacts/delta-*/delta_*.json")):
+          paths = sorted(glob.glob("artifacts/**/delta_*.json", recursive=True))
+          for path in paths:
               delta = json.loads(Path(path).read_text(encoding="utf-8"))
               vistos.update(delta)
               n += len(delta)
@@ -104,6 +98,8 @@ jobs:
           Path("vistos.json").write_text(json.dumps(vistos, ensure_ascii=False, indent=2), encoding="utf-8")
           pend = sum(1 for v in vistos.values() if isinstance(v, dict) and v.get("precio") in (None, "", "N/A", "PENDIENTE"))
           print(f"Total historial={len(vistos)} | actualizados≈{n} | sin precio={pend}")
+          if n == 0:
+              raise SystemExit("No se encontraron deltas para fusionar")
           PY
       - name: Guardar historial fusionado
         uses: stefanzweifel/git-auto-commit-action@v5
