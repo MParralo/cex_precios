@@ -1,35 +1,112 @@
 name: Escáner CeX 24/7
 
-# Lo dispara el repo público precios_disparador (cron fiable).
-# También se puede lanzar a mano desde la pestaña Actions.
+# 12 runners en paralelo (IPs distintas) para cubrir ~50k SKUs en ~1 día.
 on:
   workflow_dispatch:
 
 jobs:
-  check-cex:
+  prepare:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
-
-      - name: Configurar Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-
-      - name: Instalar dependencias
-        run: pip install -r requirements.txt
-
-      - name: Ejecutar escáner CeX
+      - run: pip install -r requirements.txt
+      - name: Sitemap + feeds
         env:
+          CEX_MODE: prepare
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
         run: python monitor_cex.py
-
-      - name: Guardar historial
+      - name: Guardar prepare
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "actualizar historial CeX [skip ci]"
+          commit_message: "cex prepare sitemap/feeds [skip ci]"
+          file_pattern: vistos.json estado.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cex-base
+          path: |
+            vistos.json
+            estado.json
+
+  recheck:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: cex-base
+      - name: Rechequeo shard ${{ matrix.shard }}
+        env:
+          CEX_MODE: recheck
+          SHARD_INDEX: ${{ matrix.shard }}
+          SHARD_TOTAL: '12'
+          RECHECK_POR_SHARD: '500'
+          PAUSA_DETAIL: '0.2'
+          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+        run: python monitor_cex.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: delta-${{ matrix.shard }}
+          path: |
+            deltas/delta_${{ matrix.shard }}.json
+            estado.json
+          if-no-files-found: warn
+
+  merge:
+    needs: recheck
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Fusionar deltas en vistos.json
+        run: |
+          python3 <<'PY'
+          import json, glob
+          from pathlib import Path
+
+          base = Path("artifacts/cex-base/vistos.json")
+          vistos = json.loads(base.read_text(encoding="utf-8"))
+
+          estado_src = Path("artifacts/delta-0/estado.json")
+          if not estado_src.exists():
+              estado_src = Path("artifacts/cex-base/estado.json")
+          if estado_src.exists():
+              Path("estado.json").write_text(estado_src.read_text(encoding="utf-8"), encoding="utf-8")
+              print(f"estado desde {estado_src}")
+
+          n = 0
+          for path in sorted(glob.glob("artifacts/delta-*/delta_*.json")):
+              delta = json.loads(Path(path).read_text(encoding="utf-8"))
+              vistos.update(delta)
+              n += len(delta)
+              print(f"merge {path}: {len(delta)} SKUs")
+
+          Path("vistos.json").write_text(json.dumps(vistos, ensure_ascii=False, indent=2), encoding="utf-8")
+          pend = sum(1 for v in vistos.values() if isinstance(v, dict) and v.get("precio") in (None, "", "N/A", "PENDIENTE"))
+          print(f"Total historial={len(vistos)} | actualizados≈{n} | sin precio={pend}")
+          PY
+      - name: Guardar historial fusionado
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "actualizar historial CeX shards [skip ci]"
           file_pattern: vistos.json estado.json
