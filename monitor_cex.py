@@ -46,8 +46,8 @@ SITEMAPS_PRODUCTOS = [
 ARCHIVO_HISTORIAL = "vistos.json"
 ARCHIVO_ESTADO = "estado.json"
 
-WHATSAPP_PHONE = os.getenv("WHATSAPP_PHONE", "")
-WHATSAPP_APIKEY = os.getenv("WHATSAPP_APIKEY", "")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
 RECHECK_POR_SHARD = int(os.getenv("RECHECK_POR_SHARD", "500"))
 PAUSA_DETAIL = float(os.getenv("PAUSA_DETAIL", "0.2"))
@@ -79,23 +79,34 @@ RE_SITEMAP_ITEM = re.compile(
 )
 
 
-def enviar_whatsapp(mensaje):
-    if not WHATSAPP_PHONE or not WHATSAPP_APIKEY:
-        print("⚠️ WhatsApp no configurado (faltan secrets), se omite el envío.")
+def enviar_telegram(mensaje):
+    """Envía un mensaje por Telegram Bot API (gratis, sin tope práctico)."""
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("⚠️ Telegram no configurado (faltan TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID).")
         return
-    mensaje_encoded = urllib.parse.quote(mensaje)
-    url = (
-        f"https://api.callmebot.com/whatsapp.php"
-        f"?phone={WHATSAPP_PHONE}&text={mensaje_encoded}&apikey={WHATSAPP_APIKEY}"
-    )
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    # Telegram limita a 4096 caracteres
+    texto = mensaje if len(mensaje) <= 4000 else mensaje[:3990] + "…"
     try:
-        r = SESSION.get(url, timeout=15)
-        if r.status_code in (200, 210):
-            print("📲 Alerta enviada/encolada por WhatsApp correctamente.")
+        r = SESSION.post(
+            url,
+            json={
+                "chat_id": TELEGRAM_CHAT_ID,
+                "text": texto,
+                "disable_web_page_preview": True,
+            },
+            timeout=20,
+        )
+        if r.status_code == 200 and (r.json() or {}).get("ok"):
+            print("📲 Alerta enviada por Telegram correctamente.")
         else:
-            print(f"⚠️ Error enviando WhatsApp: {r.status_code} | {r.text[:160]}")
+            print(f"⚠️ Error enviando Telegram: {r.status_code} | {r.text[:200]}")
     except Exception as e:
-        print(f"❌ Error al enviar mensaje: {e}")
+        print(f"❌ Error al enviar Telegram: {e}")
+
+
+# Alias por compatibilidad con el resto del código
+enviar_whatsapp = enviar_telegram
 
 
 def api_get_result(path, params=None, timeout=25, raw_query=None):

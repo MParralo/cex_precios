@@ -16,8 +16,8 @@ jobs:
       - name: Sitemap + feeds
         env:
           CEX_MODE: prepare
-          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
-          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python monitor_cex.py
       # Sin commit aquí: solo artifact → evita choques de push con merge
       - uses: actions/upload-artifact@v4
@@ -51,8 +51,8 @@ jobs:
           SHARD_TOTAL: '12'
           RECHECK_POR_SHARD: '500'
           PAUSA_DETAIL: '0.2'
-          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
-          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python monitor_cex.py
       - name: Empaquetar delta plano
         run: |

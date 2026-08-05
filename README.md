@@ -14,5 +14,5 @@ Cron: [precios_disparador](https://github.com/MParralo/precios_disparador).
 
 ## Secrets
 
-- `WHATSAPP_PHONE`
-- `WHATSAPP_APIKEY`
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
