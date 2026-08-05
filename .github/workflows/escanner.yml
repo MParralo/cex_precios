@@ -1,9 +1,8 @@
 name: Escáner CeX 24/7
 
+# Lo dispara el repo público precios_disparador (cron fiable).
+# También se puede lanzar a mano desde la pestaña Actions.
 on:
-  schedule:
-    # Cada 10 minutos
-    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 jobs:

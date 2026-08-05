@@ -50,9 +50,10 @@ ARCHIVO_ESTADO = "estado.json"
 WHATSAPP_PHONE = os.getenv("WHATSAPP_PHONE", "34613484447")
 WHATSAPP_APIKEY = os.getenv("WHATSAPP_APIKEY", "4010754")
 
-# Rechequeo de precios vía /detail (este endpoint SÍ funciona)
-RECHECK_POR_CORRIDA = 350
-PAUSA_DETAIL = 0.2
+# Rechequeo de precios vía /detail (este endpoint SÍ funciona).
+# Cupo moderado para caber en el plan gratis de Actions (~2-3 min/corrida).
+RECHECK_POR_CORRIDA = 120
+PAUSA_DETAIL = 0.12
 
 SESSION = requests.Session()
 SESSION.headers.update({
