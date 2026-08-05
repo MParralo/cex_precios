@@ -125,11 +125,13 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
+          # Primero commit local (vistos ya modificado) y luego rebase: evita
+          # "cannot pull with rebase: You have unstaged changes".
           git add vistos.json estado.json
           if git diff --staged --quiet; then
             echo "Sin cambios que guardar"
             exit 0
           fi
           git commit -m "actualizar historial CeX shards [skip ci]"
+          git pull --rebase origin main
           git push origin HEAD:main
