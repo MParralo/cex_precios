@@ -229430,7 +229430,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SSAMA266B6G128GNLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "140 €",
     "compra_num": 140,
     "cambio": "150 €",
@@ -329427,10 +329427,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORLEN15ABR827C&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "136 €",
-    "compra_num": 136,
-    "cambio": "193 €",
-    "cambio_num": 193
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORLEN15ACH670C": {
     "precio": "450 €",
@@ -333236,10 +333236,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORLENB505010B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "27 €",
-    "compra_num": 27,
-    "cambio": "44 €",
-    "cambio_num": 44
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORLENB505010C": {
     "precio": "110 €",
@@ -333249,10 +333249,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORLENB505010C&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "25 €",
-    "compra_num": 25,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORLENB505011B": {
     "precio": "150 €",
@@ -356059,7 +356059,7 @@
   "SPORTECMKI5S98B": {
     "precio": "800 €",
     "precio_num": 800,
-    "nombre": "TECNO MEGABOOK K15S /i9 3900HK /32GB RAM/1TB SSD/15\"/W11/B",
+    "nombre": "TECNO MEGABOOK K15S /i9 13900hk/32GB RAM/1TB SSD/15\"/W11/B",
     "grado": "B",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORTECMKI5S98B&categoryName=Portatiles+-+Windows",
@@ -364722,10 +364722,10 @@
     "categoria": "Portatiles - Apple",
     "link": "https://es.webuy.com/product-detail?id=SMBA1428816256M11C&categoryName=Portatiles+-+Apple",
     "origen": "detail",
-    "compra": "220 €",
-    "compra_num": 220,
-    "cambio": "311 €",
-    "cambio_num": 311
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SMBA1428816256MA": {
     "precio": "610 €",
@@ -378254,7 +378254,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR3",
     "link": "https://es.webuy.com/product-detail?id=SMEM204DD3106002GB&categoryName=Memoria+-+Portatil+DDR3",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "0,01 €",
     "compra_num": 0.01,
     "cambio": "0,01 €",
@@ -378423,7 +378423,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR4",
     "link": "https://es.webuy.com/product-detail?id=SMEM4G2400260&categoryName=Memoria+-+Portatil+DDR4",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "0,40 €",
     "compra_num": 0.4,
     "cambio": "0,90 €",
