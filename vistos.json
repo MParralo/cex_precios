@@ -646085,5 +646085,70 @@
     "compra_num": 4,
     "cambio": "6 €",
     "cambio_num": 6
+  },
+  "SWIKIGGYLIBB": {
+    "precio": "15 €",
+    "precio_num": 15,
+    "nombre": "Wiko Iggy 4.5\" Android, Libre B",
+    "grado": "B",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SWIKIGGYLIBB&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "2 €",
+    "compra_num": 2,
+    "cambio": "4 €",
+    "cambio_num": 4
+  },
+  "SXIA17ULT15512BLIBA": {
+    "precio": "1000 €",
+    "precio_num": 1000,
+    "nombre": "Xiaomi 17 Ultra (16GB+512GB) Blanco, Libre A",
+    "grado": "A",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SXIA17ULT15512BLIBA&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "520 €",
+    "compra_num": 520,
+    "cambio": "650 €",
+    "cambio_num": 650
+  },
+  "SSAMA556BD8128GLLIBC": {
+    "precio": "250 €",
+    "precio_num": 250,
+    "nombre": "Samsung Galaxy A55 5G Dual Sim (8GB+128GB) Limón, Libre C",
+    "grado": "C",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SSAMA556BD8128GLLIBC&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "185 €",
+    "compra_num": 185,
+    "cambio": "197 €",
+    "cambio_num": 197
+  },
+  "SUNPUP018256GNLIBB": {
+    "precio": "650 €",
+    "precio_num": 650,
+    "nombre": "Unplugged Uphone UP01 Dual Sim (8GB+256GB) Negro, Libre B",
+    "grado": "B",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SUNPUP018256GNLIBB&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "338 €",
+    "compra_num": 338,
+    "cambio": "422 €",
+    "cambio_num": 422
+  },
+  "SZTEBLA544128GLLIBB": {
+    "precio": "75 €",
+    "precio_num": 75,
+    "nombre": "ZTE Blade A54 (4GB+128GB) Lilac, Libre B",
+    "grado": "B",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SZTEBLA544128GLLIBB&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "46 €",
+    "compra_num": 46,
+    "cambio": "54 €",
+    "cambio_num": 54
   }
 }
