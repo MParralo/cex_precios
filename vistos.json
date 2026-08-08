@@ -378254,7 +378254,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR3",
     "link": "https://es.webuy.com/product-detail?id=SMEM204DD3106002GB&categoryName=Memoria+-+Portatil+DDR3",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,01 €",
     "compra_num": 0.01,
     "cambio": "0,01 €",
@@ -378423,7 +378423,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR4",
     "link": "https://es.webuy.com/product-detail?id=SMEM4G2400260&categoryName=Memoria+-+Portatil+DDR4",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,40 €",
     "compra_num": 0.4,
     "cambio": "0,90 €",
@@ -460870,10 +460870,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORLENV15G215B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "96 €",
-    "compra_num": 96,
-    "cambio": "137 €",
-    "cambio_num": 137
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORLENV15G231B": {
     "precio": "230 €",
@@ -461409,17 +461409,17 @@
     "cambio_num": 218
   },
   "SPORLENV15IGL41B": {
-    "precio": "225 €",
-    "precio_num": 225,
+    "precio": "215 €",
+    "precio_num": 215,
     "nombre": "Lenovo V15 IGL/N4020/8GB Ram/256GB SSD/15\"/W10/B",
     "grado": "B",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORLENV15IGL41B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "99 €",
-    "compra_num": 99,
-    "cambio": "140 €",
-    "cambio_num": 140
+    "compra": "94 €",
+    "compra_num": 94,
+    "cambio": "134 €",
+    "cambio_num": 134
   },
   "SPORLENV15IGL420B": {
     "precio": "120 €",
@@ -642733,17 +642733,17 @@
     "cambio_num": 120
   },
   "8432426459766A": {
-    "precio": "50 €",
-    "precio_num": 50,
+    "precio": "45 €",
+    "precio_num": 45,
     "nombre": "Energy Sistem  Coolpods TWS Open Ear Headphones - Negro, A",
     "grado": "A",
     "categoria": "Auriculares",
     "link": "https://es.webuy.com/product-detail?id=8432426459766A&categoryName=Auriculares",
     "origen": "feed:hotproducts",
-    "compra": "22 €",
-    "compra_num": 22,
-    "cambio": "31 €",
-    "cambio_num": 31
+    "compra": "10 €",
+    "compra_num": 10,
+    "cambio": "16 €",
+    "cambio_num": 16
   },
   "8414906987747": {
     "precio": "5 €",
