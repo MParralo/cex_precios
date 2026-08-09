@@ -378254,7 +378254,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR3",
     "link": "https://es.webuy.com/product-detail?id=SMEM204DD3106002GB&categoryName=Memoria+-+Portatil+DDR3",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,01 €",
     "compra_num": 0.01,
     "cambio": "0,01 €",
@@ -378423,7 +378423,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR4",
     "link": "https://es.webuy.com/product-detail?id=SMEM4G2400260&categoryName=Memoria+-+Portatil+DDR4",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,40 €",
     "compra_num": 0.4,
     "cambio": "0,90 €",
@@ -440856,17 +440856,17 @@
     "cambio_num": 205
   },
   "SPORHP15FC018969B": {
-    "precio": "320 €",
-    "precio_num": 320,
+    "precio": "300 €",
+    "precio_num": 300,
     "nombre": "HP 15-FC0189/Ryzen 5 7520U/16GB Ram/512GB SSD/15\"/W11/B",
     "grado": "B",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHP15FC018969B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "140 €",
-    "compra_num": 140,
-    "cambio": "199 €",
-    "cambio_num": 199
+    "compra": "132 €",
+    "compra_num": 132,
+    "cambio": "186 €",
+    "cambio_num": 186
   },
   "SPORHP15FC019421A": {
     "precio": "340 €",
