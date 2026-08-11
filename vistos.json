@@ -378254,7 +378254,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR3",
     "link": "https://es.webuy.com/product-detail?id=SMEM204DD3106002GB&categoryName=Memoria+-+Portatil+DDR3",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,01 €",
     "compra_num": 0.01,
     "cambio": "0,01 €",
@@ -378423,7 +378423,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR4",
     "link": "https://es.webuy.com/product-detail?id=SMEM4G2400260&categoryName=Memoria+-+Portatil+DDR4",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,40 €",
     "compra_num": 0.4,
     "cambio": "0,90 €",
@@ -398781,7 +398781,7 @@
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA6P5G8256GSBLIBB&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "133 €",
     "compra_num": 133,
     "cambio": "142 €",
@@ -398820,7 +398820,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA6X5G4128GBPLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "105 €",
     "compra_num": 105,
     "cambio": "117 €",
@@ -446609,10 +446609,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHP640G1132B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "184 €",
-    "compra_num": 184,
-    "cambio": "261 €",
-    "cambio_num": 261
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORHP640G117B": {
     "precio": "150 €",
@@ -446856,10 +446856,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHP640G31B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "96 €",
-    "compra_num": 96,
-    "cambio": "137 €",
-    "cambio_num": 137
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORHP640G31C": {
     "precio": "200 €",
@@ -446869,10 +446869,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHP640G31C&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "88 €",
-    "compra_num": 88,
-    "cambio": "124 €",
-    "cambio_num": 124
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORHP640G334B": {
     "precio": "240 €",
@@ -446882,10 +446882,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHP640G334B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "105 €",
-    "compra_num": 105,
-    "cambio": "149 €",
-    "cambio_num": 149
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORHP640G3781B": {
     "precio": "240 €",
@@ -449156,7 +449156,7 @@
     "grado": "A",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHPP4G1A956A&categoryName=Portatiles+-+Windows",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "215 €",
     "compra_num": 215,
     "cambio": "305 €",
