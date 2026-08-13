@@ -378254,7 +378254,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR3",
     "link": "https://es.webuy.com/product-detail?id=SMEM204DD3106002GB&categoryName=Memoria+-+Portatil+DDR3",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "0,01 €",
     "compra_num": 0.01,
     "cambio": "0,01 €",
@@ -378423,7 +378423,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR4",
     "link": "https://es.webuy.com/product-detail?id=SMEM4G2400260&categoryName=Memoria+-+Portatil+DDR4",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "0,40 €",
     "compra_num": 0.4,
     "cambio": "0,90 €",
@@ -396905,7 +396905,7 @@
   "SOPPA404256GCLIBB": {
     "precio": "115 €",
     "precio_num": 115,
-    "nombre": "Oppo A40 (4GB+256GB) Caf�, Libre B",
+    "nombre": "OPPO A40 (4GB+256GB) CAFE, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA404256GCLIBB&categoryName=Moviles+-+Android",
@@ -397542,7 +397542,7 @@
   "SOPPA55G4128GPLIBA": {
     "precio": "130 €",
     "precio_num": 130,
-    "nombre": "Oppo A5 5G 2025 Dual Sim (4GB+128GB) P�rpura, Libre A",
+    "nombre": "OPPO A5 5G 2025 DUAL SIM (4GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA55G4128GPLIBA&categoryName=Moviles+-+Android",
@@ -397555,7 +397555,7 @@
   "SOPPA55G4128GPLIBB": {
     "precio": "120 €",
     "precio_num": 120,
-    "nombre": "Oppo A5 5G 2025 Dual Sim (4GB+128GB) P�rpura, Libre B",
+    "nombre": "OPPO A5 5G 2025 DUAL SIM (4GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA55G4128GPLIBB&categoryName=Moviles+-+Android",
@@ -397672,7 +397672,7 @@
   "SOPPA56128GPLIBA": {
     "precio": "130 €",
     "precio_num": 130,
-    "nombre": "Oppo A5 4G 2025 Dual Sim (6GB+128GB) P�rpura, Libre A",
+    "nombre": "OPPO A5 4G 2025 DUAL SIM (6GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA56128GPLIBA&categoryName=Moviles+-+Android",
@@ -397685,7 +397685,7 @@
   "SOPPA56128GPLIBB": {
     "precio": "120 €",
     "precio_num": 120,
-    "nombre": "Oppo A5 4G 2025 Dual Sim (6GB+128GB) P�rpura, Libre B",
+    "nombre": "OPPO A5 4G 2025 DUAL SIM (6GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA56128GPLIBB&categoryName=Moviles+-+Android",
@@ -397698,7 +397698,7 @@
   "SOPPA56128GPLIBC": {
     "precio": "95 €",
     "precio_num": 95,
-    "nombre": "Oppo A5 4G 2025 Dual Sim (6GB+128GB) P�rpura, Libre C",
+    "nombre": "OPPO A5 4G 2025 DUAL SIM (6GB+128GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA56128GPLIBC&categoryName=Moviles+-+Android",
@@ -398374,7 +398374,7 @@
   "SOPPA604128GMPLIBB": {
     "precio": "120 €",
     "precio_num": 120,
-    "nombre": "Oppo A60 (4GB+128GB) P�rpura, Libre B",
+    "nombre": "OPPO A60 (4GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA604128GMPLIBB&categoryName=Moviles+-+Android",
@@ -398820,7 +398820,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA6X5G4128GBPLIBA&categoryName=Moviles+-+Android",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "105 €",
     "compra_num": 105,
     "cambio": "117 €",
@@ -399375,7 +399375,7 @@
   "SOPPA745G128GPULIBC": {
     "precio": "88 €",
     "precio_num": 88,
-    "nombre": "Oppo A74 5G 128GB P�rpura, Libre C",
+    "nombre": "OPPO A74 5G 128GB PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA745G128GPULIBC&categoryName=Moviles+-+Android",
@@ -402222,7 +402222,7 @@
   "SOSCC2032GLPLIBB": {
     "precio": "52 €",
     "precio_num": 52,
-    "nombre": "Oscal C20 Dual Sim 32GB P�rpura, Libre B",
+    "nombre": "OSCAL C20 DUAL SIM 32GB PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOSCC2032GLPLIBB&categoryName=Moviles+-+Android",
@@ -402235,7 +402235,7 @@
   "SOSCC2032GLPLIBC": {
     "precio": "48 €",
     "precio_num": 48,
-    "nombre": "Oscal C20 Dual Sim 32GB P�rpura, Libre C",
+    "nombre": "OSCAL C20 DUAL SIM 32GB PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOSCC2032GLPLIBC&categoryName=Moviles+-+Android",
@@ -402313,7 +402313,7 @@
   "SOSCC20PD32GBPLIBB": {
     "precio": "62 €",
     "precio_num": 62,
-    "nombre": "Oscal C20 Pro Dual Sim 32GB P�rpura, Libre B",
+    "nombre": "OSCAL C20 PRO DUAL SIM 32GB PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOSCC20PD32GBPLIBB&categoryName=Moviles+-+Android",
@@ -402456,7 +402456,7 @@
   "SOSCC6032GNELIBC": {
     "precio": "52 €",
     "precio_num": 52,
-    "nombre": "Oscal C60 32GB P�rpura, Libre C",
+    "nombre": "OSCAL C60 32GB PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOSCC6032GNELIBC&categoryName=Moviles+-+Android",
@@ -402599,7 +402599,7 @@
   "SOSCF1C32GPLIBB": {
     "precio": "62 €",
     "precio_num": 62,
-    "nombre": "Oscal Flat 1C 32GB P�rpura, Libre B",
+    "nombre": "OSCAL FLAT 1C 32GB PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOSCF1C32GPLIBB&categoryName=Moviles+-+Android",
@@ -402937,7 +402937,7 @@
   "SOSCTIG1212256GPLIBA": {
     "precio": "125 €",
     "precio_num": 125,
-    "nombre": "Oscal Tiger 12 (12GB+256GB) P�rpura, Libre A",
+    "nombre": "OSCAL TIGER 12 (12GB+256GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOSCTIG1212256GPLIBA&categoryName=Moviles+-+Android",
@@ -402950,7 +402950,7 @@
   "SOSCTIG1212256GPLIBB": {
     "precio": "110 €",
     "precio_num": 110,
-    "nombre": "Oscal Tiger 12 (12GB+256GB) P�rpura, Libre B",
+    "nombre": "OSCAL TIGER 12 (12GB+256GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOSCTIG1212256GPLIBB&categoryName=Moviles+-+Android",
@@ -403132,7 +403132,7 @@
   "SOUKC16PRO32GPLIBC": {
     "precio": "65 €",
     "precio_num": 65,
-    "nombre": "Oukitel C16 Pro 32GB P�rpura, Libre C",
+    "nombre": "OUKITEL C16 PRO 32GB PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOUKC16PRO32GPLIBC&categoryName=Moviles+-+Android",
@@ -403639,7 +403639,7 @@
   "SOUKC328G128GPLIBB": {
     "precio": "82 €",
     "precio_num": 82,
-    "nombre": "Oukitel C32 (8GB+128GB) P�rpura, Libre B",
+    "nombre": "OUKITEL C32 (8GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOUKC328G128GPLIBB&categoryName=Moviles+-+Android",
@@ -403678,7 +403678,7 @@
   "SOUKC32PD8256GPLIBA": {
     "precio": "65 €",
     "precio_num": 65,
-    "nombre": "Oukitel C32 Pro Dual Sim (8GB+256GB) P�rpura, Libre A",
+    "nombre": "OUKITEL C32 PRO DUAL SIM (8GB+256GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOUKC32PD8256GPLIBA&categoryName=Moviles+-+Android",
@@ -403691,7 +403691,7 @@
   "SOUKC32PD8256GPLIBB": {
     "precio": "60 €",
     "precio_num": 60,
-    "nombre": "Oukitel C32 Pro Dual Sim (8GB+256GB) P�rpura, Libre B",
+    "nombre": "OUKITEL C32 PRO DUAL SIM (8GB+256GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOUKC32PD8256GPLIBB&categoryName=Moviles+-+Android",
@@ -405186,7 +405186,7 @@
   "SPOCC656128GPLIBC": {
     "precio": "85 €",
     "precio_num": 85,
-    "nombre": "Poco C65 (6GB+128GB) P�rpura, Libre C",
+    "nombre": "POCO C65 (6GB+128GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SPOCC656128GPLIBC&categoryName=Moviles+-+Android",
@@ -449156,7 +449156,7 @@
     "grado": "A",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHPP4G1A956A&categoryName=Portatiles+-+Windows",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "215 €",
     "compra_num": 215,
     "cambio": "305 €",
