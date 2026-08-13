@@ -378254,7 +378254,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR3",
     "link": "https://es.webuy.com/product-detail?id=SMEM204DD3106002GB&categoryName=Memoria+-+Portatil+DDR3",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,01 €",
     "compra_num": 0.01,
     "cambio": "0,01 €",
@@ -378423,7 +378423,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR4",
     "link": "https://es.webuy.com/product-detail?id=SMEM4G2400260&categoryName=Memoria+-+Portatil+DDR4",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,40 €",
     "compra_num": 0.4,
     "cambio": "0,90 €",
@@ -398820,7 +398820,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA6X5G4128GBPLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "105 €",
     "compra_num": 105,
     "cambio": "117 €",
@@ -449156,7 +449156,7 @@
     "grado": "A",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHPP4G1A956A&categoryName=Portatiles+-+Windows",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "215 €",
     "compra_num": 215,
     "cambio": "305 €",
@@ -499722,7 +499722,7 @@
   "SSWIS24LIBA": {
     "precio": "25 €",
     "precio_num": 25,
-    "nombre": "Swissvoice S24 Con Estaci�n Base De Confort, Libre A",
+    "nombre": "SWISSVOICE S24 CON ESTACION BASE DE CONFORT, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SSWIS24LIBA&categoryName=Moviles+-+Android",
@@ -517038,7 +517038,7 @@
   "STCL40R5G128GSPLIBB": {
     "precio": "88 €",
     "precio_num": 88,
-    "nombre": "TCL 40R 5G 128GB P�rpura, Libre B",
+    "nombre": "TCL 40R 5G 128GB PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCL40R5G128GSPLIBB&categoryName=Moviles+-+Android",
@@ -517155,7 +517155,7 @@
   "STCL40SE4128GTPLIBA": {
     "precio": "82 €",
     "precio_num": 82,
-    "nombre": "TCL 40 SE (4GB+128GB) P�rpura, Libre A",
+    "nombre": "TCL 40 SE (4GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCL40SE4128GTPLIBA&categoryName=Moviles+-+Android",
@@ -517168,7 +517168,7 @@
   "STCL40SE4128GTPLIBB": {
     "precio": "72 €",
     "precio_num": 72,
-    "nombre": "TCL 40 SE (4GB+128GB) P�rpura, Libre B",
+    "nombre": "TCL 40 SE (4GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCL40SE4128GTPLIBB&categoryName=Moviles+-+Android",
@@ -517181,7 +517181,7 @@
   "STCL40SE6256GTPLIBB": {
     "precio": "88 €",
     "precio_num": 88,
-    "nombre": "TCL 40 SE (6GB+256GB) P�rpura, Libre B",
+    "nombre": "TCL 40 SE (6GB+256GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCL40SE6256GTPLIBB&categoryName=Moviles+-+Android",
@@ -518884,7 +518884,7 @@
   "STCLT413D403232PLIBA": {
     "precio": "48 €",
     "precio_num": 48,
-    "nombre": "TCL T413D 403 Dual Sim (2GB+32GB) P�rpura, Libre A",
+    "nombre": "TCL T413D 403 DUAL SIM (2GB+32GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT413D403232PLIBA&categoryName=Moviles+-+Android",
@@ -518897,7 +518897,7 @@
   "STCLT413D403232PLIBB": {
     "precio": "45 €",
     "precio_num": 45,
-    "nombre": "TCL T413D 403 Dual Sim (2GB+32GB) P�rpura, Libre B",
+    "nombre": "TCL T413D 403 DUAL SIM (2GB+32GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT413D403232PLIBB&categoryName=Moviles+-+Android",
@@ -518910,7 +518910,7 @@
   "STCLT413D403232PLIBC": {
     "precio": "38 €",
     "precio_num": 38,
-    "nombre": "TCL T413D 403 Dual Sim (2GB+32GB) P�rpura, Libre C",
+    "nombre": "TCL T413D 403 DUAL SIM (2GB+32GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT413D403232PLIBC&categoryName=Moviles+-+Android",
@@ -519092,7 +519092,7 @@
   "STCLT610K4128GDPLIBA": {
     "precio": "85 €",
     "precio_num": 85,
-    "nombre": "TCL 40SE T610K Dual Sim(4GB+128GB) P�rpura, Libre A",
+    "nombre": "TCL 40SE T610K DUAL SIM(4GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K4128GDPLIBA&categoryName=Moviles+-+Android",
@@ -519105,7 +519105,7 @@
   "STCLT610K4128GDPLIBB": {
     "precio": "78 €",
     "precio_num": 78,
-    "nombre": "TCL 40SE T610K Dual Sim(4GB+128GB) P�rpura, Libre B",
+    "nombre": "TCL 40SE T610K DUAL SIM(4GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K4128GDPLIBB&categoryName=Moviles+-+Android",
@@ -519118,7 +519118,7 @@
   "STCLT610K4128GDPLIBC": {
     "precio": "72 €",
     "precio_num": 72,
-    "nombre": "TCL 40SE T610K Dual Sim (4GB+128GB) P�rpura, Libre C",
+    "nombre": "TCL 40SE T610K DUAL SIM (4GB+128GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K4128GDPLIBC&categoryName=Moviles+-+Android",
@@ -519131,7 +519131,7 @@
   "STCLT610K4128GTPLIBA": {
     "precio": "90 €",
     "precio_num": 90,
-    "nombre": "TCL 40SE T610K (4GB+128GB) P�rpura, Libre A",
+    "nombre": "TCL 40SE T610K (4GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K4128GTPLIBA&categoryName=Moviles+-+Android",
@@ -519144,7 +519144,7 @@
   "STCLT610K4128GTPLIBB": {
     "precio": "78 €",
     "precio_num": 78,
-    "nombre": "TCL 40SE T610K (4GB+128GB) P�rpura, Libre B",
+    "nombre": "TCL 40SE T610K (4GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K4128GTPLIBB&categoryName=Moviles+-+Android",
@@ -519157,7 +519157,7 @@
   "STCLT610K4128GTPLIBC": {
     "precio": "68 €",
     "precio_num": 68,
-    "nombre": "TCL 40SE T610K (4GB+128GB) P�rpura, Libre C",
+    "nombre": "TCL 40SE T610K (4GB+128GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K4128GTPLIBC&categoryName=Moviles+-+Android",
@@ -519209,7 +519209,7 @@
   "STCLT610K6256GTPLIBA": {
     "precio": "105 €",
     "precio_num": 105,
-    "nombre": "TCL 40SE T610K (6GB+256GB) P�rpura, Libre A",
+    "nombre": "TCL 40SE T610K (6GB+256GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K6256GTPLIBA&categoryName=Moviles+-+Android",
@@ -519222,7 +519222,7 @@
   "STCLT610K6256GTPLIBB": {
     "precio": "95 €",
     "precio_num": 95,
-    "nombre": "TCL 40SE T610K (6GB+256GB) P�rpura, Libre B",
+    "nombre": "TCL 40SE T610K (6GB+256GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STCLT610K6256GTPLIBB&categoryName=Moviles+-+Android",
@@ -520327,7 +520327,7 @@
   "STECS10P8256GMSLIBB": {
     "precio": "105 €",
     "precio_num": 105,
-    "nombre": "Tecno Spark 10 Pro (8GB+256GB) Piel M�gica, Libre B",
+    "nombre": "TECNO SPARK 10 PRO (8GB+256GB) PIEL MAGICA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STECS10P8256GMSLIBB&categoryName=Moviles+-+Android",
@@ -520340,7 +520340,7 @@
   "STECS10P8256GMSLIBC": {
     "precio": "92 €",
     "precio_num": 92,
-    "nombre": "Tecno Spark 10 Pro (8GB+256GB) Piel M�gica, Libre C",
+    "nombre": "TECNO SPARK 10 PRO (8GB+256GB) PIEL MAGICA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STECS10P8256GMSLIBC&categoryName=Moviles+-+Android",
@@ -520964,7 +520964,7 @@
   "STECSPAGO23464GPLIVB": {
     "precio": "52 €",
     "precio_num": 52,
-    "nombre": "Tecno Spark Go 2023 (4GB+64GB) P�rpura N�bula, Libre B",
+    "nombre": "TECNO SPARK GO 2023 (4GB+64GB) PURPURA NEBULA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=STECSPAGO23464GPLIVB&categoryName=Moviles+-+Android",
@@ -523291,7 +523291,7 @@
   "SULENOT1532GPLIBB": {
     "precio": "35 €",
     "precio_num": 35,
-    "nombre": "Ulefone Note 15 3G 32GB P�rpura, Libre B",
+    "nombre": "ULEFONE NOTE 15 3G 32GB PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT1532GPLIBB&categoryName=Moviles+-+Android",
@@ -523356,7 +523356,7 @@
   "SULENOT16P4G128PLIBA": {
     "precio": "72 €",
     "precio_num": 72,
-    "nombre": "Ulefone Note 16 Pro (4GB+128GB) P�rpura, Libre A",
+    "nombre": "ULEFONE NOTE 16 PRO (4GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT16P4G128PLIBA&categoryName=Moviles+-+Android",
@@ -523369,7 +523369,7 @@
   "SULENOT16P4G128PLIBB": {
     "precio": "62 €",
     "precio_num": 62,
-    "nombre": "Ulefone Note 16 Pro (4GB+128GB) P�rpura, Libre B",
+    "nombre": "ULEFONE NOTE 16 PRO (4GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT16P4G128PLIBB&categoryName=Moviles+-+Android",
@@ -523382,7 +523382,7 @@
   "SULENOT16P4G128PLIBC": {
     "precio": "58 €",
     "precio_num": 58,
-    "nombre": "Ulefone Note 16 Pro (4GB+128GB) P�rpura, Libre C",
+    "nombre": "ULEFONE NOTE 16 PRO (4GB+128GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT16P4G128PLIBC&categoryName=Moviles+-+Android",
@@ -523408,7 +523408,7 @@
   "SULENOT16P8256GPLIBA": {
     "precio": "88 €",
     "precio_num": 88,
-    "nombre": "Ulefone Note 16 Pro (8GB+256GB) P�rpura, Libre A",
+    "nombre": "ULEFONE NOTE 16 PRO (8GB+256GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT16P8256GPLIBA&categoryName=Moviles+-+Android",
@@ -523473,7 +523473,7 @@
   "SULENOT16P8G128PLIBB": {
     "precio": "68 €",
     "precio_num": 68,
-    "nombre": "Ulefone Note 16 Pro (8GB+128GB) P�rpura, Libre B",
+    "nombre": "ULEFONE NOTE 16 PRO (8GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT16P8G128PLIBB&categoryName=Moviles+-+Android",
@@ -523486,7 +523486,7 @@
   "SULENOT16P8G128PLIBC": {
     "precio": "65 €",
     "precio_num": 65,
-    "nombre": "Ulefone Note 16 Pro (8GB+128GB) P�rpura, Libre C",
+    "nombre": "ULEFONE NOTE 16 PRO (8GB+128GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT16P8G128PLIBC&categoryName=Moviles+-+Android",
@@ -523785,7 +523785,7 @@
   "SULENOT7P32GCLIBB": {
     "precio": "42 €",
     "precio_num": 42,
-    "nombre": "Ulefone Note 7P 32GB Crep�sculo, Libre B",
+    "nombre": "ULEFONE NOTE 7P 32GB CREPUSCULO, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULENOT7P32GCLIBB&categoryName=Moviles+-+Android",
@@ -524721,7 +524721,7 @@
   "SULET1128GPELIBB": {
     "precio": "100 €",
     "precio_num": 100,
-    "nombre": "Ulefone T1 128GB Edici�n Premium, Libre B",
+    "nombre": "ULEFONE T1 128GB EDICION PREMIUM, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULET1128GPELIBB&categoryName=Moviles+-+Android",
@@ -524734,7 +524734,7 @@
   "SULET1128GPELIBC": {
     "precio": "92 €",
     "precio_num": 92,
-    "nombre": "Ulefone T1 128GB Edici�n Premium, Libre C",
+    "nombre": "ULEFONE T1 128GB EDICION PREMIUM, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SULET1128GPELIBC&categoryName=Moviles+-+Android",
@@ -525007,7 +525007,7 @@
   "SUMIA15C8G128GPLIBA": {
     "precio": "115 €",
     "precio_num": 115,
-    "nombre": "UMIDIGI A15C (8GB+128GB) P�rpura, Libre A",
+    "nombre": "UMIDIGI A15C (8GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SUMIA15C8G128GPLIBA&categoryName=Moviles+-+Android",
@@ -525020,7 +525020,7 @@
   "SUMIA15C8G128GPLIBB": {
     "precio": "105 €",
     "precio_num": 105,
-    "nombre": "UMIDIGI A15C (8GB+128GB) P�rpura, Libre B",
+    "nombre": "UMIDIGI A15C (8GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SUMIA15C8G128GPLIBB&categoryName=Moviles+-+Android",
@@ -525059,7 +525059,7 @@
   "SUMIA15D8256GPLIBB": {
     "precio": "95 €",
     "precio_num": 95,
-    "nombre": "Umidigi A15 Dual Sim (8GB+256GB) P�rpura, Libre B",
+    "nombre": "UMIDIGI A15 DUAL SIM (8GB+256GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SUMIA15D8256GPLIBB&categoryName=Moviles+-+Android",
@@ -526502,7 +526502,7 @@
   "SVIVV5012G512GMPLIBB": {
     "precio": "290 €",
     "precio_num": 290,
-    "nombre": "Vivo V50 5G (12GB+512GB) P�rpura, Libre B",
+    "nombre": "VIVO V50 5G (12GB+512GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SVIVV5012G512GMPLIBB&categoryName=Moviles+-+Android",
@@ -649088,5 +649088,18 @@
     "compra_num": 518,
     "cambio": "553 €",
     "cambio_num": 553
+  },
+  "SACCDELDA310A": {
+    "precio": "15 €",
+    "precio_num": 15,
+    "nombre": "Dell DA310 USB-C Mobile Adapter",
+    "grado": "N/A",
+    "categoria": "PC Accesorios",
+    "link": "https://es.webuy.com/product-detail?id=SACCDELDA310A&categoryName=PC+Accesorios",
+    "origen": "feed:hotproducts",
+    "compra": "6 €",
+    "compra_num": 6,
+    "cambio": "9 €",
+    "cambio_num": 9
   }
 }
