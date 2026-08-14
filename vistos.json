@@ -208,17 +208,17 @@
     "cambio_num": 6
   },
   "5026555410267": {
-    "precio": "4 €",
-    "precio_num": 4,
+    "precio": "5 €",
+    "precio_num": 5,
     "nombre": "Grand Theft Auto V (5)",
     "grado": "N/A",
     "categoria": "PS3 Juegos",
     "link": "https://es.webuy.com/product-detail?id=5026555410267&categoryName=PS3+Juegos",
     "origen": "feed:hotproducts",
-    "compra": "0,90 €",
-    "compra_num": 0.9,
-    "cambio": "1,40 €",
-    "cambio_num": 1.4
+    "compra": "1,50 €",
+    "compra_num": 1.5,
+    "cambio": "2 €",
+    "cambio_num": 2
   },
   "711719439912": {
     "precio": "18 €",
@@ -2288,17 +2288,17 @@
     "cambio_num": 3
   },
   "SMEDGOOCHRO2A": {
-    "precio": "20 €",
-    "precio_num": 20,
+    "precio": "18 €",
+    "precio_num": 18,
     "nombre": "Google Chromecast 2nd Gen, B",
     "grado": "B",
     "categoria": "Reproductor Multimedia TV",
     "link": "https://es.webuy.com/product-detail?id=SMEDGOOCHRO2A&categoryName=Reproductor+Multimedia+TV",
     "origen": "feed:hotproducts",
-    "compra": "11 €",
-    "compra_num": 11,
-    "cambio": "13 €",
-    "cambio_num": 13
+    "compra": "9 €",
+    "compra_num": 9,
+    "cambio": "12 €",
+    "cambio_num": 12
   },
   "8436558201538": {
     "precio": "15 €",
@@ -3549,17 +3549,17 @@
     "cambio_num": 46
   },
   "0884095231477": {
-    "precio": "58 €",
-    "precio_num": 58,
+    "precio": "60 €",
+    "precio_num": 60,
     "nombre": "Beast of Reincarnation (Sin DLC)",
     "grado": "N/A",
     "categoria": "PS5 Juegos",
     "link": "https://es.webuy.com/product-detail?id=0884095231477&categoryName=PS5+Juegos",
     "origen": "feed:mostwanted",
-    "compra": "35 €",
-    "compra_num": 35,
-    "cambio": "41 €",
-    "cambio_num": 41
+    "compra": "37 €",
+    "compra_num": 37,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "SVALSM16G512GNA": {
     "precio": "1450 €",
@@ -76329,7 +76329,7 @@
     "grado": "B",
     "categoria": "Moviles - iPhone",
     "link": "https://es.webuy.com/product-detail?id=SAPPIP17PM256GAOLIBB&categoryName=Moviles+-+iPhone",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "837 €",
     "compra_num": 837,
     "cambio": "925 €",
@@ -76381,7 +76381,7 @@
     "grado": "A",
     "categoria": "Moviles - iPhone",
     "link": "https://es.webuy.com/product-detail?id=SAPPIP17PM256GPLLIBA&categoryName=Moviles+-+iPhone",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "904 €",
     "compra_num": 904,
     "cambio": "999 €",
@@ -119762,7 +119762,7 @@
     "grado": "B",
     "categoria": "Moviles - iPhone",
     "link": "https://es.webuy.com/product-detail?id=SAPPIP16PM256GBTLIBB&categoryName=Moviles+-+iPhone",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "636 €",
     "compra_num": 636,
     "cambio": "703 €",
@@ -123701,7 +123701,7 @@
     "grado": "B",
     "categoria": "Apple iPad",
     "link": "https://es.webuy.com/product-detail?id=SAPPIPAA2UNL64GGEB&categoryName=Apple+iPad",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "18 €",
     "compra_num": 18,
     "cambio": "25 €",
@@ -123779,7 +123779,7 @@
     "grado": "B",
     "categoria": "Apple iPad",
     "link": "https://es.webuy.com/product-detail?id=SAPPIPAA2UNL64GPB&categoryName=Apple+iPad",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "21 €",
     "compra_num": 21,
     "cambio": "29 €",
@@ -131814,10 +131814,10 @@
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SBLABL7000NA&categoryName=Moviles+-+Android",
     "origen": "detail",
-    "compra": "114 €",
-    "compra_num": 114,
-    "cambio": "143 €",
-    "cambio_num": 143
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SBLABL8000512GNLIBA": {
     "precio": "205 €",
@@ -147877,7 +147877,7 @@
   "SREDN145G256GLPLIBC": {
     "precio": "175 €",
     "precio_num": 175,
-    "nombre": "Redmi Note 14 5G (8GB+256GB) P�rpura, Libre C",
+    "nombre": "REDMI NOTE 14 5G (8GB+256GB) PURPURA, LIBRE C",
     "grado": "C",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SREDN145G256GLPLIBC&categoryName=Moviles+-+Android",
@@ -147968,7 +147968,7 @@
   "SREDN145G6128GLPLIBA": {
     "precio": "150 €",
     "precio_num": 150,
-    "nombre": "Redmi Note 14 5G (6GB+128GB) P�rpura, Libre A",
+    "nombre": "REDMI NOTE 14 5G (6GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SREDN145G6128GLPLIBA&categoryName=Moviles+-+Android",
@@ -147981,7 +147981,7 @@
   "SREDN145G6128GLPLIBB": {
     "precio": "115 €",
     "precio_num": 115,
-    "nombre": "Redmi Note 14 5G (6GB+128GB) P�rpura, Libre B",
+    "nombre": "REDMI NOTE 14 5G (6GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SREDN145G6128GLPLIBB&categoryName=Moviles+-+Android",
@@ -155729,7 +155729,7 @@
   "SSAMA356BD6128LILIBB": {
     "precio": "185 €",
     "precio_num": 185,
-    "nombre": "Samsung Galaxy A35 5G Dual Sim (6GB+128GB) Lim�n, Libre B",
+    "nombre": "SAMSUNG GALAXY A35 5G DUAL SIM (6GB+128GB) LIMON, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SSAMA356BD6128LILIBB&categoryName=Moviles+-+Android",
@@ -156097,7 +156097,7 @@
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SSAMA366BD6128GNLIBB&categoryName=Moviles+-+Android",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "151 €",
     "compra_num": 151,
     "cambio": "161 €",
@@ -158862,7 +158862,7 @@
   "SCUBA104128GPLIBA": {
     "precio": "65 €",
     "precio_num": 65,
-    "nombre": "Cubot A10 (4GB+128GB) P�rpura, Libre A",
+    "nombre": "CUBOT A10 (4GB+128GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SCUBA104128GPLIBA&categoryName=Moviles+-+Android",
@@ -158875,7 +158875,7 @@
   "SCUBA104128GPLIBB": {
     "precio": "58 €",
     "precio_num": 58,
-    "nombre": "Cubot A10 (4GB+128GB) P�rpura, Libre B",
+    "nombre": "CUBOT A10 (4GB+128GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SCUBA104128GPLIBB&categoryName=Moviles+-+Android",
@@ -162333,7 +162333,7 @@
   "SCUBX7012G256GNLIBA": {
     "precio": "135 €",
     "precio_num": 135,
-    "nombre": "Cubot X70 (12GB+256GB) Negro Tecnol�gico, Libre A",
+    "nombre": "CUBOT X70 (12GB+256GB) NEGRO TECNOLOGICO, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SCUBX7012G256GNLIBA&categoryName=Moviles+-+Android",
@@ -162346,7 +162346,7 @@
   "SCUBX7012G256GNLIBB": {
     "precio": "115 €",
     "precio_num": 115,
-    "nombre": "Cubot X70 (12GB+256GB) Negro Tecnol�gico, Libre B",
+    "nombre": "CUBOT X70 (12GB+256GB) NEGRO TECNOLOGICO, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SCUBX7012G256GNLIBB&categoryName=Moviles+-+Android",
@@ -164361,7 +164361,7 @@
   "SDUOG55316GPLIBB": {
     "precio": "30 €",
     "precio_num": 30,
-    "nombre": "DuoDuoGo G55 (3GB+16GB) P�rpura, Libre B",
+    "nombre": "DUODUOGO G55 (3GB+16GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SDUOG55316GPLIBB&categoryName=Moviles+-+Android",
@@ -181707,7 +181707,7 @@
     "grado": "A",
     "categoria": "PC Gaming Portatil",
     "link": "https://es.webuy.com/product-detail?id=SHGPASURC73YA512GWA&categoryName=PC+Gaming+Portatil",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "272 €",
     "compra_num": 272,
     "cambio": "316 €",
@@ -181720,7 +181720,7 @@
     "grado": "B",
     "categoria": "PC Gaming Portatil",
     "link": "https://es.webuy.com/product-detail?id=SHGPASURC73YA512GWB&categoryName=PC+Gaming+Portatil",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "241 €",
     "compra_num": 241,
     "cambio": "280 €",
@@ -192233,7 +192233,7 @@
   "SHOTN13PD8256GPLIBA": {
     "precio": "100 €",
     "precio_num": 100,
-    "nombre": "Hotwav Note 13 Pro Dual Sim (8GB+256GB) P�rpura, Libre A",
+    "nombre": "HOTWAV NOTE 13 PRO DUAL SIM (8GB+256GB) PURPURA, LIBRE A",
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SHOTN13PD8256GPLIBA&categoryName=Moviles+-+Android",
@@ -192246,7 +192246,7 @@
   "SHOTN13PD8256GPLIBB": {
     "precio": "90 €",
     "precio_num": 90,
-    "nombre": "Hotwav Note 13 Pro Dual Sim (8GB+256GB) P�rpura, Libre B",
+    "nombre": "HOTWAV NOTE 13 PRO DUAL SIM (8GB+256GB) PURPURA, LIBRE B",
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SHOTN13PD8256GPLIBB&categoryName=Moviles+-+Android",
