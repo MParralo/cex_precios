@@ -449156,7 +449156,7 @@
     "grado": "A",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHPP4G1A956A&categoryName=Portatiles+-+Windows",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "215 €",
     "compra_num": 215,
     "cambio": "305 €",
@@ -499902,17 +499902,17 @@
     "cambio_num": 21
   },
   "STABACEA3A1032GB": {
-    "precio": "45 €",
-    "precio_num": 45,
+    "precio": "50 €",
+    "precio_num": 50,
     "nombre": "Acer Iconia A3-A10 32GB 10\", B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABACEA3A1032GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "19 €",
-    "compra_num": 19,
-    "cambio": "28 €",
-    "cambio_num": 28
+    "compra": "22 €",
+    "compra_num": 22,
+    "cambio": "31 €",
+    "cambio_num": 31
   },
   "STABACEA3A3032B": {
     "precio": "55 €",
@@ -500032,17 +500032,17 @@
     "cambio_num": 90
   },
   "STABACEAS20WF256WIFB": {
-    "precio": "80 €",
-    "precio_num": 80,
+    "precio": "90 €",
+    "precio_num": 90,
     "nombre": "Acer Sospiro AS20WF 256GB 10\", WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABACEAS20WF256WIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "35 €",
-    "compra_num": 35,
-    "cambio": "49 €",
-    "cambio_num": 49
+    "compra": "39 €",
+    "compra_num": 39,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABACEB171016GLIBB": {
     "precio": "20 €",
@@ -500487,30 +500487,30 @@
     "cambio_num": 43
   },
   "STABALC1T1016GLIBB": {
-    "precio": "50 €",
-    "precio_num": 50,
+    "precio": "55 €",
+    "precio_num": 55,
     "nombre": "Alcatel 1T 10\" 16GB, Libre B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALC1T1016GLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "22 €",
-    "compra_num": 22,
-    "cambio": "31 €",
-    "cambio_num": 31
+    "compra": "24 €",
+    "compra_num": 24,
+    "cambio": "34 €",
+    "cambio_num": 34
   },
   "STABALC1T1016GLIBC": {
-    "precio": "40 €",
-    "precio_num": 40,
+    "precio": "45 €",
+    "precio_num": 45,
     "nombre": "Alcatel 1T 10\" 16GB, Libre C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALC1T1016GLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "17 €",
-    "compra_num": 17,
-    "cambio": "24 €",
-    "cambio_num": 24
+    "compra": "19 €",
+    "compra_num": 19,
+    "cambio": "28 €",
+    "cambio_num": 28
   },
   "STABALC1T16GLIBB": {
     "precio": "25 €",
@@ -500539,43 +500539,43 @@
     "cambio_num": 8
   },
   "STABALC1T16GWIFA": {
-    "precio": "45 €",
-    "precio_num": 45,
+    "precio": "50 €",
+    "precio_num": 50,
     "nombre": "Alcatel 1T 10\" 16GB, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALC1T16GWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "19 €",
-    "compra_num": 19,
-    "cambio": "28 €",
-    "cambio_num": 28
+    "compra": "22 €",
+    "compra_num": 22,
+    "cambio": "31 €",
+    "cambio_num": 31
   },
   "STABALC1T16GWIFB": {
-    "precio": "35 €",
-    "precio_num": 35,
+    "precio": "40 €",
+    "precio_num": 40,
     "nombre": "Alcatel 1T 10\" 16GB, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALC1T16GWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "15 €",
-    "compra_num": 15,
-    "cambio": "21 €",
-    "cambio_num": 21
+    "compra": "17 €",
+    "compra_num": 17,
+    "cambio": "24 €",
+    "cambio_num": 24
   },
   "STABALC1T16GWIFC": {
-    "precio": "25 €",
-    "precio_num": 25,
+    "precio": "30 €",
+    "precio_num": 30,
     "nombre": "Alcatel 1T 10\" 16GB, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALC1T16GWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "11 €",
-    "compra_num": 11,
-    "cambio": "15 €",
-    "cambio_num": 15
+    "compra": "13 €",
+    "compra_num": 13,
+    "cambio": "18 €",
+    "cambio_num": 18
   },
   "STABALC1T32GLIBB": {
     "precio": "55 €",
@@ -500903,30 +500903,30 @@
     "cambio_num": 28
   },
   "STABALC809532GMGLIBB": {
-    "precio": "85 €",
-    "precio_num": 85,
+    "precio": "95 €",
+    "precio_num": 95,
     "nombre": "Alcatel TKEE Max 32GB 10\" Mint Green, Libre B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALC809532GMGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "37 €",
-    "compra_num": 37,
-    "cambio": "52 €",
-    "cambio_num": 52
+    "compra": "41 €",
+    "compra_num": 41,
+    "cambio": "59 €",
+    "cambio_num": 59
   },
   "STABALC809532GMGLIBC": {
-    "precio": "75 €",
-    "precio_num": 75,
+    "precio": "85 €",
+    "precio_num": 85,
     "nombre": "Alcatel TKEE Max 32GB 10\" Mint Green, Libre C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALC809532GMGLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "33 €",
-    "compra_num": 33,
-    "cambio": "46 €",
-    "cambio_num": 46
+    "compra": "37 €",
+    "compra_num": 37,
+    "cambio": "52 €",
+    "cambio_num": 52
   },
   "STABALC9010X8GLIBB": {
     "precio": "35 €",
@@ -501163,43 +501163,43 @@
     "cambio_num": 11
   },
   "STABALCPIX48GWIFA": {
-    "precio": "20 €",
-    "precio_num": 20,
+    "precio": "25 €",
+    "precio_num": 25,
     "nombre": "Alcatel One Toch Pixi 4 (7) 8063, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALCPIX48GWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "5 €",
+    "compra_num": 5,
+    "cambio": "9 €",
+    "cambio_num": 9
+  },
+  "STABALCPIX48GWIFB": {
+    "precio": "20 €",
+    "precio_num": 20,
+    "nombre": "Alcatel One Toch Pixi 4 (7) 8063, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABALCPIX48GWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "4 €",
     "compra_num": 4,
     "cambio": "7 €",
     "cambio_num": 7
   },
-  "STABALCPIX48GWIFB": {
+  "STABALCPIX48GWIFC": {
     "precio": "15 €",
     "precio_num": 15,
-    "nombre": "Alcatel One Toch Pixi 4 (7) 8063, WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABALCPIX48GWIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "3 €",
-    "compra_num": 3,
-    "cambio": "5 €",
-    "cambio_num": 5
-  },
-  "STABALCPIX48GWIFC": {
-    "precio": "10 €",
-    "precio_num": 10,
     "nombre": "Alcatel One Toch Pixi 4 (7) 8063, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALCPIX48GWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "2 €",
-    "compra_num": 2,
-    "cambio": "3 €",
-    "cambio_num": 3
+    "compra": "3 €",
+    "compra_num": 3,
+    "cambio": "5 €",
+    "cambio_num": 5
   },
   "STABALL70MU12256GWA": {
     "precio": "190 €",
@@ -501280,17 +501280,17 @@
     "cambio_num": 68
   },
   "STABALLI70M8128NLIBA": {
-    "precio": "140 €",
-    "precio_num": 140,
+    "precio": "155 €",
+    "precio_num": 155,
     "nombre": "ALLDOCUBE iPlay 70 MAX Pro 13\" (8GB+128GB) Negro, Libre A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABALLI70M8128NLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "61 €",
-    "compra_num": 61,
-    "cambio": "87 €",
-    "cambio_num": 87
+    "compra": "68 €",
+    "compra_num": 68,
+    "cambio": "96 €",
+    "cambio_num": 96
   },
   "STABALLIP206128NLIBB": {
     "precio": "95 €",
@@ -501527,43 +501527,43 @@
     "cambio_num": 84
   },
   "STABAMAFHD832GBWAB": {
-    "precio": "32 €",
-    "precio_num": 32,
+    "precio": "40 €",
+    "precio_num": 40,
     "nombre": "Amazon Fire HD 8 (2020) 8\" 32GB Negro (Con Anuncios), WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABAMAFHD832GBWAB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "14 €",
-    "compra_num": 14,
-    "cambio": "19 €",
-    "cambio_num": 19
+    "compra": "17 €",
+    "compra_num": 17,
+    "cambio": "24 €",
+    "cambio_num": 24
   },
   "STABAMAFHD832GBWAC": {
-    "precio": "28 €",
-    "precio_num": 28,
+    "precio": "35 €",
+    "precio_num": 35,
     "nombre": "Amazon Fire HD 8 (2020) 8\" 32GB Negro (Con Anuncios), WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABAMAFHD832GBWAC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "12 €",
-    "compra_num": 12,
-    "cambio": "17 €",
-    "cambio_num": 17
+    "compra": "15 €",
+    "compra_num": 15,
+    "cambio": "21 €",
+    "cambio_num": 21
   },
   "STABAMAFHD832GPWAB": {
-    "precio": "32 €",
-    "precio_num": 32,
+    "precio": "40 €",
+    "precio_num": 40,
     "nombre": "Amazon Fire HD 8 (2020) 8\" 32GB Púrpura (Con Anuncios), WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABAMAFHD832GPWAB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "14 €",
-    "compra_num": 14,
-    "cambio": "19 €",
-    "cambio_num": 19
+    "compra": "17 €",
+    "compra_num": 17,
+    "cambio": "24 €",
+    "cambio_num": 24
   },
   "STABAMAFIR7162022NA": {
     "precio": "55 €",
@@ -502567,30 +502567,30 @@
     "cambio_num": 34
   },
   "STABGEN1014X01A": {
-    "precio": "70 €",
-    "precio_num": 70,
+    "precio": "75 €",
+    "precio_num": 75,
     "nombre": "Generico 10\" Android 14 x Tableta, A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABGEN1014X01A&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "30 €",
-    "compra_num": 30,
-    "cambio": "43 €",
-    "cambio_num": 43
+    "compra": "33 €",
+    "compra_num": 33,
+    "cambio": "46 €",
+    "cambio_num": 46
   },
   "STABGEN1014X01B": {
-    "precio": "60 €",
-    "precio_num": 60,
+    "precio": "65 €",
+    "precio_num": 65,
     "nombre": "Generico 10\" Android 14 x Tableta, B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABGEN1014X01B&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "26 €",
-    "compra_num": 26,
-    "cambio": "37 €",
-    "cambio_num": 37
+    "compra": "28 €",
+    "compra_num": 28,
+    "cambio": "40 €",
+    "cambio_num": 40
   },
   "STABGEN1014X01C": {
     "precio": "50 €",
@@ -503165,30 +503165,30 @@
     "cambio_num": 15
   },
   "STABGEN70014A": {
-    "precio": "32 €",
-    "precio_num": 32,
+    "precio": "38 €",
+    "precio_num": 38,
     "nombre": "Generico 7\" Android 14 x Tableta, A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABGEN70014A&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "14 €",
-    "compra_num": 14,
-    "cambio": "19 €",
-    "cambio_num": 19
+    "compra": "16 €",
+    "compra_num": 16,
+    "cambio": "23 €",
+    "cambio_num": 23
   },
   "STABGEN70014B": {
-    "precio": "28 €",
-    "precio_num": 28,
+    "precio": "32 €",
+    "precio_num": 32,
     "nombre": "Generico 7\" Android 14 x Tableta, B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABGEN70014B&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "12 €",
-    "compra_num": 12,
-    "cambio": "17 €",
-    "cambio_num": 17
+    "compra": "14 €",
+    "compra_num": 14,
+    "cambio": "19 €",
+    "cambio_num": 19
   },
   "STABGEN70015B": {
     "precio": "35 €",
@@ -504056,10 +504056,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONMAGP2256BWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "140 €",
-    "compra_num": 140,
-    "cambio": "199 €",
-    "cambio_num": 199
+    "compra": "176 €",
+    "compra_num": 176,
+    "cambio": "214 €",
+    "cambio_num": 214
   },
   "STABHONMAGP2256BWIFB": {
     "precio": "290 €",
@@ -504069,10 +504069,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONMAGP2256BWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "127 €",
-    "compra_num": 127,
-    "cambio": "180 €",
-    "cambio_num": 180
+    "compra": "159 €",
+    "compra_num": 159,
+    "cambio": "194 €",
+    "cambio_num": 194
   },
   "STABHONMAGP2256NWIFA": {
     "precio": "320 €",
@@ -504082,10 +504082,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONMAGP2256NWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "140 €",
-    "compra_num": 140,
-    "cambio": "199 €",
-    "cambio_num": 199
+    "compra": "176 €",
+    "compra_num": 176,
+    "cambio": "214 €",
+    "cambio_num": 214
   },
   "STABHONMAGP2256NWIFB": {
     "precio": "290 €",
@@ -504095,10 +504095,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONMAGP2256NWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "127 €",
-    "compra_num": 127,
-    "cambio": "180 €",
-    "cambio_num": 180
+    "compra": "159 €",
+    "compra_num": 159,
+    "cambio": "194 €",
+    "cambio_num": 194
   },
   "STABHONMP4256GWIFA": {
     "precio": "540 €",
@@ -504114,30 +504114,30 @@
     "cambio_num": 336
   },
   "STABHONP10256GGWIFA": {
-    "precio": "210 €",
-    "precio_num": 210,
-    "nombre": "Honor Pad 10 (HEY3-W00) 256GB 12\" Gris, WiFi A",
+    "precio": "230 €",
+    "precio_num": 230,
+    "nombre": "Honor Pad 10 (8GB+256GB) 12\" Gris, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONP10256GGWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "101 €",
+    "compra_num": 101,
+    "cambio": "143 €",
+    "cambio_num": 143
+  },
+  "STABHONP10256GGWIFB": {
+    "precio": "210 €",
+    "precio_num": 210,
+    "nombre": "Honor Pad 10 (8GB+256GB) 12\" Gris, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABHONP10256GGWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "92 €",
     "compra_num": 92,
     "cambio": "130 €",
     "cambio_num": 130
-  },
-  "STABHONP10256GGWIFB": {
-    "precio": "190 €",
-    "precio_num": 190,
-    "nombre": "Honor Pad 10 (HEY3-W00) 256GB 12\" Gris, WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABHONP10256GGWIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "83 €",
-    "compra_num": 83,
-    "cambio": "118 €",
-    "cambio_num": 118
   },
   "STABHONP86G128GAWIFA": {
     "precio": "150 €",
@@ -504173,10 +504173,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONP8A128GSGLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "63 €",
-    "compra_num": 63,
-    "cambio": "90 €",
-    "cambio_num": 90
+    "compra": "79 €",
+    "compra_num": 79,
+    "cambio": "97 €",
+    "cambio_num": 97
   },
   "STABHONP8A128GSGLIBB": {
     "precio": "135 €",
@@ -504186,10 +504186,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONP8A128GSGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "59 €",
-    "compra_num": 59,
-    "cambio": "84 €",
-    "cambio_num": 84
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABHONP8A128GSGWIFA": {
     "precio": "140 €",
@@ -504199,10 +504199,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONP8A128GSGWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "61 €",
-    "compra_num": 61,
-    "cambio": "87 €",
-    "cambio_num": 87
+    "compra": "77 €",
+    "compra_num": 77,
+    "cambio": "93 €",
+    "cambio_num": 93
   },
   "STABHONP8A128GSGWIFB": {
     "precio": "130 €",
@@ -504212,10 +504212,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONP8A128GSGWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "57 €",
-    "compra_num": 57,
-    "cambio": "81 €",
-    "cambio_num": 81
+    "compra": "71 €",
+    "compra_num": 71,
+    "cambio": "87 €",
+    "cambio_num": 87
   },
   "STABHONP8A128GSGWIFC": {
     "precio": "120 €",
@@ -504225,10 +504225,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONP8A128GSGWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "52 €",
-    "compra_num": 52,
-    "cambio": "74 €",
-    "cambio_num": 74
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
   },
   "STABHONP8A64GSGWIFA": {
     "precio": "110 €",
@@ -504465,30 +504465,30 @@
     "cambio_num": 67
   },
   "STABHONPX9ELNW09WIFA": {
-    "precio": "110 €",
-    "precio_num": 110,
+    "precio": "120 €",
+    "precio_num": 120,
     "nombre": "Honor Pad X9 (ELN-W09) 128GB 11\" Gris Espacial, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONPX9ELNW09WIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "48 €",
-    "compra_num": 48,
-    "cambio": "68 €",
-    "cambio_num": 68
+    "compra": "52 €",
+    "compra_num": 52,
+    "cambio": "74 €",
+    "cambio_num": 74
   },
   "STABHONPX9ELNW09WIFB": {
-    "precio": "100 €",
-    "precio_num": 100,
+    "precio": "110 €",
+    "precio_num": 110,
     "nombre": "Honor Pad X9 (ELN-W09) 128GB 11\" Gris Espacial, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHONPX9ELNW09WIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "44 €",
-    "compra_num": 44,
-    "cambio": "62 €",
-    "cambio_num": 62
+    "compra": "48 €",
+    "compra_num": 48,
+    "cambio": "68 €",
+    "cambio_num": 68
   },
   "STABHOTR76256GGLIBB": {
     "precio": "165 €",
@@ -504829,43 +504829,43 @@
     "cambio_num": 40
   },
   "STABHUAAGS2W0964GWA": {
-    "precio": "80 €",
-    "precio_num": 80,
+    "precio": "90 €",
+    "precio_num": 90,
     "nombre": "Huawei MediaPad T5 10.1\" 64GB, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS2W0964GWA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "39 €",
+    "compra_num": 39,
+    "cambio": "56 €",
+    "cambio_num": 56
+  },
+  "STABHUAAGS2W0964GWB": {
+    "precio": "80 €",
+    "precio_num": 80,
+    "nombre": "Huawei MediaPad T5 10.1\" 64GB, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABHUAAGS2W0964GWB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "35 €",
     "compra_num": 35,
     "cambio": "49 €",
     "cambio_num": 49
   },
-  "STABHUAAGS2W0964GWB": {
+  "STABHUAAGS2W0964GWC": {
     "precio": "70 €",
     "precio_num": 70,
-    "nombre": "Huawei MediaPad T5 10.1\" 64GB, WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABHUAAGS2W0964GWB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "30 €",
-    "compra_num": 30,
-    "cambio": "43 €",
-    "cambio_num": 43
-  },
-  "STABHUAAGS2W0964GWC": {
-    "precio": "60 €",
-    "precio_num": 60,
     "nombre": "Huawei MediaPad T5 10.1\" 64GB, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS2W0964GWC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "26 €",
-    "compra_num": 26,
-    "cambio": "37 €",
-    "cambio_num": 37
+    "compra": "30 €",
+    "compra_num": 30,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABHUAAGS3L0932GA": {
     "precio": "85 €",
@@ -504875,10 +504875,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3L0932GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "19 €",
-    "compra_num": 19,
-    "cambio": "31 €",
-    "cambio_num": 31
+    "compra": "37 €",
+    "compra_num": 37,
+    "cambio": "52 €",
+    "cambio_num": 52
   },
   "STABHUAAGS3L0932GB": {
     "precio": "75 €",
@@ -504888,10 +504888,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3L0932GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "17 €",
-    "compra_num": 17,
-    "cambio": "27 €",
-    "cambio_num": 27
+    "compra": "33 €",
+    "compra_num": 33,
+    "cambio": "46 €",
+    "cambio_num": 46
   },
   "STABHUAAGS3W09128GB": {
     "precio": "100 €",
@@ -504901,10 +504901,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W09128GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "23 €",
-    "compra_num": 23,
-    "cambio": "37 €",
-    "cambio_num": 37
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "62 €",
+    "cambio_num": 62
   },
   "STABHUAAGS3W09128GC": {
     "precio": "90 €",
@@ -504914,10 +504914,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W09128GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "20 €",
-    "compra_num": 20,
-    "cambio": "33 €",
-    "cambio_num": 33
+    "compra": "39 €",
+    "compra_num": 39,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABHUAAGS3W0932GA": {
     "precio": "60 €",
@@ -504927,10 +504927,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W0932GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "13 €",
-    "compra_num": 13,
-    "cambio": "22 €",
-    "cambio_num": 22
+    "compra": "26 €",
+    "compra_num": 26,
+    "cambio": "37 €",
+    "cambio_num": 37
   },
   "STABHUAAGS3W0932GB": {
     "precio": "55 €",
@@ -504940,10 +504940,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W0932GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "12 €",
-    "compra_num": 12,
-    "cambio": "20 €",
-    "cambio_num": 20
+    "compra": "24 €",
+    "compra_num": 24,
+    "cambio": "34 €",
+    "cambio_num": 34
   },
   "STABHUAAGS3W0932GC": {
     "precio": "50 €",
@@ -504953,10 +504953,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W0932GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "11 €",
-    "compra_num": 11,
-    "cambio": "18 €",
-    "cambio_num": 18
+    "compra": "22 €",
+    "compra_num": 22,
+    "cambio": "31 €",
+    "cambio_num": 31
   },
   "STABHUAAGS3W0964GA": {
     "precio": "70 €",
@@ -504966,10 +504966,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W0964GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "16 €",
-    "compra_num": 16,
-    "cambio": "25 €",
-    "cambio_num": 25
+    "compra": "30 €",
+    "compra_num": 30,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABHUAAGS3W0964GB": {
     "precio": "60 €",
@@ -504979,10 +504979,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W0964GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "13 €",
-    "compra_num": 13,
-    "cambio": "22 €",
-    "cambio_num": 22
+    "compra": "26 €",
+    "compra_num": 26,
+    "cambio": "37 €",
+    "cambio_num": 37
   },
   "STABHUAAGS3W0964GC": {
     "precio": "55 €",
@@ -504992,10 +504992,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABHUAAGS3W0964GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "12 €",
-    "compra_num": 12,
-    "cambio": "20 €",
-    "cambio_num": 20
+    "compra": "24 €",
+    "compra_num": 24,
+    "cambio": "34 €",
+    "cambio_num": 34
   },
   "STABHUAAGS6W09128AWB": {
     "precio": "130 €",
@@ -505895,43 +505895,43 @@
     "cambio_num": 26
   },
   "STABLENTB8504F16GA": {
-    "precio": "35 €",
-    "precio_num": 35,
+    "precio": "40 €",
+    "precio_num": 40,
     "nombre": "Lenovo Tab 4 (TB-8504F) 16GB 8\", WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTB8504F16GA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "17 €",
+    "compra_num": 17,
+    "cambio": "24 €",
+    "cambio_num": 24
+  },
+  "STABLENTB8504F16GB": {
+    "precio": "35 €",
+    "precio_num": 35,
+    "nombre": "Lenovo Tab 4 (TB-8504F) 16GB 8\", WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENTB8504F16GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "15 €",
     "compra_num": 15,
     "cambio": "21 €",
     "cambio_num": 21
   },
-  "STABLENTB8504F16GB": {
+  "STABLENTB8504F16GC": {
     "precio": "30 €",
     "precio_num": 30,
-    "nombre": "Lenovo Tab 4 (TB-8504F) 16GB 8\", WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENTB8504F16GB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "13 €",
-    "compra_num": 13,
-    "cambio": "18 €",
-    "cambio_num": 18
-  },
-  "STABLENTB8504F16GC": {
-    "precio": "25 €",
-    "precio_num": 25,
     "nombre": "Lenovo Tab 4 (TB-8504F) 16GB 8\", WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTB8504F16GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "11 €",
-    "compra_num": 11,
-    "cambio": "15 €",
-    "cambio_num": 15
+    "compra": "13 €",
+    "compra_num": 13,
+    "cambio": "18 €",
+    "cambio_num": 18
   },
   "STABLENTB8604F32GB": {
     "precio": "45 €",
@@ -506669,10 +506669,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F128GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "50 €",
-    "compra_num": 50,
-    "cambio": "71 €",
-    "cambio_num": 71
+    "compra": "63 €",
+    "compra_num": 63,
+    "cambio": "77 €",
+    "cambio_num": 77
   },
   "STABLENTBX606F128GB": {
     "precio": "105 €",
@@ -506682,10 +506682,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F128GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "46 €",
-    "compra_num": 46,
-    "cambio": "65 €",
-    "cambio_num": 65
+    "compra": "57 €",
+    "compra_num": 57,
+    "cambio": "70 €",
+    "cambio_num": 70
   },
   "STABLENTBX606F128GC": {
     "precio": "95 €",
@@ -506695,10 +506695,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F128GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "41 €",
-    "compra_num": 41,
-    "cambio": "59 €",
-    "cambio_num": 59
+    "compra": "52 €",
+    "compra_num": 52,
+    "cambio": "63 €",
+    "cambio_num": 63
   },
   "STABLENTBX606F64GA": {
     "precio": "105 €",
@@ -506708,10 +506708,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F64GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "46 €",
-    "compra_num": 46,
-    "cambio": "65 €",
-    "cambio_num": 65
+    "compra": "57 €",
+    "compra_num": 57,
+    "cambio": "70 €",
+    "cambio_num": 70
   },
   "STABLENTBX606F64GB": {
     "precio": "95 €",
@@ -506721,10 +506721,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F64GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "41 €",
-    "compra_num": 41,
-    "cambio": "59 €",
-    "cambio_num": 59
+    "compra": "52 €",
+    "compra_num": 52,
+    "cambio": "63 €",
+    "cambio_num": 63
   },
   "STABLENTBX606F64GC": {
     "precio": "85 €",
@@ -506734,10 +506734,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F64GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "37 €",
-    "compra_num": 37,
-    "cambio": "52 €",
-    "cambio_num": 52
+    "compra": "46 €",
+    "compra_num": 46,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABLENTBX606F64GWDA": {
     "precio": "115 €",
@@ -506747,10 +506747,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F64GWDA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "50 €",
-    "compra_num": 50,
-    "cambio": "71 €",
-    "cambio_num": 71
+    "compra": "63 €",
+    "compra_num": 63,
+    "cambio": "77 €",
+    "cambio_num": 77
   },
   "STABLENTBX606F64GWDB": {
     "precio": "105 €",
@@ -506760,10 +506760,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F64GWDB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "46 €",
-    "compra_num": 46,
-    "cambio": "65 €",
-    "cambio_num": 65
+    "compra": "57 €",
+    "compra_num": 57,
+    "cambio": "70 €",
+    "cambio_num": 70
   },
   "STABLENTBX606F64GWDC": {
     "precio": "95 €",
@@ -506773,10 +506773,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606F64GWDC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "41 €",
-    "compra_num": 41,
-    "cambio": "59 €",
-    "cambio_num": 59
+    "compra": "52 €",
+    "compra_num": 52,
+    "cambio": "63 €",
+    "cambio_num": 63
   },
   "STABLENTBX606X32LIBB": {
     "precio": "80 €",
@@ -506786,10 +506786,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606X32LIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "35 €",
-    "compra_num": 35,
-    "cambio": "49 €",
-    "cambio_num": 49
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "53 €",
+    "cambio_num": 53
   },
   "STABLENTBX606X64LIBA": {
     "precio": "120 €",
@@ -506799,10 +506799,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606X64LIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "52 €",
-    "compra_num": 52,
-    "cambio": "74 €",
-    "cambio_num": 74
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
   },
   "STABLENTBX606X64LIBB": {
     "precio": "110 €",
@@ -506812,10 +506812,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606X64LIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "48 €",
-    "compra_num": 48,
-    "cambio": "68 €",
-    "cambio_num": 68
+    "compra": "60 €",
+    "compra_num": 60,
+    "cambio": "73 €",
+    "cambio_num": 73
   },
   "STABLENTBX606X64LIBC": {
     "precio": "100 €",
@@ -506825,10 +506825,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENTBX606X64LIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "44 €",
-    "compra_num": 44,
-    "cambio": "62 €",
-    "cambio_num": 62
+    "compra": "55 €",
+    "compra_num": 55,
+    "cambio": "67 €",
+    "cambio_num": 67
   },
   "STABLENTBX704F16GB": {
     "precio": "65 €",
@@ -507280,10 +507280,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENX606X128GLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "57 €",
-    "compra_num": 57,
-    "cambio": "81 €",
-    "cambio_num": 81
+    "compra": "71 €",
+    "compra_num": 71,
+    "cambio": "87 €",
+    "cambio_num": 87
   },
   "STABLENX606X128GLIBC": {
     "precio": "120 €",
@@ -507293,140 +507293,140 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENX606X128GLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "52 €",
-    "compra_num": 52,
-    "cambio": "74 €",
-    "cambio_num": 74
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
   },
   "STABLENX6C6F32GBWIFB": {
-    "precio": "75 €",
-    "precio_num": 75,
+    "precio": "80 €",
+    "precio_num": 80,
     "nombre": "Lenovo Tab K10 (TB-X6C6F) (3GB+32GB) 10.3\" Azul, Wifi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENX6C6F32GBWIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "33 €",
-    "compra_num": 33,
-    "cambio": "46 €",
-    "cambio_num": 46
-  },
-  "STABLENX6C6F64GBWIFA": {
-    "precio": "95 €",
-    "precio_num": 95,
-    "nombre": "Lenovo Tab K10 (TB-X6C6F) (4GB+64GB) 10.3\" Azul, Wifi A",
-    "grado": "A",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6F64GBWIFA&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "41 €",
-    "compra_num": 41,
-    "cambio": "59 €",
-    "cambio_num": 59
-  },
-  "STABLENX6C6F64GBWIFB": {
-    "precio": "85 €",
-    "precio_num": 85,
-    "nombre": "Lenovo Tab K10 (TB-X6C6F) (4GB+64GB) 10.3\" Azul, Wifi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6F64GBWIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "37 €",
-    "compra_num": 37,
-    "cambio": "52 €",
-    "cambio_num": 52
-  },
-  "STABLENX6C6F64GBWIFC": {
-    "precio": "75 €",
-    "precio_num": 75,
-    "nombre": "Lenovo Tab K10 (TB-X6C6F) (4GB+64GB) 10.3\" Abyss Blue, WiFi C",
-    "grado": "C",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6F64GBWIFC&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "33 €",
-    "compra_num": 33,
-    "cambio": "46 €",
-    "cambio_num": 46
-  },
-  "STABLENX6C6X32GBLIBA": {
-    "precio": "90 €",
-    "precio_num": 90,
-    "nombre": "Lenovo Tab K10 (TB-X6C6X) (3GB+32GB) 10.3\" Azul, Libre A",
-    "grado": "A",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X32GBLIBA&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "39 €",
-    "compra_num": 39,
-    "cambio": "56 €",
-    "cambio_num": 56
-  },
-  "STABLENX6C6X32GBLIBB": {
-    "precio": "80 €",
-    "precio_num": 80,
-    "nombre": "Lenovo Tab K10 (TB-X6C6X) (3GB+32GB) 10.3\" Azul, Libre B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X32GBLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "35 €",
     "compra_num": 35,
     "cambio": "49 €",
     "cambio_num": 49
   },
-  "STABLENX6C6X32GBLIBC": {
-    "precio": "70 €",
-    "precio_num": 70,
-    "nombre": "Lenovo Tab K10 (TB-X6C6X) (3GB+32GB) 10.3\" Azul, Libre C",
-    "grado": "C",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X32GBLIBC&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "30 €",
-    "compra_num": 30,
-    "cambio": "43 €",
-    "cambio_num": 43
-  },
-  "STABLENX6C6X64GBLIBA": {
-    "precio": "110 €",
-    "precio_num": 110,
-    "nombre": "Lenovo Tab K10 (TB-X6C6X) (4GB+64GB) 10.3\" Azul, Libre A",
-    "grado": "A",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X64GBLIBA&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "48 €",
-    "compra_num": 48,
-    "cambio": "68 €",
-    "cambio_num": 68
-  },
-  "STABLENX6C6X64GBLIBB": {
+  "STABLENX6C6F64GBWIFA": {
     "precio": "100 €",
     "precio_num": 100,
-    "nombre": "Lenovo Tab K10 (TB-X6C6X) (4GB+64GB) 10.3\" Azul, Libre B",
-    "grado": "B",
+    "nombre": "Lenovo Tab K10 (TB-X6C6F) (4GB+64GB) 10.3\" Azul, Wifi A",
+    "grado": "A",
     "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X64GBLIBB&categoryName=Tabletas+-+Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6F64GBWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "44 €",
     "compra_num": 44,
     "cambio": "62 €",
     "cambio_num": 62
   },
-  "STABLENX6C6X64GBLIBC": {
+  "STABLENX6C6F64GBWIFB": {
     "precio": "90 €",
     "precio_num": 90,
-    "nombre": "Lenovo Tab K10 (TB-X6C6X) (4GB+64GB) 10.3\" Azul, Libre C",
-    "grado": "C",
+    "nombre": "Lenovo Tab K10 (TB-X6C6F) (4GB+64GB) 10.3\" Azul, Wifi B",
+    "grado": "B",
     "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X64GBLIBC&categoryName=Tabletas+-+Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6F64GBWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "39 €",
     "compra_num": 39,
     "cambio": "56 €",
     "cambio_num": 56
+  },
+  "STABLENX6C6F64GBWIFC": {
+    "precio": "80 €",
+    "precio_num": 80,
+    "nombre": "Lenovo Tab K10 (TB-X6C6F) (4GB+64GB) 10.3\" Abyss Blue, WiFi C",
+    "grado": "C",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6F64GBWIFC&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "49 €",
+    "cambio_num": 49
+  },
+  "STABLENX6C6X32GBLIBA": {
+    "precio": "100 €",
+    "precio_num": 100,
+    "nombre": "Lenovo Tab K10 (TB-X6C6X) (3GB+32GB) 10.3\" Azul, Libre A",
+    "grado": "A",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X32GBLIBA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "62 €",
+    "cambio_num": 62
+  },
+  "STABLENX6C6X32GBLIBB": {
+    "precio": "90 €",
+    "precio_num": 90,
+    "nombre": "Lenovo Tab K10 (TB-X6C6X) (3GB+32GB) 10.3\" Azul, Libre B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X32GBLIBB&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "39 €",
+    "compra_num": 39,
+    "cambio": "56 €",
+    "cambio_num": 56
+  },
+  "STABLENX6C6X32GBLIBC": {
+    "precio": "80 €",
+    "precio_num": 80,
+    "nombre": "Lenovo Tab K10 (TB-X6C6X) (3GB+32GB) 10.3\" Azul, Libre C",
+    "grado": "C",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X32GBLIBC&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "49 €",
+    "cambio_num": 49
+  },
+  "STABLENX6C6X64GBLIBA": {
+    "precio": "120 €",
+    "precio_num": 120,
+    "nombre": "Lenovo Tab K10 (TB-X6C6X) (4GB+64GB) 10.3\" Azul, Libre A",
+    "grado": "A",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X64GBLIBA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "52 €",
+    "compra_num": 52,
+    "cambio": "74 €",
+    "cambio_num": 74
+  },
+  "STABLENX6C6X64GBLIBB": {
+    "precio": "110 €",
+    "precio_num": 110,
+    "nombre": "Lenovo Tab K10 (TB-X6C6X) (4GB+64GB) 10.3\" Azul, Libre B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X64GBLIBB&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "48 €",
+    "compra_num": 48,
+    "cambio": "68 €",
+    "cambio_num": 68
+  },
+  "STABLENX6C6X64GBLIBC": {
+    "precio": "100 €",
+    "precio_num": 100,
+    "nombre": "Lenovo Tab K10 (TB-X6C6X) (4GB+64GB) 10.3\" Azul, Libre C",
+    "grado": "C",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENX6C6X64GBLIBC&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "62 €",
+    "cambio_num": 62
   },
   "STABLENX705L4G64UNLB": {
     "precio": "125 €",
@@ -507507,43 +507507,43 @@
     "cambio_num": 140
   },
   "STABLENYB1X90F64WIFA": {
-    "precio": "90 €",
-    "precio_num": 90,
+    "precio": "100 €",
+    "precio_num": 100,
     "nombre": "Lenovo Yoga Book YB1-X90F 64GB 10.1\" WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENYB1X90F64WIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "62 €",
+    "cambio_num": 62
+  },
+  "STABLENYB1X90F64WIFB": {
+    "precio": "90 €",
+    "precio_num": 90,
+    "nombre": "Lenovo Yoga Book YB1-X90F 64GB 10.1\" WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENYB1X90F64WIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "39 €",
     "compra_num": 39,
     "cambio": "56 €",
     "cambio_num": 56
   },
-  "STABLENYB1X90F64WIFB": {
+  "STABLENYB1X90F64WIFC": {
     "precio": "80 €",
     "precio_num": 80,
-    "nombre": "Lenovo Yoga Book YB1-X90F 64GB 10.1\" WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABLENYB1X90F64WIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "35 €",
-    "compra_num": 35,
-    "cambio": "49 €",
-    "cambio_num": 49
-  },
-  "STABLENYB1X90F64WIFC": {
-    "precio": "70 €",
-    "precio_num": 70,
     "nombre": "Lenovo Yoga Book YB1-X90F 64GB 10.1\" WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABLENYB1X90F64WIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "30 €",
-    "compra_num": 30,
-    "cambio": "43 €",
-    "cambio_num": 43
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "49 €",
+    "cambio_num": 49
   },
   "STABLENYB1X90L64GB": {
     "precio": "100 €",
@@ -507962,186 +507962,186 @@
     "cambio_num": 48
   },
   "STABREDPSE128GVWIFB": {
-    "precio": "135 €",
-    "precio_num": 135,
+    "precio": "150 €",
+    "precio_num": 150,
     "nombre": "Redmi Pad SE (4GB+128GB) 11\" Verde, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE128GVWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "74 €",
-    "compra_num": 74,
-    "cambio": "90 €",
-    "cambio_num": 90
+    "compra": "82 €",
+    "compra_num": 82,
+    "cambio": "100 €",
+    "cambio_num": 100
   },
   "STABREDPSE128GVWIFC": {
-    "precio": "115 €",
-    "precio_num": 115,
+    "precio": "130 €",
+    "precio_num": 130,
     "nombre": "Redmi Pad SE (4GB+128GB) 11\" Verde, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE128GVWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "63 €",
-    "compra_num": 63,
-    "cambio": "77 €",
-    "cambio_num": 77
+    "compra": "71 €",
+    "compra_num": 71,
+    "cambio": "87 €",
+    "cambio_num": 87
   },
   "STABREDPSE128GWIFA": {
-    "precio": "100 €",
-    "precio_num": 100,
+    "precio": "110 €",
+    "precio_num": 110,
     "nombre": "Redmi Pad SE 8.7 (4GB+128GB) 8.7\" Gris Grafito, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE128GWIFA&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "55 €",
-    "compra_num": 55,
-    "cambio": "67 €",
-    "cambio_num": 67
-  },
-  "STABREDPSE128GWIFB": {
-    "precio": "90 €",
-    "precio_num": 90,
-    "nombre": "Redmi Pad SE 8.7 (4GB+128GB) 8.7\" Gris Grafito, WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABREDPSE128GWIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "49 €",
-    "compra_num": 49,
-    "cambio": "60 €",
-    "cambio_num": 60
-  },
-  "STABREDPSE4128GAWIFA": {
-    "precio": "100 €",
-    "precio_num": 100,
-    "nombre": "Redmi Pad SE 8.7 (4GB+128GB) 8.7\" Azul Cielo, WiFi A",
-    "grado": "A",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128GAWIFA&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "55 €",
-    "compra_num": 55,
-    "cambio": "67 €",
-    "cambio_num": 67
-  },
-  "STABREDPSE4128GGLIBA": {
-    "precio": "110 €",
-    "precio_num": 110,
-    "nombre": "Redmi Pad SE 8.7 4G (4GB+128GB) 8.7\" Gris Grafito, Libre A",
-    "grado": "A",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128GGLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "60 €",
     "compra_num": 60,
     "cambio": "73 €",
     "cambio_num": 73
   },
+  "STABREDPSE128GWIFB": {
+    "precio": "100 €",
+    "precio_num": 100,
+    "nombre": "Redmi Pad SE 8.7 (4GB+128GB) 8.7\" Gris Grafito, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABREDPSE128GWIFB&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "55 €",
+    "compra_num": 55,
+    "cambio": "67 €",
+    "cambio_num": 67
+  },
+  "STABREDPSE4128GAWIFA": {
+    "precio": "110 €",
+    "precio_num": 110,
+    "nombre": "Redmi Pad SE 8.7 (4GB+128GB) 8.7\" Azul Cielo, WiFi A",
+    "grado": "A",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128GAWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "60 €",
+    "compra_num": 60,
+    "cambio": "73 €",
+    "cambio_num": 73
+  },
+  "STABREDPSE4128GGLIBA": {
+    "precio": "120 €",
+    "precio_num": 120,
+    "nombre": "Redmi Pad SE 8.7 4G (4GB+128GB) 8.7\" Gris Grafito, Libre A",
+    "grado": "A",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128GGLIBA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
+  },
   "STABREDPSE4128LPWIFA": {
-    "precio": "155 €",
-    "precio_num": 155,
+    "precio": "170 €",
+    "precio_num": 170,
     "nombre": "Redmi Pad SE (4GB+128GB) 11\" Púrpura, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128LPWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "85 €",
-    "compra_num": 85,
-    "cambio": "103 €",
-    "cambio_num": 103
+    "compra": "93 €",
+    "compra_num": 93,
+    "cambio": "113 €",
+    "cambio_num": 113
   },
   "STABREDPSE4128LPWIFB": {
-    "precio": "135 €",
-    "precio_num": 135,
+    "precio": "150 €",
+    "precio_num": 150,
     "nombre": "Redmi Pad SE (4GB+128GB) 11\" Púrpura, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128LPWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "74 €",
-    "compra_num": 74,
-    "cambio": "90 €",
-    "cambio_num": 90
+    "compra": "82 €",
+    "compra_num": 82,
+    "cambio": "100 €",
+    "cambio_num": 100
   },
   "STABREDPSE4128LPWIFC": {
-    "precio": "115 €",
-    "precio_num": 115,
+    "precio": "130 €",
+    "precio_num": 130,
     "nombre": "Redmi Pad SE (4GB+128GB) 11\" Púrpura, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128LPWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "63 €",
-    "compra_num": 63,
-    "cambio": "77 €",
-    "cambio_num": 77
+    "compra": "71 €",
+    "compra_num": 71,
+    "cambio": "87 €",
+    "cambio_num": 87
   },
   "STABREDPSE4128MGWIFA": {
-    "precio": "155 €",
-    "precio_num": 155,
+    "precio": "170 €",
+    "precio_num": 170,
     "nombre": "Redmi Pad SE (4GB+128GB) 11\" Mint Green, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128MGWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "85 €",
-    "compra_num": 85,
-    "cambio": "103 €",
-    "cambio_num": 103
+    "compra": "93 €",
+    "compra_num": 93,
+    "cambio": "113 €",
+    "cambio_num": 113
   },
   "STABREDPSE4128MGWIFB": {
-    "precio": "135 €",
-    "precio_num": 135,
+    "precio": "150 €",
+    "precio_num": 150,
     "nombre": "Redmi Pad SE (4GB+128GB) 11\" Mint Green, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE4128MGWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "74 €",
-    "compra_num": 74,
-    "cambio": "90 €",
-    "cambio_num": 90
+    "compra": "82 €",
+    "compra_num": 82,
+    "cambio": "100 €",
+    "cambio_num": 100
   },
   "STABREDPSE464GGLIBA": {
-    "precio": "95 €",
-    "precio_num": 95,
+    "precio": "105 €",
+    "precio_num": 105,
     "nombre": "Redmi Pad SE 8.7 4G (4GB+64GB) 8.7\" Gris Grafito, Libre A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE464GGLIBA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "57 €",
+    "compra_num": 57,
+    "cambio": "70 €",
+    "cambio_num": 70
+  },
+  "STABREDPSE464GGLIBB": {
+    "precio": "95 €",
+    "precio_num": 95,
+    "nombre": "Redmi Pad SE 8.7 4G (4GB+64GB) 8.7\" Gris Grafito, Libre B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABREDPSE464GGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "52 €",
     "compra_num": 52,
     "cambio": "63 €",
     "cambio_num": 63
   },
-  "STABREDPSE464GGLIBB": {
-    "precio": "85 €",
-    "precio_num": 85,
-    "nombre": "Redmi Pad SE 8.7 4G (4GB+64GB) 8.7\" Gris Grafito, Libre B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABREDPSE464GGLIBB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "46 €",
-    "compra_num": 46,
-    "cambio": "56 €",
-    "cambio_num": 56
-  },
   "STABREDPSE6128GAWIFA": {
-    "precio": "110 €",
-    "precio_num": 110,
+    "precio": "120 €",
+    "precio_num": 120,
     "nombre": "Redmi Pad SE 8.7 (6GB+128GB) 8.7\" Azul Cielo, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE6128GAWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "60 €",
-    "compra_num": 60,
-    "cambio": "73 €",
-    "cambio_num": 73
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
   },
   "STABREDPSE6128GGWIFA": {
     "precio": "165 €",
@@ -508222,95 +508222,95 @@
     "cambio_num": 97
   },
   "STABREDPSE64AWIFA": {
-    "precio": "90 €",
-    "precio_num": 90,
+    "precio": "100 €",
+    "precio_num": 100,
     "nombre": "Redmi Pad SE 8.7 (4GB+64GB) 8.7\" Azul Cielo, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE64AWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "49 €",
-    "compra_num": 49,
-    "cambio": "60 €",
-    "cambio_num": 60
+    "compra": "55 €",
+    "compra_num": 55,
+    "cambio": "67 €",
+    "cambio_num": 67
   },
   "STABREDPSE64AWIFB": {
-    "precio": "80 €",
-    "precio_num": 80,
+    "precio": "90 €",
+    "precio_num": 90,
     "nombre": "Redmi Pad SE 8.7 (4GB+64GB) 8.7\" Azul Cielo, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE64AWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "44 €",
-    "compra_num": 44,
-    "cambio": "53 €",
-    "cambio_num": 53
+    "compra": "49 €",
+    "compra_num": 49,
+    "cambio": "60 €",
+    "cambio_num": 60
   },
   "STABREDPSE64AWIFC": {
-    "precio": "70 €",
-    "precio_num": 70,
+    "precio": "80 €",
+    "precio_num": 80,
     "nombre": "Redmi Pad SE 8.7 (4GB+64GB) 8.7\" Azul Cielo, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE64AWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "38 €",
-    "compra_num": 38,
-    "cambio": "46 €",
-    "cambio_num": 46
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "53 €",
+    "cambio_num": 53
   },
   "STABREDPSE64GWIFA": {
-    "precio": "90 €",
-    "precio_num": 90,
+    "precio": "100 €",
+    "precio_num": 100,
     "nombre": "Redmi Pad SE 8.7 (4GB+64GB) 8.7\" Gris Grafito, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE64GWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "55 €",
+    "compra_num": 55,
+    "cambio": "67 €",
+    "cambio_num": 67
+  },
+  "STABREDPSE64GWIFB": {
+    "precio": "90 €",
+    "precio_num": 90,
+    "nombre": "Redmi Pad SE 8.7 (4GB+64GB) 8.7\" Gris Grafito, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABREDPSE64GWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "49 €",
     "compra_num": 49,
     "cambio": "60 €",
     "cambio_num": 60
   },
-  "STABREDPSE64GWIFB": {
-    "precio": "80 €",
-    "precio_num": 80,
-    "nombre": "Redmi Pad SE 8.7 (4GB+64GB) 8.7\" Gris Grafito, WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABREDPSE64GWIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "44 €",
-    "compra_num": 44,
-    "cambio": "53 €",
-    "cambio_num": 53
-  },
   "STABREDPSE6G128GWIFA": {
-    "precio": "110 €",
-    "precio_num": 110,
+    "precio": "120 €",
+    "precio_num": 120,
     "nombre": "Redmi Pad SE 8.7 (6GB+128GB) 8.7\" Gris Grafito, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE6G128GWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "60 €",
-    "compra_num": 60,
-    "cambio": "73 €",
-    "cambio_num": 73
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
   },
   "STABREDPSE6G128GWIFB": {
-    "precio": "100 €",
-    "precio_num": 100,
+    "precio": "110 €",
+    "precio_num": 110,
     "nombre": "Redmi Pad SE 8.7 (6GB+128GB) 8.7\" Gris Grafito, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABREDPSE6G128GWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "55 €",
-    "compra_num": 55,
-    "cambio": "67 €",
-    "cambio_num": 67
+    "compra": "60 €",
+    "compra_num": 60,
+    "cambio": "73 €",
+    "cambio_num": 73
   },
   "STABREDPSE8128GGWIFA": {
     "precio": "175 €",
@@ -508697,10 +508697,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58016GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "33 €",
-    "compra_num": 33,
-    "cambio": "46 €",
-    "cambio_num": 46
+    "compra": "41 €",
+    "compra_num": 41,
+    "cambio": "50 €",
+    "cambio_num": 50
   },
   "STABSAMGALT58016GB": {
     "precio": "65 €",
@@ -508710,10 +508710,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58016GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMGALT58016GC": {
     "precio": "55 €",
@@ -508723,10 +508723,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58016GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "24 €",
-    "compra_num": 24,
-    "cambio": "34 €",
-    "cambio_num": 34
+    "compra": "30 €",
+    "compra_num": 30,
+    "cambio": "36 €",
+    "cambio_num": 36
   },
   "STABSAMGALT58032GA": {
     "precio": "85 €",
@@ -508736,10 +508736,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58032GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "37 €",
-    "compra_num": 37,
-    "cambio": "52 €",
-    "cambio_num": 52
+    "compra": "46 €",
+    "compra_num": 46,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABSAMGALT58032GC": {
     "precio": "65 €",
@@ -508749,49 +508749,49 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58032GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMGALT58516LIBA": {
-    "precio": "75 €",
-    "precio_num": 75,
+    "precio": "85 €",
+    "precio_num": 85,
     "nombre": "Samsung Galaxy Tab A 10.1\" (2016) T585 16GB Negro, LTE A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58516LIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "33 €",
-    "compra_num": 33,
-    "cambio": "46 €",
-    "cambio_num": 46
+    "compra": "46 €",
+    "compra_num": 46,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABSAMGALT58516LIBB": {
-    "precio": "65 €",
-    "precio_num": 65,
+    "precio": "75 €",
+    "precio_num": 75,
     "nombre": "Samsung Galaxy Tab A 10.1\" (2016) T585 16GB Negro, LTE B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58516LIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "41 €",
+    "compra_num": 41,
+    "cambio": "50 €",
+    "cambio_num": 50
   },
   "STABSAMGALT58516LIBC": {
-    "precio": "55 €",
-    "precio_num": 55,
+    "precio": "65 €",
+    "precio_num": 65,
     "nombre": "Samsung Galaxy Tab A 10.1\" (2016) T585 16GB Negro, LTE C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58516LIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "24 €",
-    "compra_num": 24,
-    "cambio": "34 €",
-    "cambio_num": 34
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMGALT58532LIBA": {
     "precio": "90 €",
@@ -508801,10 +508801,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58532LIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "39 €",
-    "compra_num": 39,
-    "cambio": "56 €",
-    "cambio_num": 56
+    "compra": "49 €",
+    "compra_num": 49,
+    "cambio": "60 €",
+    "cambio_num": 60
   },
   "STABSAMGALT58532LIBB": {
     "precio": "80 €",
@@ -508814,10 +508814,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58532LIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "35 €",
-    "compra_num": 35,
-    "cambio": "49 €",
-    "cambio_num": 49
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "53 €",
+    "cambio_num": 53
   },
   "STABSAMGALT58532LIBC": {
     "precio": "70 €",
@@ -508827,36 +508827,36 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGALT58532LIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "30 €",
-    "compra_num": 30,
-    "cambio": "43 €",
-    "cambio_num": 43
+    "compra": "38 €",
+    "compra_num": 38,
+    "cambio": "46 €",
+    "cambio_num": 46
   },
   "STABSAMGAT58516BLIBB": {
-    "precio": "65 €",
-    "precio_num": 65,
+    "precio": "75 €",
+    "precio_num": 75,
     "nombre": "Samsung Galaxy Tab A 10.1\" (2016) T585 16GB Blanco, LTE B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGAT58516BLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "41 €",
+    "compra_num": 41,
+    "cambio": "50 €",
+    "cambio_num": 50
   },
   "STABSAMGAT58516BLIBC": {
-    "precio": "55 €",
-    "precio_num": 55,
+    "precio": "65 €",
+    "precio_num": 65,
     "nombre": "Samsung Galaxy Tab A 10.1\" (2016) T585 16GB Blanco, LTE C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGAT58516BLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "24 €",
-    "compra_num": 24,
-    "cambio": "34 €",
-    "cambio_num": 34
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMGAT58532BLIBA": {
     "precio": "90 €",
@@ -508866,10 +508866,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGAT58532BLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "39 €",
-    "compra_num": 39,
-    "cambio": "56 €",
-    "cambio_num": 56
+    "compra": "49 €",
+    "compra_num": 49,
+    "cambio": "60 €",
+    "cambio_num": 60
   },
   "STABSAMGAT58532BLIBB": {
     "precio": "80 €",
@@ -508879,10 +508879,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGAT58532BLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "35 €",
-    "compra_num": 35,
-    "cambio": "49 €",
-    "cambio_num": 49
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "53 €",
+    "cambio_num": 53
   },
   "STABSAMGAT58532BLIBC": {
     "precio": "70 €",
@@ -508892,10 +508892,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMGAT58532BLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "30 €",
-    "compra_num": 30,
-    "cambio": "43 €",
-    "cambio_num": 43
+    "compra": "38 €",
+    "compra_num": 38,
+    "cambio": "46 €",
+    "cambio_num": 46
   },
   "STABSAMN800016GWA": {
     "precio": "35 €",
@@ -508996,10 +508996,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP20032GNWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMP510032GLIBB": {
     "precio": "30 €",
@@ -509087,10 +509087,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP58016GWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "30 €",
-    "compra_num": 30,
-    "cambio": "43 €",
-    "cambio_num": 43
+    "compra": "38 €",
+    "compra_num": 38,
+    "cambio": "46 €",
+    "cambio_num": 46
   },
   "STABSAMP58016GWIFB": {
     "precio": "60 €",
@@ -509100,10 +509100,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP58016GWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "26 €",
-    "compra_num": 26,
-    "cambio": "37 €",
-    "cambio_num": 37
+    "compra": "33 €",
+    "compra_num": 33,
+    "cambio": "40 €",
+    "cambio_num": 40
   },
   "STABSAMP58016GWIFC": {
     "precio": "50 €",
@@ -509113,10 +509113,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP58016GWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "22 €",
-    "compra_num": 22,
-    "cambio": "31 €",
-    "cambio_num": 31
+    "compra": "27 €",
+    "compra_num": 27,
+    "cambio": "33 €",
+    "cambio_num": 33
   },
   "STABSAMP58032GWIFA": {
     "precio": "85 €",
@@ -509126,10 +509126,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP58032GWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "37 €",
-    "compra_num": 37,
-    "cambio": "52 €",
-    "cambio_num": 52
+    "compra": "46 €",
+    "compra_num": 46,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABSAMP58032GWIFC": {
     "precio": "65 €",
@@ -509139,10 +509139,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP58032GWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMP60032GB": {
     "precio": "60 €",
@@ -509184,134 +509184,134 @@
     "cambio_num": 43
   },
   "STABSAMP613128GBWIFA": {
-    "precio": "165 €",
-    "precio_num": 165,
+    "precio": "175 €",
+    "precio_num": 175,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 128GB 10\" (Sin Lápiz) Azul, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP613128GBWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "90 €",
-    "compra_num": 90,
-    "cambio": "110 €",
-    "cambio_num": 110
+    "compra": "96 €",
+    "compra_num": 96,
+    "cambio": "117 €",
+    "cambio_num": 117
   },
   "STABSAMP613128GBWIFB": {
-    "precio": "145 €",
-    "precio_num": 145,
+    "precio": "155 €",
+    "precio_num": 155,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 128GB 10\" (Sin Lápiz) Azul, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP613128GBWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "79 €",
-    "compra_num": 79,
-    "cambio": "97 €",
-    "cambio_num": 97
+    "compra": "85 €",
+    "compra_num": 85,
+    "cambio": "103 €",
+    "cambio_num": 103
   },
   "STABSAMP613128GBWIFC": {
-    "precio": "125 €",
-    "precio_num": 125,
+    "precio": "135 €",
+    "precio_num": 135,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 128GB 10\" (Sin Lápiz) Azul, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP613128GBWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "68 €",
-    "compra_num": 68,
-    "cambio": "83 €",
-    "cambio_num": 83
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABSAMP613128GGWIFA": {
-    "precio": "165 €",
-    "precio_num": 165,
+    "precio": "175 €",
+    "precio_num": 175,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 128GB 10\" (Sin Lápiz) Gris, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP613128GGWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "90 €",
-    "compra_num": 90,
-    "cambio": "110 €",
-    "cambio_num": 110
+    "compra": "96 €",
+    "compra_num": 96,
+    "cambio": "117 €",
+    "cambio_num": 117
   },
   "STABSAMP613128GGWIFB": {
-    "precio": "145 €",
-    "precio_num": 145,
+    "precio": "155 €",
+    "precio_num": 155,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 128GB 10\" (Sin Lápiz) Gris, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP613128GGWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "79 €",
-    "compra_num": 79,
-    "cambio": "97 €",
-    "cambio_num": 97
+    "compra": "85 €",
+    "compra_num": 85,
+    "cambio": "103 €",
+    "cambio_num": 103
   },
   "STABSAMP61364GBWIFA": {
-    "precio": "145 €",
-    "precio_num": 145,
+    "precio": "155 €",
+    "precio_num": 155,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 64GB 10\" (Sin Lápiz) Azul, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61364GBWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "79 €",
-    "compra_num": 79,
-    "cambio": "97 €",
-    "cambio_num": 97
+    "compra": "85 €",
+    "compra_num": 85,
+    "cambio": "103 €",
+    "cambio_num": 103
   },
   "STABSAMP61364GBWIFB": {
-    "precio": "125 €",
-    "precio_num": 125,
+    "precio": "135 €",
+    "precio_num": 135,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 64GB 10\" (Sin Lápiz) Azul, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61364GBWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "68 €",
-    "compra_num": 68,
-    "cambio": "83 €",
-    "cambio_num": 83
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABSAMP61364GGWIFA": {
-    "precio": "145 €",
-    "precio_num": 145,
+    "precio": "155 €",
+    "precio_num": 155,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 64GB 10\" (Sin Lápiz) Gris, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61364GGWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "79 €",
-    "compra_num": 79,
-    "cambio": "97 €",
-    "cambio_num": 97
+    "compra": "85 €",
+    "compra_num": 85,
+    "cambio": "103 €",
+    "cambio_num": 103
   },
   "STABSAMP61364GGWIFB": {
-    "precio": "125 €",
-    "precio_num": 125,
+    "precio": "135 €",
+    "precio_num": 135,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 64GB 10\" (Sin Lápiz) Gris, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61364GGWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "68 €",
-    "compra_num": 68,
-    "cambio": "83 €",
-    "cambio_num": 83
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABSAMP61364GGWIFC": {
-    "precio": "105 €",
-    "precio_num": 105,
+    "precio": "115 €",
+    "precio_num": 115,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P613 64GB 10\" (Sin Lápiz) Gris, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61364GGWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "57 €",
-    "compra_num": 57,
-    "cambio": "70 €",
-    "cambio_num": 70
+    "compra": "63 €",
+    "compra_num": 63,
+    "cambio": "77 €",
+    "cambio_num": 77
   },
   "STABSAMP615128GALIBC": {
     "precio": "130 €",
@@ -509321,10 +509321,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP615128GALIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "57 €",
-    "compra_num": 57,
-    "cambio": "81 €",
-    "cambio_num": 81
+    "compra": "71 €",
+    "compra_num": 71,
+    "cambio": "87 €",
+    "cambio_num": 87
   },
   "STABSAMP615128GGLIBA": {
     "precio": "170 €",
@@ -509334,10 +509334,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP615128GGLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "74 €",
-    "compra_num": 74,
-    "cambio": "105 €",
-    "cambio_num": 105
+    "compra": "93 €",
+    "compra_num": 93,
+    "cambio": "113 €",
+    "cambio_num": 113
   },
   "STABSAMP615128GGLIBB": {
     "precio": "150 €",
@@ -509347,10 +509347,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP615128GGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "66 €",
-    "compra_num": 66,
-    "cambio": "93 €",
-    "cambio_num": 93
+    "compra": "82 €",
+    "compra_num": 82,
+    "cambio": "100 €",
+    "cambio_num": 100
   },
   "STABSAMP615128GGLIBC": {
     "precio": "130 €",
@@ -509360,10 +509360,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP615128GGLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "57 €",
-    "compra_num": 57,
-    "cambio": "81 €",
-    "cambio_num": 81
+    "compra": "71 €",
+    "compra_num": 71,
+    "cambio": "87 €",
+    "cambio_num": 87
   },
   "STABSAMP61564GALIBA": {
     "precio": "155 €",
@@ -509373,10 +509373,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61564GALIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "68 €",
-    "compra_num": 68,
-    "cambio": "96 €",
-    "cambio_num": 96
+    "compra": "85 €",
+    "compra_num": 85,
+    "cambio": "103 €",
+    "cambio_num": 103
   },
   "STABSAMP61564GALIBB": {
     "precio": "135 €",
@@ -509386,10 +509386,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61564GALIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "59 €",
-    "compra_num": 59,
-    "cambio": "84 €",
-    "cambio_num": 84
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABSAMP61564GGLIBA": {
     "precio": "155 €",
@@ -509399,10 +509399,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61564GGLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "68 €",
-    "compra_num": 68,
-    "cambio": "96 €",
-    "cambio_num": 96
+    "compra": "85 €",
+    "compra_num": 85,
+    "cambio": "103 €",
+    "cambio_num": 103
   },
   "STABSAMP61564GGLIBB": {
     "precio": "135 €",
@@ -509412,10 +509412,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61564GGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "59 €",
-    "compra_num": 59,
-    "cambio": "84 €",
-    "cambio_num": 84
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABSAMP61564GGLIBC": {
     "precio": "115 €",
@@ -509425,101 +509425,101 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61564GGLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "50 €",
-    "compra_num": 50,
-    "cambio": "71 €",
-    "cambio_num": 71
+    "compra": "63 €",
+    "compra_num": 63,
+    "cambio": "77 €",
+    "cambio_num": 77
   },
   "STABSAMP619128GGLIBA": {
-    "precio": "180 €",
-    "precio_num": 180,
+    "precio": "190 €",
+    "precio_num": 190,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P619 128GB 10\" (Sin Lápiz) Gris, Libre A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP619128GGLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "99 €",
-    "compra_num": 99,
-    "cambio": "120 €",
-    "cambio_num": 120
+    "compra": "104 €",
+    "compra_num": 104,
+    "cambio": "127 €",
+    "cambio_num": 127
   },
   "STABSAMP619128GGLIBB": {
-    "precio": "160 €",
-    "precio_num": 160,
+    "precio": "170 €",
+    "precio_num": 170,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P619 128GB 10\" (Sin Lápiz) Gris, Libre B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP619128GGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "88 €",
-    "compra_num": 88,
-    "cambio": "107 €",
-    "cambio_num": 107
+    "compra": "93 €",
+    "compra_num": 93,
+    "cambio": "113 €",
+    "cambio_num": 113
   },
   "STABSAMP619128GGLIBC": {
-    "precio": "140 €",
-    "precio_num": 140,
+    "precio": "150 €",
+    "precio_num": 150,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P619 128GB 10\" (Sin Lápiz) Gris, Libre C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP619128GGLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "77 €",
-    "compra_num": 77,
-    "cambio": "93 €",
-    "cambio_num": 93
+    "compra": "82 €",
+    "compra_num": 82,
+    "cambio": "100 €",
+    "cambio_num": 100
   },
   "STABSAMP61964GALIBB": {
-    "precio": "125 €",
-    "precio_num": 125,
+    "precio": "135 €",
+    "precio_num": 135,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P619 64GB 10\" (Sin Lápiz) Azul, Libre B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61964GALIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "68 €",
-    "compra_num": 68,
-    "cambio": "83 €",
-    "cambio_num": 83
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABSAMP61964GGLIBA": {
-    "precio": "140 €",
-    "precio_num": 140,
+    "precio": "150 €",
+    "precio_num": 150,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P619 64GB 10\" (Sin Lápiz) Gris, Libre A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61964GGLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "77 €",
-    "compra_num": 77,
-    "cambio": "93 €",
-    "cambio_num": 93
+    "compra": "82 €",
+    "compra_num": 82,
+    "cambio": "100 €",
+    "cambio_num": 100
   },
   "STABSAMP61964GGLIBB": {
-    "precio": "125 €",
-    "precio_num": 125,
+    "precio": "135 €",
+    "precio_num": 135,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P619 64GB 10\" (Sin Lápiz) Gris, Libre B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61964GGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "68 €",
-    "compra_num": 68,
-    "cambio": "83 €",
-    "cambio_num": 83
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "STABSAMP61964GGLIBC": {
-    "precio": "105 €",
-    "precio_num": 105,
+    "precio": "115 €",
+    "precio_num": 115,
     "nombre": "Samsung Galaxy Tab S6 Lite (2022) P619 64GB 10\" (Sin Lápiz) Gris, Libre C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMP61964GGLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "57 €",
-    "compra_num": 57,
-    "cambio": "70 €",
-    "cambio_num": 70
+    "compra": "63 €",
+    "compra_num": 63,
+    "cambio": "77 €",
+    "cambio_num": 77
   },
   "STABSAMP621016GBB": {
     "precio": "30 €",
@@ -509698,10 +509698,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMSMP20532GLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "44 €",
-    "compra_num": 44,
-    "cambio": "62 €",
-    "cambio_num": 62
+    "compra": "55 €",
+    "compra_num": 55,
+    "cambio": "67 €",
+    "cambio_num": 67
   },
   "STABSAMSMP60032GA": {
     "precio": "70 €",
@@ -510055,43 +510055,43 @@
     "cambio_num": 40
   },
   "STABSAMSMT53016GA": {
-    "precio": "30 €",
-    "precio_num": 30,
+    "precio": "35 €",
+    "precio_num": 35,
     "nombre": "Samsung Galaxy Tab 4 SM-T530 16GB, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMSMT53016GA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "8 €",
+    "compra_num": 8,
+    "cambio": "12 €",
+    "cambio_num": 12
+  },
+  "STABSAMSMT53016GB": {
+    "precio": "30 €",
+    "precio_num": 30,
+    "nombre": "Samsung Galaxy Tab 4 SM-T530 16GB, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABSAMSMT53016GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "6 €",
     "compra_num": 6,
     "cambio": "11 €",
     "cambio_num": 11
   },
-  "STABSAMSMT53016GB": {
+  "STABSAMSMT53016GC": {
     "precio": "25 €",
     "precio_num": 25,
-    "nombre": "Samsung Galaxy Tab 4 SM-T530 16GB, WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABSAMSMT53016GB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "5 €",
-    "compra_num": 5,
-    "cambio": "9 €",
-    "cambio_num": 9
-  },
-  "STABSAMSMT53016GC": {
-    "precio": "20 €",
-    "precio_num": 20,
     "nombre": "Samsung Galaxy Tab 4 SM-T530 16GB, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMSMT53016GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "4 €",
-    "compra_num": 4,
-    "cambio": "7 €",
-    "cambio_num": 7
+    "compra": "5 €",
+    "compra_num": 5,
+    "cambio": "9 €",
+    "cambio_num": 9
   },
   "STABSAMSMT53516GA": {
     "precio": "45 €",
@@ -510328,17 +510328,17 @@
     "cambio_num": 29
   },
   "STABSAMSMT720128GNB": {
-    "precio": "160 €",
-    "precio_num": 160,
-    "nombre": "Samsung Galaxy Tab S5e SM-T720 128GB Negro, WiFi B",
+    "precio": "140 €",
+    "precio_num": 140,
+    "nombre": "Samsung Galaxy Tab S5E 128GB Negro, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMSMT720128GNB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "88 €",
-    "compra_num": 88,
-    "cambio": "107 €",
-    "cambio_num": 107
+    "compra": "77 €",
+    "compra_num": 77,
+    "cambio": "93 €",
+    "cambio_num": 93
   },
   "STABSAMSMT72064GNB": {
     "precio": "130 €",
@@ -511596,10 +511596,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT51532GSLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "52 €",
-    "compra_num": 52,
-    "cambio": "74 €",
-    "cambio_num": 74
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
   },
   "STABSAMT51532GSLIBB": {
     "precio": "110 €",
@@ -511609,10 +511609,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT51532GSLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "48 €",
-    "compra_num": 48,
-    "cambio": "68 €",
-    "cambio_num": 68
+    "compra": "60 €",
+    "compra_num": 60,
+    "cambio": "73 €",
+    "cambio_num": 73
   },
   "STABSAMT51532GSLIBC": {
     "precio": "100 €",
@@ -511622,10 +511622,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT51532GSLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "44 €",
-    "compra_num": 44,
-    "cambio": "62 €",
-    "cambio_num": 62
+    "compra": "55 €",
+    "compra_num": 55,
+    "cambio": "67 €",
+    "cambio_num": 67
   },
   "STABSAMT51564GNLIBA": {
     "precio": "140 €",
@@ -511687,10 +511687,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT51564GPLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "52 €",
-    "compra_num": 52,
-    "cambio": "74 €",
-    "cambio_num": 74
+    "compra": "66 €",
+    "compra_num": 66,
+    "cambio": "80 €",
+    "cambio_num": 80
   },
   "STABSAMT52016GBB": {
     "precio": "40 €",
@@ -511732,43 +511732,43 @@
     "cambio_num": 31
   },
   "STABSAMT53316GA": {
-    "precio": "45 €",
-    "precio_num": 45,
+    "precio": "50 €",
+    "precio_num": 50,
     "nombre": "Samsung Galaxy Tab 4 T533 10.1\" 16GB WiFi, A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT53316GA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "10 €",
-    "compra_num": 10,
-    "cambio": "16 €",
-    "cambio_num": 16
+    "compra": "11 €",
+    "compra_num": 11,
+    "cambio": "18 €",
+    "cambio_num": 18
   },
   "STABSAMT53316GB": {
-    "precio": "35 €",
-    "precio_num": 35,
+    "precio": "40 €",
+    "precio_num": 40,
     "nombre": "Samsung Galaxy Tab 4 T533 10.1\" 16GB WiFi, B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT53316GB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "8 €",
-    "compra_num": 8,
-    "cambio": "12 €",
-    "cambio_num": 12
+    "compra": "9 €",
+    "compra_num": 9,
+    "cambio": "14 €",
+    "cambio_num": 14
   },
   "STABSAMT53316GC": {
-    "precio": "25 €",
-    "precio_num": 25,
+    "precio": "30 €",
+    "precio_num": 30,
     "nombre": "Samsung Galaxy Tab 4 T533 10.1\" 16GB WiFi, C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT53316GC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "5 €",
-    "compra_num": 5,
-    "cambio": "9 €",
-    "cambio_num": 9
+    "compra": "6 €",
+    "compra_num": 6,
+    "cambio": "11 €",
+    "cambio_num": 11
   },
   "STABSAMT56016GB": {
     "precio": "50 €",
@@ -511843,10 +511843,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT58016GBWIFIA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "33 €",
-    "compra_num": 33,
-    "cambio": "46 €",
-    "cambio_num": 46
+    "compra": "41 €",
+    "compra_num": 41,
+    "cambio": "50 €",
+    "cambio_num": 50
   },
   "STABSAMT58016GBWIFIB": {
     "precio": "65 €",
@@ -511856,10 +511856,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT58016GBWIFIB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMT58016GBWIFIC": {
     "precio": "55 €",
@@ -511869,10 +511869,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT58016GBWIFIC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "24 €",
-    "compra_num": 24,
-    "cambio": "34 €",
-    "cambio_num": 34
+    "compra": "30 €",
+    "compra_num": 30,
+    "cambio": "36 €",
+    "cambio_num": 36
   },
   "STABSAMT58032GBWIFIA": {
     "precio": "85 €",
@@ -511882,10 +511882,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT58032GBWIFIA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "37 €",
-    "compra_num": 37,
-    "cambio": "52 €",
-    "cambio_num": 52
+    "compra": "46 €",
+    "compra_num": 46,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABSAMT58032GBWIFIB": {
     "precio": "75 €",
@@ -511895,10 +511895,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT58032GBWIFIB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "33 €",
-    "compra_num": 33,
-    "cambio": "46 €",
-    "cambio_num": 46
+    "compra": "41 €",
+    "compra_num": 41,
+    "cambio": "50 €",
+    "cambio_num": 50
   },
   "STABSAMT58032GBWIFIC": {
     "precio": "65 €",
@@ -511908,10 +511908,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT58032GBWIFIC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "28 €",
-    "compra_num": 28,
-    "cambio": "40 €",
-    "cambio_num": 40
+    "compra": "35 €",
+    "compra_num": 35,
+    "cambio": "43 €",
+    "cambio_num": 43
   },
   "STABSAMT59032GWIFA": {
     "precio": "85 €",
@@ -511921,10 +511921,10 @@
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMT59032GWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "37 €",
-    "compra_num": 37,
-    "cambio": "52 €",
-    "cambio_num": 52
+    "compra": "46 €",
+    "compra_num": 46,
+    "cambio": "56 €",
+    "cambio_num": 56
   },
   "STABSAMT59032GWIFB": {
     "precio": "75 €",
@@ -512239,199 +512239,199 @@
     "cambio_num": 536
   },
   "STABSAMX800128GGWIFA": {
-    "precio": "300 €",
-    "precio_num": 300,
+    "precio": "310 €",
+    "precio_num": 310,
     "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Grafito, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GGWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "165 €",
-    "compra_num": 165,
-    "cambio": "201 €",
-    "cambio_num": 201
+    "compra": "170 €",
+    "compra_num": 170,
+    "cambio": "207 €",
+    "cambio_num": 207
   },
   "STABSAMX800128GGWIFB": {
-    "precio": "270 €",
-    "precio_num": 270,
+    "precio": "280 €",
+    "precio_num": 280,
     "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Grafito, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GGWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "148 €",
-    "compra_num": 148,
-    "cambio": "180 €",
-    "cambio_num": 180
+    "compra": "154 €",
+    "compra_num": 154,
+    "cambio": "187 €",
+    "cambio_num": 187
   },
   "STABSAMX800128GGWIFC": {
-    "precio": "240 €",
-    "precio_num": 240,
+    "precio": "250 €",
+    "precio_num": 250,
     "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Grafito, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GGWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "132 €",
-    "compra_num": 132,
-    "cambio": "160 €",
-    "cambio_num": 160
+    "compra": "137 €",
+    "compra_num": 137,
+    "cambio": "167 €",
+    "cambio_num": 167
   },
   "STABSAMX800128GPWIFA": {
-    "precio": "300 €",
-    "precio_num": 300,
+    "precio": "310 €",
+    "precio_num": 310,
     "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Oro Rosa, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GPWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "165 €",
-    "compra_num": 165,
-    "cambio": "201 €",
-    "cambio_num": 201
+    "compra": "170 €",
+    "compra_num": 170,
+    "cambio": "207 €",
+    "cambio_num": 207
   },
   "STABSAMX800128GPWIFB": {
-    "precio": "270 €",
-    "precio_num": 270,
+    "precio": "280 €",
+    "precio_num": 280,
     "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Oro Rosa, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GPWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "148 €",
-    "compra_num": 148,
-    "cambio": "180 €",
-    "cambio_num": 180
+    "compra": "154 €",
+    "compra_num": 154,
+    "cambio": "187 €",
+    "cambio_num": 187
   },
   "STABSAMX800128GPWIFC": {
-    "precio": "240 €",
-    "precio_num": 240,
+    "precio": "250 €",
+    "precio_num": 250,
     "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Oro Rosa, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GPWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "132 €",
-    "compra_num": 132,
-    "cambio": "160 €",
-    "cambio_num": 160
+    "compra": "137 €",
+    "compra_num": 137,
+    "cambio": "167 €",
+    "cambio_num": 167
   },
   "STABSAMX800128GSWIFA": {
-    "precio": "300 €",
-    "precio_num": 300,
+    "precio": "310 €",
+    "precio_num": 310,
     "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Plata, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GSWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "170 €",
+    "compra_num": 170,
+    "cambio": "207 €",
+    "cambio_num": 207
+  },
+  "STABSAMX800128GSWIFB": {
+    "precio": "280 €",
+    "precio_num": 280,
+    "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Plata, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GSWIFB&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "154 €",
+    "compra_num": 154,
+    "cambio": "187 €",
+    "cambio_num": 187
+  },
+  "STABSAMX800128GSWIFC": {
+    "precio": "250 €",
+    "precio_num": 250,
+    "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Plata, WiFi C",
+    "grado": "C",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GSWIFC&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "137 €",
+    "compra_num": 137,
+    "cambio": "167 €",
+    "cambio_num": 167
+  },
+  "STABSAMX800256GGWIFA": {
+    "precio": "330 €",
+    "precio_num": 330,
+    "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Grafito, WiFi A",
+    "grado": "A",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GGWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "181 €",
+    "compra_num": 181,
+    "cambio": "221 €",
+    "cambio_num": 221
+  },
+  "STABSAMX800256GGWIFB": {
+    "precio": "300 €",
+    "precio_num": 300,
+    "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Grafito, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GGWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "165 €",
     "compra_num": 165,
     "cambio": "201 €",
     "cambio_num": 201
   },
-  "STABSAMX800128GSWIFB": {
+  "STABSAMX800256GGWIFC": {
     "precio": "270 €",
     "precio_num": 270,
-    "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Plata, WiFi B",
-    "grado": "B",
+    "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Grafito, WiFi C",
+    "grado": "C",
     "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GSWIFB&categoryName=Tabletas+-+Android",
+    "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GGWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
     "compra": "148 €",
     "compra_num": 148,
     "cambio": "180 €",
     "cambio_num": 180
   },
-  "STABSAMX800128GSWIFC": {
-    "precio": "240 €",
-    "precio_num": 240,
-    "nombre": "Samsung Galaxy Tab S8 Plus 128GB 12.4\" (Sin Lápiz) - Plata, WiFi C",
-    "grado": "C",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABSAMX800128GSWIFC&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "132 €",
-    "compra_num": 132,
-    "cambio": "160 €",
-    "cambio_num": 160
-  },
-  "STABSAMX800256GGWIFA": {
-    "precio": "320 €",
-    "precio_num": 320,
-    "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Grafito, WiFi A",
-    "grado": "A",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GGWIFA&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "176 €",
-    "compra_num": 176,
-    "cambio": "214 €",
-    "cambio_num": 214
-  },
-  "STABSAMX800256GGWIFB": {
-    "precio": "290 €",
-    "precio_num": 290,
-    "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Grafito, WiFi B",
-    "grado": "B",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GGWIFB&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "159 €",
-    "compra_num": 159,
-    "cambio": "194 €",
-    "cambio_num": 194
-  },
-  "STABSAMX800256GGWIFC": {
-    "precio": "260 €",
-    "precio_num": 260,
-    "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Grafito, WiFi C",
-    "grado": "C",
-    "categoria": "Tabletas - Android",
-    "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GGWIFC&categoryName=Tabletas+-+Android",
-    "origen": "detail",
-    "compra": "143 €",
-    "compra_num": 143,
-    "cambio": "174 €",
-    "cambio_num": 174
-  },
   "STABSAMX800256GSWIFA": {
-    "precio": "320 €",
-    "precio_num": 320,
+    "precio": "330 €",
+    "precio_num": 330,
     "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Plata, WiFi A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GSWIFA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "176 €",
-    "compra_num": 176,
-    "cambio": "214 €",
-    "cambio_num": 214
+    "compra": "181 €",
+    "compra_num": 181,
+    "cambio": "221 €",
+    "cambio_num": 221
   },
   "STABSAMX800256GSWIFB": {
-    "precio": "290 €",
-    "precio_num": 290,
+    "precio": "300 €",
+    "precio_num": 300,
     "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Plata, WiFi B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GSWIFB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "159 €",
-    "compra_num": 159,
-    "cambio": "194 €",
-    "cambio_num": 194
+    "compra": "165 €",
+    "compra_num": 165,
+    "cambio": "201 €",
+    "cambio_num": 201
   },
   "STABSAMX800256GSWIFC": {
-    "precio": "260 €",
-    "precio_num": 260,
+    "precio": "270 €",
+    "precio_num": 270,
     "nombre": "Samsung Galaxy Tab S8 Plus 256GB 12.4\" (Sin Lápiz) - Plata, WiFi C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSAMX800256GSWIFC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "143 €",
-    "compra_num": 143,
-    "cambio": "174 €",
-    "cambio_num": 174
+    "compra": "148 €",
+    "compra_num": 148,
+    "cambio": "180 €",
+    "cambio_num": 180
   },
   "STABSAMX806128GGLIBA": {
     "precio": "330 €",
@@ -514124,43 +514124,43 @@
     "cambio_num": 62
   },
   "STABSMX306B128GGLIBA": {
-    "precio": "235 €",
-    "precio_num": 235,
+    "precio": "260 €",
+    "precio_num": 260,
     "nombre": "Samsung Galaxy Tab Active5 128GB 8\" Verde, Libre A",
     "grado": "A",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSMX306B128GGLIBA&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "103 €",
-    "compra_num": 103,
-    "cambio": "146 €",
-    "cambio_num": 146
+    "compra": "114 €",
+    "compra_num": 114,
+    "cambio": "162 €",
+    "cambio_num": 162
   },
   "STABSMX306B128GGLIBB": {
-    "precio": "215 €",
-    "precio_num": 215,
+    "precio": "240 €",
+    "precio_num": 240,
     "nombre": "Samsung Galaxy Tab Active5 128GB 8\" Verde, Libre B",
     "grado": "B",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSMX306B128GGLIBB&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "94 €",
-    "compra_num": 94,
-    "cambio": "134 €",
-    "cambio_num": 134
+    "compra": "105 €",
+    "compra_num": 105,
+    "cambio": "149 €",
+    "cambio_num": 149
   },
   "STABSMX306B128GGLIBC": {
-    "precio": "190 €",
-    "precio_num": 190,
+    "precio": "215 €",
+    "precio_num": 215,
     "nombre": "Samsung Galaxy Tab Active5 128GB 8\" Verde, Libre C",
     "grado": "C",
     "categoria": "Tabletas - Android",
     "link": "https://es.webuy.com/product-detail?id=STABSMX306B128GGLIBC&categoryName=Tabletas+-+Android",
     "origen": "detail",
-    "compra": "83 €",
-    "compra_num": 83,
-    "cambio": "118 €",
-    "cambio_num": 118
+    "compra": "94 €",
+    "compra_num": 94,
+    "cambio": "134 €",
+    "cambio_num": 134
   },
   "STABSPCG5P128GGWIFA": {
     "precio": "135 €",
@@ -649803,5 +649803,96 @@
     "compra_num": 40,
     "cambio": "46 €",
     "cambio_num": 46
+  },
+  "STABLEN3X70F16GWIFC": {
+    "precio": "30 €",
+    "precio_num": 30,
+    "nombre": "Lenovo Tab 3 TB3-X70F 16GB, WiFi C",
+    "grado": "C",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLEN3X70F16GWIFC&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "13 €",
+    "compra_num": 13,
+    "cambio": "18 €",
+    "cambio_num": 18
+  },
+  "STABLEN8505X32GLIBC": {
+    "precio": "55 €",
+    "precio_num": 55,
+    "nombre": "Lenovo M8 (TB-8505X) 32GB 8\", Libre C",
+    "grado": "C",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLEN8505X32GLIBC&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "24 €",
+    "compra_num": 24,
+    "cambio": "34 €",
+    "cambio_num": 34
+  },
+  "STABXIAPAD78256VWIFA": {
+    "precio": "280 €",
+    "precio_num": 280,
+    "nombre": "Xiaomi Pad 7 (8GB+256GB) Verde WiFi, A",
+    "grado": "A",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABXIAPAD78256VWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "154 €",
+    "compra_num": 154,
+    "cambio": "187 €",
+    "cambio_num": 187
+  },
+  "SSAMA276B68256GNLIBA": {
+    "precio": "340 €",
+    "precio_num": 340,
+    "nombre": "Samsung Galaxy A27 5G Dual Sim (8GB+256GB) Negro, Libre A",
+    "grado": "A",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SSAMA276B68256GNLIBA&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "176 €",
+    "compra_num": 176,
+    "cambio": "221 €",
+    "cambio_num": 221
+  },
+  "STABHOTR9U24512NLIBB": {
+    "precio": "280 €",
+    "precio_num": 280,
+    "nombre": "HOTWAV R9 Ultra 5G (24GB+512GB) 11\" Negro, Libre B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABHOTR9U24512NLIBB&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "123 €",
+    "compra_num": 123,
+    "cambio": "174 €",
+    "cambio_num": 174
+  },
+  "SSAMA175FDS4128NLIBC": {
+    "precio": "100 €",
+    "precio_num": 100,
+    "nombre": "Samsung Galaxy A17 4G Dual Sim (4GB+128GB) Negro, Libre C",
+    "grado": "C",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SSAMA175FDS4128NLIBC&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "74 €",
+    "compra_num": 74,
+    "cambio": "79 €",
+    "cambio_num": 79
+  },
+  "SSAMA56BD12256GRLIBC": {
+    "precio": "285 €",
+    "precio_num": 285,
+    "nombre": "Samsung Galaxy A56 5G Dual Sim (12GB+256GB) Gris, Libre C",
+    "grado": "C",
+    "categoria": "Moviles - Android",
+    "link": "https://es.webuy.com/product-detail?id=SSAMA56BD12256GRLIBC&categoryName=Moviles+-+Android",
+    "origen": "detail",
+    "compra": "210 €",
+    "compra_num": 210,
+    "cambio": "225 €",
+    "cambio_num": 225
   }
 }
