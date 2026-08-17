@@ -398820,7 +398820,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA6X5G4128GBPLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "105 €",
     "compra_num": 105,
     "cambio": "117 €",
@@ -651090,5 +651090,31 @@
     "compra_num": 105,
     "cambio": "149 €",
     "cambio_num": 149
+  },
+  "STABLENKTB305FUGWIFA": {
+    "precio": "100 €",
+    "precio_num": 100,
+    "nombre": "Lenovo Tab K9 (TB305FU) 64GB 8.7\" Gris, WiFi A",
+    "grado": "A",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABLENKTB305FUGWIFA&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "44 €",
+    "compra_num": 44,
+    "cambio": "62 €",
+    "cambio_num": 62
+  },
+  "STABSAMX610128GPWIFB": {
+    "precio": "310 €",
+    "precio_num": 310,
+    "nombre": "Samsung Galaxy Tab S9 FE+ 128GB 12\" (Sin Lápiz) - Plata, WiFi B",
+    "grado": "B",
+    "categoria": "Tabletas - Android",
+    "link": "https://es.webuy.com/product-detail?id=STABSAMX610128GPWIFB&categoryName=Tabletas+-+Android",
+    "origen": "detail",
+    "compra": "170 €",
+    "compra_num": 170,
+    "cambio": "207 €",
+    "cambio_num": 207
   }
 }
