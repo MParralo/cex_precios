@@ -226557,7 +226557,7 @@
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SSAMA165FD4128GNLIBB&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "98 €",
     "compra_num": 98,
     "cambio": "109 €",
@@ -306852,17 +306852,17 @@
     "cambio_num": 146
   },
   "SPORDEL548044B": {
-    "precio": "270 €",
-    "precio_num": 270,
+    "precio": "250 €",
+    "precio_num": 250,
     "nombre": "Dell 5480/i5-6300U/16GB Ram/256GB SSD/14\"/W11/B",
     "grado": "B",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORDEL548044B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "118 €",
-    "compra_num": 118,
-    "cambio": "168 €",
-    "cambio_num": 168
+    "compra": "110 €",
+    "compra_num": 110,
+    "cambio": "155 €",
+    "cambio_num": 155
   },
   "SPORDEL548050B": {
     "precio": "225 €",
@@ -325657,10 +325657,10 @@
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORHP840G986B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "180 €",
-    "compra_num": 180,
-    "cambio": "255 €",
-    "cambio_num": 255
+    "compra": "0 €",
+    "compra_num": 0,
+    "cambio": "0 €",
+    "cambio_num": 0
   },
   "SPORHP840RG416B": {
     "precio": "255 €",
