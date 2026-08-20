@@ -325,17 +325,17 @@
     "cambio_num": 16
   },
   "045496420079": {
-    "precio": "48 €",
-    "precio_num": 48,
+    "precio": "50 €",
+    "precio_num": 50,
     "nombre": "Legend of Zelda: Breath of the Wild",
     "grado": "N/A",
     "categoria": "Switch Juegos",
     "link": "https://es.webuy.com/product-detail?id=045496420079&categoryName=Switch+Juegos",
     "origen": "feed:hotproducts",
-    "compra": "21 €",
-    "compra_num": 21,
-    "cambio": "29 €",
-    "cambio_num": 29
+    "compra": "22 €",
+    "compra_num": 22,
+    "cambio": "31 €",
+    "cambio_num": 31
   },
   "045496420642": {
     "precio": "28 €",
@@ -442,17 +442,17 @@
     "cambio_num": 0
   },
   "045496425395": {
-    "precio": "42 €",
-    "precio_num": 42,
+    "precio": "45 €",
+    "precio_num": 45,
     "nombre": "Animal Crossing: New Horizons",
     "grado": "N/A",
     "categoria": "Switch Juegos",
     "link": "https://es.webuy.com/product-detail?id=045496425395&categoryName=Switch+Juegos",
     "origen": "feed:hotproducts",
-    "compra": "18 €",
-    "compra_num": 18,
-    "cambio": "26 €",
-    "cambio_num": 26
+    "compra": "19 €",
+    "compra_num": 19,
+    "cambio": "28 €",
+    "cambio_num": 28
   },
   "711719571827": {
     "precio": "40 €",
@@ -468,17 +468,17 @@
     "cambio_num": 26
   },
   "045496510879": {
-    "precio": "38 €",
-    "precio_num": 38,
+    "precio": "40 €",
+    "precio_num": 40,
     "nombre": "Pokémon Púrpura",
     "grado": "A",
     "categoria": "Switch Juegos",
     "link": "https://es.webuy.com/product-detail?id=045496510879&categoryName=Switch+Juegos",
     "origen": "feed:hotproducts",
-    "compra": "16 €",
-    "compra_num": 16,
-    "cambio": "23 €",
-    "cambio_num": 23
+    "compra": "17 €",
+    "compra_num": 17,
+    "cambio": "24 €",
+    "cambio_num": 24
   },
   "711719848233": {
     "precio": "10 €",
@@ -1820,30 +1820,30 @@
     "cambio_num": 26
   },
   "SGRANVI1050TIGTX4GBA": {
-    "precio": "60 €",
-    "precio_num": 60,
+    "precio": "65 €",
+    "precio_num": 65,
     "nombre": "Nvidia GeForce GTX 1050 Ti 4GB GDDR5",
     "grado": "N/A",
     "categoria": "Tarjetas Graficas - PCi-E",
     "link": "https://es.webuy.com/product-detail?id=SGRANVI1050TIGTX4GBA&categoryName=Tarjetas+Graficas+-+PCi-E",
     "origen": "feed:hotproducts",
-    "compra": "26 €",
-    "compra_num": 26,
-    "cambio": "37 €",
-    "cambio_num": 37
+    "compra": "28 €",
+    "compra_num": 28,
+    "cambio": "40 €",
+    "cambio_num": 40
   },
   "SGRANVI1660SGTX6GB": {
-    "precio": "115 €",
-    "precio_num": 115,
+    "precio": "125 €",
+    "precio_num": 125,
     "nombre": "Nvidia GeForce GTX 1660 Super 6GB GDDR6",
     "grado": "N/A",
     "categoria": "Tarjetas Graficas - PCi-E",
     "link": "https://es.webuy.com/product-detail?id=SGRANVI1660SGTX6GB&categoryName=Tarjetas+Graficas+-+PCi-E",
     "origen": "feed:hotproducts",
-    "compra": "63 €",
-    "compra_num": 63,
-    "cambio": "77 €",
-    "cambio_num": 77
+    "compra": "68 €",
+    "compra_num": 68,
+    "cambio": "83 €",
+    "cambio_num": 83
   },
   "SRED13C6128GAMLIBA": {
     "precio": "120 €",
@@ -3263,17 +3263,17 @@
     "cambio_num": 21
   },
   "SVRMETQUE3S128GBB": {
-    "precio": "275 €",
-    "precio_num": 275,
+    "precio": "260 €",
+    "precio_num": 260,
     "nombre": "Meta Quest 3S VR Headset (Con Controladores) - 128GB, B",
     "grado": "B",
     "categoria": "VR Tech",
     "link": "https://es.webuy.com/product-detail?id=SVRMETQUE3S128GBB&categoryName=VR+Tech",
     "origen": "feed:hotproducts",
-    "compra": "151 €",
-    "compra_num": 151,
-    "cambio": "184 €",
-    "cambio_num": 184
+    "compra": "143 €",
+    "compra_num": 143,
+    "cambio": "174 €",
+    "cambio_num": 174
   },
   "SAPPA3354128GPLWIFA": {
     "precio": "435 €",
@@ -181707,7 +181707,7 @@
     "grado": "A",
     "categoria": "PC Gaming Portatil",
     "link": "https://es.webuy.com/product-detail?id=SHGPASURC73YA512GWA&categoryName=PC+Gaming+Portatil",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "272 €",
     "compra_num": 272,
     "cambio": "316 €",
@@ -202494,7 +202494,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SRED15C4G4128GNLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "81 €",
     "compra_num": 81,
     "cambio": "86 €",
@@ -202650,7 +202650,7 @@
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SRED15C4G4256GNMLIBB&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "70 €",
     "compra_num": 70,
     "cambio": "75 €",
@@ -203001,7 +203001,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SRED15C5G4256GNLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "103 €",
     "compra_num": 103,
     "cambio": "110 €",
@@ -226557,7 +226557,7 @@
     "grado": "B",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SSAMA165FD4128GNLIBB&categoryName=Moviles+-+Android",
-    "origen": "feed:hotproducts",
+    "origen": "detail",
     "compra": "98 €",
     "compra_num": 98,
     "cambio": "109 €",
