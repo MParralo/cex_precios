@@ -378254,7 +378254,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR3",
     "link": "https://es.webuy.com/product-detail?id=SMEM204DD3106002GB&categoryName=Memoria+-+Portatil+DDR3",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,01 €",
     "compra_num": 0.01,
     "cambio": "0,01 €",
@@ -378423,7 +378423,7 @@
     "grado": "A",
     "categoria": "Memoria - Portatil DDR4",
     "link": "https://es.webuy.com/product-detail?id=SMEM4G2400260&categoryName=Memoria+-+Portatil+DDR4",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "0,40 €",
     "compra_num": 0.4,
     "cambio": "0,90 €",
@@ -398820,7 +398820,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA6X5G4128GBPLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "105 €",
     "compra_num": 105,
     "cambio": "117 €",
@@ -398859,7 +398859,7 @@
     "grado": "A",
     "categoria": "Moviles - Android",
     "link": "https://es.webuy.com/product-detail?id=SOPPA6X5G4128GIBLIBA&categoryName=Moviles+-+Android",
-    "origen": "detail",
+    "origen": "feed:hotproducts",
     "compra": "94 €",
     "compra_num": 94,
     "cambio": "105 €",
@@ -452504,17 +452504,17 @@
     "cambio_num": 84
   },
   "SPORLEN11015IBR01C": {
-    "precio": "140 €",
-    "precio_num": 140,
+    "precio": "135 €",
+    "precio_num": 135,
     "nombre": "Lenovo Yoga 110-15iBR/N3060/4GB Ram/500GB HDD/DVD-RW/15\"/W10/C",
     "grado": "C",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORLEN11015IBR01C&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "61 €",
-    "compra_num": 61,
-    "cambio": "87 €",
-    "cambio_num": 87
+    "compra": "59 €",
+    "compra_num": 59,
+    "cambio": "84 €",
+    "cambio_num": 84
   },
   "SPORLEN11015IBR22B": {
     "precio": "145 €",
@@ -452569,17 +452569,17 @@
     "cambio_num": 105
   },
   "SPORLEN11015IBR91B": {
-    "precio": "170 €",
-    "precio_num": 170,
+    "precio": "145 €",
+    "precio_num": 145,
     "nombre": "Lenovo Yoga 110-15iBR/N3060/4GB Ram/500GB HDD/DVD-RW/15\"/W10/B",
     "grado": "B",
     "categoria": "Portatiles - Windows",
     "link": "https://es.webuy.com/product-detail?id=SPORLEN11015IBR91B&categoryName=Portatiles+-+Windows",
     "origen": "detail",
-    "compra": "74 €",
-    "compra_num": 74,
-    "cambio": "105 €",
-    "cambio_num": 105
+    "compra": "63 €",
+    "compra_num": 63,
+    "cambio": "90 €",
+    "cambio_num": 90
   },
   "SPORLEN11015ISK221B": {
     "precio": "170 €",
