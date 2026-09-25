@@ -10,22 +10,12 @@ WEB_BASE = "https://es.webuy.com"
 
 FEEDS = ("hotproducts", "topsellers", "mostwanted")
 
+# Filtros para sitemap: solo capturar productos de interés
 FILTROS_INCLUIR = (
     "iphone",
-    "android",
-    "moviles -",
-    "móviles -",
-    "telefonos moviles",
-    "teléfonos moviles",
-    "ipad",
-    "portatil",
-    "portátil",
-    "portatiles",
-    "portátiles",
     "macbook",
     "ps5",
     "switch",
-    "xbox series",
 )
 FILTROS_EXCLUIR = (
     "accesor",
@@ -33,9 +23,17 @@ FILTROS_EXCLUIR = (
     "cable",
     "basics",
     "mandos",
-    "dvd portatil",
+    "controller",
+    "funda",
     "juegos",
     "games",
+    "game",
+    "dvd",
+    "microsd",
+    "tarjeta",
+    "portal",
+    "edicion",
+    "edition",
 )
 
 SITEMAPS_PRODUCTOS = [
@@ -45,6 +43,7 @@ SITEMAPS_PRODUCTOS = [
 
 ARCHIVO_HISTORIAL = "vistos.json"
 ARCHIVO_ESTADO = "estado.json"
+ARCHIVO_PRECIOS_OBJETIVO = "precios_objetivo.json"
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
@@ -80,12 +79,11 @@ RE_SITEMAP_ITEM = re.compile(
 
 
 def enviar_telegram(mensaje):
-    """Envía un mensaje por Telegram Bot API (gratis, sin tope práctico)."""
+    """Envía un mensaje por Telegram Bot API."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("⚠️ Telegram no configurado (faltan TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID).")
         return
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    # Telegram limita a 4096 caracteres
     texto = mensaje if len(mensaje) <= 4000 else mensaje[:3990] + "…"
     try:
         r = SESSION.post(
@@ -103,10 +101,6 @@ def enviar_telegram(mensaje):
             print(f"⚠️ Error enviando Telegram: {r.status_code} | {r.text[:200]}")
     except Exception as e:
         print(f"❌ Error al enviar Telegram: {e}")
-
-
-# Alias por compatibilidad con el resto del código
-enviar_whatsapp = enviar_telegram
 
 
 def api_get_result(path, params=None, timeout=25, raw_query=None):
@@ -137,6 +131,18 @@ def api_get_result(path, params=None, timeout=25, raw_query=None):
 def api_get(path, params=None, timeout=25, raw_query=None):
     status, data = api_get_result(path, params=params, timeout=timeout, raw_query=raw_query)
     return data if status == "ok" else None
+
+
+def parse_precio_num(val):
+    if val is None:
+        return None
+    if isinstance(val, (int, float)):
+        return float(val)
+    txt = str(val).replace("\xa0", " ").replace("€", "").strip()
+    if re.search(r"\d+,\d+", txt):
+        txt = txt.replace(".", "").replace(",", ".")
+    m = re.search(r"(\d+(?:\.\d+)?)", txt)
+    return float(m.group(1)) if m else None
 
 
 def formatear_precio(valor):
@@ -186,7 +192,6 @@ def normalizar_box(box):
         "nombre": (box.get("boxName") or "").strip(),
         "precio": formatear_precio(precio_raw),
         "precio_num": precio_raw,
-        # cashPrice = a cuánto te lo compran en efectivo; exchangePrice = en vale
         "compra": formatear_precio(compra_raw) if compra_raw is not None else None,
         "compra_num": compra_raw,
         "cambio": formatear_precio(cambio_raw) if cambio_raw is not None else None,
@@ -212,6 +217,131 @@ def cargar_json(ruta, default):
 def guardar_json(ruta, datos):
     with open(ruta, "w", encoding="utf-8") as f:
         json.dump(datos, f, ensure_ascii=False, indent=2)
+
+
+def evaluar_tecnologia_top(ficha, cfg):
+    """
+    Evalúa si el producto es de interés (iPhone 13+, MacBook Silicon, Nintendo Switch, PS5)
+    y si su precio de venta en CeX está por debajo del techo de compra garantizada (chollo).
+    """
+    nombre = ficha.get("nombre", "")
+    nombre_low = nombre.lower()
+    precio_num = parse_precio_num(ficha.get("precio_num")) or parse_precio_num(ficha.get("precio"))
+    if not precio_num or precio_num <= 0:
+        return {"interesante": False, "motivo": "Sin precio numérico"}
+
+    # 1. iPhones (13 al 18)
+    for item in cfg.get("iphones", []):
+        if re.search(item["regex"], nombre_low):
+            max_compra = item["max_compra"]
+            mercado = item["precio_mercado"]
+            if precio_num <= max_compra:
+                margen = mercado - precio_num
+                return {
+                    "interesante": True,
+                    "tipo": "IPHONE",
+                    "modelo": item["nombre"],
+                    "precio": precio_num,
+                    "precio_mercado": mercado,
+                    "max_compra": max_compra,
+                    "margen": margen,
+                    "motivo": f"{item['nombre']} a {precio_num:.0f}€ ≤ techo {max_compra:.0f}€ (Margen: +{margen:.0f}€)",
+                }
+            return {
+                "interesante": False,
+                "motivo": f"{item['nombre']} a {precio_num:.0f}€ > techo {max_compra:.0f}€",
+            }
+
+    # 2. MacBooks Apple Silicon (2022+)
+    for item in cfg.get("macbooks_apple_silicon", []):
+        if all(k in nombre_low for k in item["keywords_incluir"]) and not any(k in nombre_low for k in item["keywords_excluir"]):
+            if any(bad in nombre_low for bad in ["intel", "core i5", "core i7", "core i3", "2015", "2016", "2017", "2018", "2019", "2020 intel"]):
+                continue
+            max_compra = item["max_compra"]
+            mercado = item["precio_mercado"]
+            if precio_num <= max_compra:
+                margen = mercado - precio_num
+                return {
+                    "interesante": True,
+                    "tipo": "MACBOOK",
+                    "modelo": item["nombre"],
+                    "precio": precio_num,
+                    "precio_mercado": mercado,
+                    "max_compra": max_compra,
+                    "margen": margen,
+                    "motivo": f"{item['nombre']} a {precio_num:.0f}€ ≤ techo {max_compra:.0f}€ (Margen: +{margen:.0f}€)",
+                }
+            return {
+                "interesante": False,
+                "motivo": f"{item['nombre']} a {precio_num:.0f}€ > techo {max_compra:.0f}€",
+            }
+
+    # 3. Consolas cotizadas (Nintendo Switch, PS5)
+    for item in cfg.get("consolas", []):
+        if all(k in nombre_low for k in item["keywords_incluir"]) and not any(k in nombre_low for k in item["keywords_excluir"]):
+            max_compra = item["max_compra"]
+            mercado = item["precio_mercado"]
+            if precio_num <= max_compra:
+                margen = mercado - precio_num
+                return {
+                    "interesante": True,
+                    "tipo": "CONSOLA",
+                    "modelo": item["nombre"],
+                    "precio": precio_num,
+                    "precio_mercado": mercado,
+                    "max_compra": max_compra,
+                    "margen": margen,
+                    "motivo": f"{item['nombre']} a {precio_num:.0f}€ ≤ techo {max_compra:.0f}€ (Margen: +{margen:.0f}€)",
+                }
+            return {
+                "interesante": False,
+                "motivo": f"{item['nombre']} a {precio_num:.0f}€ > techo {max_compra:.0f}€",
+            }
+
+    return {"interesante": False, "motivo": "No coincide con catálogo objetivo"}
+
+
+def formatear_alerta(tipo_evento, ficha, eval_res, precio_prev=None):
+    nombre = ficha.get("nombre", "")
+    sku = ficha.get("sku", "")
+    grado = ficha.get("grado", "N/A")
+    link = ficha.get("link", "")
+    compra = ficha.get("compra", "")
+    modelo = eval_res.get("modelo", nombre)
+    mercado = eval_res.get("precio_mercado", 0)
+    margen = eval_res.get("margen", 0)
+    techo = eval_res.get("max_compra", 0)
+    precio_num = eval_res.get("precio") or parse_precio_num(ficha.get("precio"))
+    precio_txt = f"{precio_num:.0f}€" if precio_num else ficha.get("precio", "N/A")
+
+    if tipo_evento == "bajada":
+        prefijo = "📉 [CHOLLO POR BAJADA DE PRECIO] [CeX]"
+        lineas = [
+            prefijo,
+            f"📦 Producto: {modelo}",
+            f"🏷️ Grado: {grado}",
+            f"💵 Precio anterior: {precio_prev or 'N/A'}",
+            f"💰 Nuevo precio: {precio_txt}",
+        ]
+    else:
+        prefijo = "🔥 [CHOLLO DETECTADO] [CeX]"
+        lineas = [
+            prefijo,
+            f"📦 Producto: {modelo}",
+            f"🏷️ Grado: {grado}",
+            f"💰 Venta CeX: {precio_txt}",
+        ]
+
+    if compra and compra not in ("N/A", "0 €", "0,00 €"):
+        lineas.append(f"🏦 Compra CeX: {compra}")
+
+    lineas.extend([
+        f"📊 Mercado Wallapop: ~{mercado:.0f}€",
+        f"💵 Margen estimado: +{margen:.0f}€ (Techo: {techo:.0f}€)",
+        f"🔢 SKU: {sku}",
+        f"🔗 Link: {link}",
+    ])
+    return "\n".join(lineas)
 
 
 def categoria_interesante(ruta_imagen):
@@ -245,7 +375,7 @@ def descubrir_desde_sitemap(sitemap_url):
                     "categoria": categoria,
                     "link": link_producto(sku),
                 })
-        print(f"🗺️ Sitemap {sitemap_url.split('/')[-1]}: {len(encontrados)} SKUs interesantes")
+        print(f"🗺️ Sitemap {sitemap_url.split('/')[-1]}: {len(encontrados)} SKUs objetivo")
         return encontrados
     except Exception as e:
         print(f"⚠️ Error leyendo sitemap: {e}")
@@ -277,7 +407,6 @@ def precio_valido(precio):
 
 
 def _aplicar_precios_compra(entrada, ficha):
-    """Añade compra/cambio solo si la API los trae (no pisa caché con None)."""
     if ficha.get("compra_num") is not None:
         entrada["compra"] = ficha.get("compra")
         entrada["compra_num"] = ficha.get("compra_num")
@@ -286,7 +415,8 @@ def _aplicar_precios_compra(entrada, ficha):
         entrada["cambio_num"] = ficha.get("cambio_num")
 
 
-def procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False):
+def procesar_ficha(ficha, vistos, avisos, cfg, avisar_nuevo=False):
+    """Actualiza historial y avisa SOLO si es un chollo objetivo."""
     sku = ficha["sku"]
     precio = ficha["precio"]
     entrada = {
@@ -300,60 +430,58 @@ def procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False):
     }
     _aplicar_precios_compra(entrada, ficha)
 
+    eval_res = evaluar_tecnologia_top(entrada, cfg)
+
     if sku not in vistos:
-        if avisar_nuevo and precio_valido(precio):
-            print(f"🆕 Nuevo: {entrada['nombre']} ({precio}) [SKU {sku}]")
-            compra_txt = entrada.get("compra") or "N/A"
-            msg = (
-                f"📦 [CeX] Producto nuevo: {entrada['nombre']}\n"
-                f"🔢 SKU: {sku}\n"
-                f"🏷️ Grado: {entrada['grado']}\n"
-                f"📁 Categoría: {entrada['categoria'] or 'N/A'}\n"
-                f"💰 Venta: {precio}\n"
-                f"🏦 Compra CeX: {compra_txt}\n\n"
-                f"🔗 Link: {entrada['link']}"
-            )
-            enviar_whatsapp(msg)
+        if avisar_nuevo and eval_res.get("interesante") and precio_valido(precio):
+            print(f"🔥 CHOLLO NUEVO: {entrada['nombre']} ({precio}) -> {eval_res.get('motivo')}")
+            msg = formatear_alerta("nuevo", entrada, eval_res)
+            enviar_telegram(msg)
             avisos["nuevos"] += 1
             time.sleep(1)
+        elif eval_res.get("interesante"):
+            print(f"🎯 Chollo objetivo detectado: {entrada['nombre']} ({precio})")
         vistos[sku] = entrada
         return
 
     prev = vistos[sku] if isinstance(vistos[sku], dict) else {}
     precio_prev = prev.get("precio")
 
+    # Si antes no tenía precio y ahora sí
     if not precio_valido(precio_prev) and precio_valido(precio):
+        if avisar_nuevo and eval_res.get("interesante"):
+            print(f"🔥 CHOLLO DISPONIBLE: {entrada['nombre']} ({precio}) -> {eval_res.get('motivo')}")
+            msg = formatear_alerta("nuevo", entrada, eval_res)
+            enviar_telegram(msg)
+            avisos["nuevos"] += 1
+            time.sleep(1)
         vistos[sku] = {**prev, **entrada}
         return
 
+    # Si cambió el precio
     if (
         precio_valido(precio_prev)
         and precio_valido(precio)
         and precio != precio_prev
     ):
-        nombre = entrada["nombre"] or prev.get("nombre") or sku
-        print(f"📉 Cambio: {nombre} ({precio_prev} ➡️ {precio}) [SKU {sku}]")
-        compra_txt = entrada.get("compra") or prev.get("compra") or "N/A"
-        msg = (
-            f"📉 [CeX] ¡CAMBIO DE PRECIO! 📉\n\n"
-            f"📦 Producto: {nombre}\n"
-            f"🔢 SKU: {sku}\n"
-            f"🏷️ Grado: {entrada['grado']}\n"
-            f"💵 Precio anterior: {precio_prev}\n"
-            f"💰 Nuevo precio: {precio}\n"
-            f"🏦 Compra CeX: {compra_txt}\n\n"
-            f"🔗 Link: {entrada['link']}"
-        )
-        enviar_whatsapp(msg)
-        avisos["cambios"] += 1
-        time.sleep(1)
+        precio_act_num = parse_precio_num(precio)
+        precio_prev_num = parse_precio_num(precio_prev)
+        bajada = precio_prev_num is not None and precio_act_num is not None and precio_act_num < precio_prev_num
+
+        if eval_res.get("interesante") and bajada:
+            nombre = entrada["nombre"] or prev.get("nombre") or sku
+            print(f"📉 CHOLLO POR BAJADA: {nombre} ({precio_prev} ➡️ {precio}) -> {eval_res.get('motivo')}")
+            msg = formatear_alerta("bajada", entrada, eval_res, precio_prev=precio_prev)
+            enviar_telegram(msg)
+            avisos["cambios"] += 1
+            time.sleep(1)
 
     if not entrada["nombre"] and prev.get("nombre"):
         entrada["nombre"] = prev["nombre"]
     vistos[sku] = {**prev, **entrada}
 
 
-def fase_prepare(vistos, estado, avisos, habia_historial):
+def fase_prepare(vistos, estado, avisos, cfg, habia_historial):
     print("🔄 Fase 1: descubrimiento por sitemap")
     sm_idx = int(estado.get("sitemap_index", 0)) % len(SITEMAPS_PRODUCTOS)
     sitemap_url = SITEMAPS_PRODUCTOS[sm_idx]
@@ -385,8 +513,16 @@ def fase_prepare(vistos, estado, avisos, habia_historial):
             if not ficha:
                 continue
             ficha["origen"] = f"feed:{feed}"
-            procesar_ficha(ficha, vistos, avisos, avisar_nuevo=habia_historial)
+            procesar_ficha(ficha, vistos, avisos, cfg, avisar_nuevo=habia_historial)
         time.sleep(0.3)
+
+
+def es_sku_prioritario(item):
+    if not isinstance(item, dict):
+        return False
+    cat = (item.get("categoria") or "").lower()
+    nom = (item.get("nombre") or "").lower()
+    return any(k in nom or k in cat for k in ["iphone", "macbook", "switch", "ps5", "playstation 5"])
 
 
 def construir_lote(vistos, estado):
@@ -397,17 +533,12 @@ def construir_lote(vistos, estado):
             (vistos[s] or {}).get("precio") if isinstance(vistos[s], dict) else None
         )
     ]
-    # Priorizar SKUs sin precio de compra cacheado (relleno gradual, sin más llamadas)
-    sin_compra = [
-        s for s in skus
-        if s not in set(pendientes)
-        and isinstance(vistos.get(s), dict)
-        and vistos[s].get("compra_num") is None
-    ]
-    resto = [s for s in skus if s not in set(pendientes) and s not in set(sin_compra)]
-    cola = sin_compra + resto
-    offset = int(estado.get("recheck_offset", 0)) % max(len(cola), 1)
+    # Priorizar productos de catálogo objetivo (iPhones, MacBooks, Switch, PS5)
+    objetivos = [s for s in skus if s not in set(pendientes) and es_sku_prioritario(vistos.get(s))]
+    resto = [s for s in skus if s not in set(pendientes) and s not in set(objetivos)]
+    cola = objetivos + resto
 
+    offset = int(estado.get("recheck_offset", 0)) % max(len(cola), 1)
     cupo_oleada = RECHECK_POR_SHARD * SHARD_TOTAL
     lote = []
     lote.extend(pendientes[:cupo_oleada])
@@ -421,7 +552,7 @@ def construir_lote(vistos, estado):
     return lote[SHARD_INDEX::SHARD_TOTAL], len(pendientes)
 
 
-def fase_recheck(vistos, estado, avisos):
+def fase_recheck(vistos, estado, avisos, cfg):
     print(
         f"🔄 Fase 3: rechequeo shard {SHARD_INDEX + 1}/{SHARD_TOTAL} "
         f"(hasta {RECHECK_POR_SHARD} SKUs, pausa {PAUSA_DETAIL}s)"
@@ -456,7 +587,7 @@ def fase_recheck(vistos, estado, avisos):
             ficha = normalizar_box(detalle)
             if ficha:
                 ficha["origen"] = "detail"
-                procesar_ficha(ficha, vistos, avisos, avisar_nuevo=False)
+                procesar_ficha(ficha, vistos, avisos, cfg, avisar_nuevo=False)
                 delta[sku] = vistos[sku]
                 ok += 1
             else:
@@ -471,6 +602,7 @@ def fase_recheck(vistos, estado, avisos):
 
 
 def comprobar_tienda():
+    cfg = cargar_json(ARCHIVO_PRECIOS_OBJETIVO, {})
     vistos = cargar_json(ARCHIVO_HISTORIAL, {})
     estado = cargar_json(ARCHIVO_ESTADO, {
         "sitemap_index": 0,
@@ -480,7 +612,7 @@ def comprobar_tienda():
     habia_historial = len(vistos) > 0
 
     if CEX_MODE in ("all", "prepare"):
-        fase_prepare(vistos, estado, avisos, habia_historial)
+        fase_prepare(vistos, estado, avisos, cfg, habia_historial)
         guardar_json(ARCHIVO_HISTORIAL, vistos)
         guardar_json(ARCHIVO_ESTADO, estado)
 
@@ -488,7 +620,7 @@ def comprobar_tienda():
         if CEX_MODE == "recheck":
             vistos = cargar_json(ARCHIVO_HISTORIAL, vistos)
             estado = cargar_json(ARCHIVO_ESTADO, estado)
-        delta = fase_recheck(vistos, estado, avisos)
+        delta = fase_recheck(vistos, estado, avisos, cfg)
         if CEX_MODE == "recheck":
             os.makedirs("deltas", exist_ok=True)
             delta_path = f"deltas/delta_{SHARD_INDEX}.json"
@@ -507,7 +639,7 @@ def comprobar_tienda():
     )
     print(
         f"[{hora}] Escaneo CeX ({CEX_MODE}) finalizado. "
-        f"WhatsApp nuevos: {avisos['nuevos']} | Cambios: {avisos['cambios']} | "
+        f"Chollos nuevos: {avisos['nuevos']} | Chollos por bajada: {avisos['cambios']} | "
         f"Historial: {len(vistos)} | Sin precio aún: {pendientes_final}"
     )
 

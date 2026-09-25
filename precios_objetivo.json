@@ -1,0 +1,454 @@
+{
+  "version": "1.0",
+  "descripcion": "Catálogo de productos cotizados de alta liquidez y precios techo de compra garantizada.",
+  "alertar_cambios_precio": false,
+  "oro_18k": {
+    "activo": true,
+    "max_eur_gramo": 80.0,
+    "min_gramos": 0.5,
+    "solo_oro_sin_piedras": true,
+    "keywords_excluir_piedras": [
+      "circonita",
+      "circonitas",
+      "zirconita",
+      "zirconitas",
+      "diamante",
+      "diamantes",
+      "brillante",
+      "brillantes",
+      "rubi",
+      "rubí",
+      "rubies",
+      "rubíes",
+      "zafiro",
+      "zafiros",
+      "esmeralda",
+      "esmeraldas",
+      "perla",
+      "perlas",
+      "cuarzo",
+      "amatista",
+      "amatistas",
+      "topacio",
+      "topacios",
+      "aguamarina",
+      "aguamarinas",
+      "turquesa",
+      "turquesas",
+      "coral",
+      "corales",
+      "nacar",
+      "nácar",
+      "onix",
+      "ónix",
+      "piedra",
+      "piedras",
+      "gema",
+      "gemas",
+      "circon",
+      "circones",
+      "zircon",
+      "zircones",
+      "zircón",
+      "turmalina",
+      "turmalinas",
+      "espinela",
+      "espinelas",
+      "tanzanita",
+      "tanzanitas",
+      "piedras de color"
+    ],
+    "keywords_pureza": [
+      "18k",
+      "18 k",
+      "18kt",
+      "18-kt",
+      "18 kt",
+      "18ktes",
+      "18 ktes",
+      "18kilates",
+      "18 kilates",
+      "18quilates",
+      "18 quilates",
+      "18 kl",
+      "18-kl",
+      "18kl",
+      "18 cl",
+      "18-cl",
+      "18cl",
+      "750",
+      "oro 750",
+      "ley 750",
+      "750mm",
+      "750/1000",
+      "primera ley"
+    ]
+  },
+  "consolas": [
+    {
+      "id": "switch_oled",
+      "nombre": "Nintendo Switch OLED",
+      "keywords_incluir": [
+        "switch",
+        "oled"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "mando",
+        "cargador",
+        "dock",
+        "soporte",
+        "cristal",
+        "juego",
+        "juegos",
+        "game",
+        "grip",
+        "microsd",
+        "tarjeta",
+        "sd",
+        "edicion",
+        "edition",
+        "case",
+        "straps",
+        "joy-con",
+        "joycon",
+        "volante"
+      ],
+      "precio_mercado": 250.0,
+      "max_compra": 180.0
+    },
+    {
+      "id": "switch_v2",
+      "nombre": "Nintendo Switch V2 / Estandar",
+      "keywords_incluir": [
+        "nintendo switch"
+      ],
+      "keywords_excluir": [
+        "oled",
+        "lite",
+        "funda",
+        "mando",
+        "cargador",
+        "dock",
+        "soporte",
+        "cristal",
+        "juego",
+        "juegos",
+        "game",
+        "adaptador",
+        "microsd",
+        "tarjeta",
+        "sd",
+        "edicion",
+        "edition",
+        "sandisk",
+        "case",
+        "straps",
+        "joy-con",
+        "joycon",
+        "volante",
+        "controller",
+        "cable",
+        "auriculares"
+      ],
+      "precio_mercado": 200.0,
+      "max_compra": 140.0
+    },
+    {
+      "id": "switch_2",
+      "nombre": "Nintendo Switch 2",
+      "keywords_incluir": [
+        "switch 2"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "mando",
+        "cargador",
+        "juego",
+        "juegos",
+        "game",
+        "microsd",
+        "tarjeta",
+        "sd",
+        "edicion",
+        "edition",
+        "sandisk",
+        "case",
+        "straps",
+        "joy-con",
+        "joycon",
+        "volante",
+        "controller"
+      ],
+      "precio_mercado": 300.0,
+      "max_compra": 220.0
+    },
+    {
+      "id": "ps5_slim",
+      "nombre": "PlayStation 5 Slim",
+      "keywords_incluir": [
+        "ps5",
+        "slim"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "mando",
+        "dualsense",
+        "soporte",
+        "placas",
+        "cubiertas",
+        "juego",
+        "juegos",
+        "game",
+        "volante",
+        "portal",
+        "auriculares",
+        "pulse",
+        "vr",
+        "camara",
+        "cargador"
+      ],
+      "precio_mercado": 400.0,
+      "max_compra": 290.0
+    },
+    {
+      "id": "ps5_estandar",
+      "nombre": "PlayStation 5 (Chasis clásico)",
+      "keywords_incluir": [
+        "playstation 5",
+        "ps5"
+      ],
+      "keywords_excluir": [
+        "slim",
+        "pro",
+        "funda",
+        "mando",
+        "dualsense",
+        "soporte",
+        "placas",
+        "juego",
+        "juegos",
+        "game",
+        "auriculares",
+        "portal",
+        "pulse",
+        "vr",
+        "camara",
+        "cargador",
+        "volante",
+        "disco",
+        "lector"
+      ],
+      "precio_mercado": 350.0,
+      "max_compra": 250.0
+    }
+  ],
+  "iphones": [
+    {
+      "id": "iphone_13",
+      "nombre": "iPhone 13",
+      "regex": "\\biphone\\s*13\\b(?!\\s*(pro|mini))",
+      "precio_mercado": 520.0,
+      "max_compra": 370.0
+    },
+    {
+      "id": "iphone_13_pro",
+      "nombre": "iPhone 13 Pro",
+      "regex": "\\biphone\\s*13\\s*pro\\b(?!\\s*max)",
+      "precio_mercado": 650.0,
+      "max_compra": 470.0
+    },
+    {
+      "id": "iphone_13_pro_max",
+      "nombre": "iPhone 13 Pro Max",
+      "regex": "\\biphone\\s*13\\s*pro\\s*max\\b",
+      "precio_mercado": 700.0,
+      "max_compra": 500.0
+    },
+    {
+      "id": "iphone_14",
+      "nombre": "iPhone 14",
+      "regex": "\\biphone\\s*14\\b(?!\\s*(pro|plus))",
+      "precio_mercado": 600.0,
+      "max_compra": 430.0
+    },
+    {
+      "id": "iphone_14_plus",
+      "nombre": "iPhone 14 Plus",
+      "regex": "\\biphone\\s*14\\s*plus\\b",
+      "precio_mercado": 650.0,
+      "max_compra": 470.0
+    },
+    {
+      "id": "iphone_14_pro",
+      "nombre": "iPhone 14 Pro",
+      "regex": "\\biphone\\s*14\\s*pro\\b(?!\\s*max)",
+      "precio_mercado": 800.0,
+      "max_compra": 580.0
+    },
+    {
+      "id": "iphone_14_pro_max",
+      "nombre": "iPhone 14 Pro Max",
+      "regex": "\\biphone\\s*14\\s*pro\\s*max\\b",
+      "precio_mercado": 850.0,
+      "max_compra": 610.0
+    },
+    {
+      "id": "iphone_15",
+      "nombre": "iPhone 15",
+      "regex": "\\biphone\\s*15\\b(?!\\s*(pro|plus))",
+      "precio_mercado": 700.0,
+      "max_compra": 500.0
+    },
+    {
+      "id": "iphone_15_plus",
+      "nombre": "iPhone 15 Plus",
+      "regex": "\\biphone\\s*15\\s*plus\\b",
+      "precio_mercado": 750.0,
+      "max_compra": 540.0
+    },
+    {
+      "id": "iphone_15_pro",
+      "nombre": "iPhone 15 Pro",
+      "regex": "\\biphone\\s*15\\s*pro\\b(?!\\s*max)",
+      "precio_mercado": 950.0,
+      "max_compra": 680.0
+    },
+    {
+      "id": "iphone_15_pro_max",
+      "nombre": "iPhone 15 Pro Max",
+      "regex": "\\biphone\\s*15\\s*pro\\s*max\\b",
+      "precio_mercado": 1000.0,
+      "max_compra": 720.0
+    },
+    {
+      "id": "iphone_16",
+      "nombre": "iPhone 16",
+      "regex": "\\biphone\\s*16\\b(?!\\s*(pro|plus))",
+      "precio_mercado": 800.0,
+      "max_compra": 580.0
+    },
+    {
+      "id": "iphone_16_plus",
+      "nombre": "iPhone 16 Plus",
+      "regex": "\\biphone\\s*16\\s*plus\\b",
+      "precio_mercado": 850.0,
+      "max_compra": 610.0
+    },
+    {
+      "id": "iphone_16_pro",
+      "nombre": "iPhone 16 Pro",
+      "regex": "\\biphone\\s*16\\s*pro\\b(?!\\s*max)",
+      "precio_mercado": 1100.0,
+      "max_compra": 790.0
+    },
+    {
+      "id": "iphone_16_pro_max",
+      "nombre": "iPhone 16 Pro Max",
+      "regex": "\\biphone\\s*16\\s*pro\\s*max\\b",
+      "precio_mercado": 1150.0,
+      "max_compra": 830.0
+    },
+    {
+      "id": "iphone_17",
+      "nombre": "iPhone 17 Serie",
+      "regex": "\\biphone\\s*17\\b",
+      "precio_mercado": 950.0,
+      "max_compra": 680.0
+    },
+    {
+      "id": "iphone_18",
+      "nombre": "iPhone 18 Serie",
+      "regex": "\\biphone\\s*18\\b",
+      "precio_mercado": 1000.0,
+      "max_compra": 720.0
+    }
+  ],
+  "macbooks_apple_silicon": [
+    {
+      "id": "macbook_air_m2",
+      "nombre": "MacBook Air M2 (2022+)",
+      "keywords_incluir": [
+        "macbook air",
+        "m2"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "cargador",
+        "teclado",
+        "hub",
+        "adaptador"
+      ],
+      "precio_mercado": 900.0,
+      "max_compra": 650.0
+    },
+    {
+      "id": "macbook_air_m3",
+      "nombre": "MacBook Air M3 (2024+)",
+      "keywords_incluir": [
+        "macbook air",
+        "m3"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "cargador",
+        "teclado",
+        "hub",
+        "adaptador"
+      ],
+      "precio_mercado": 1100.0,
+      "max_compra": 790.0
+    },
+    {
+      "id": "macbook_pro_m1_pro",
+      "nombre": "MacBook Pro M1 Pro / Max (14\"/16\")",
+      "keywords_incluir": [
+        "macbook pro",
+        "m1 pro"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "cargador",
+        "teclado",
+        "hub",
+        "adaptador"
+      ],
+      "precio_mercado": 1400.0,
+      "max_compra": 1010.0
+    },
+    {
+      "id": "macbook_pro_m2",
+      "nombre": "MacBook Pro M2 / Pro / Max",
+      "keywords_incluir": [
+        "macbook pro",
+        "m2"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "cargador",
+        "teclado",
+        "hub",
+        "adaptador"
+      ],
+      "precio_mercado": 1600.0,
+      "max_compra": 1150.0
+    },
+    {
+      "id": "macbook_pro_m3",
+      "nombre": "MacBook Pro M3 / Pro / Max",
+      "keywords_incluir": [
+        "macbook pro",
+        "m3"
+      ],
+      "keywords_excluir": [
+        "funda",
+        "cargador",
+        "teclado",
+        "hub",
+        "adaptador"
+      ],
+      "precio_mercado": 1800.0,
+      "max_compra": 1300.0
+    }
+  ]
+}
