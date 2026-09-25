@@ -112,7 +112,33 @@
         "straps",
         "joy-con",
         "joycon",
-        "volante"
+        "volante",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía"
       ],
       "precio_mercado": 250.0,
       "max_compra": 180.0
@@ -149,7 +175,33 @@
         "volante",
         "controller",
         "cable",
-        "auriculares"
+        "auriculares",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía"
       ],
       "precio_mercado": 200.0,
       "max_compra": 140.0
@@ -178,7 +230,33 @@
         "joy-con",
         "joycon",
         "volante",
-        "controller"
+        "controller",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía"
       ],
       "precio_mercado": 300.0,
       "max_compra": 220.0
@@ -206,16 +284,46 @@
         "pulse",
         "vr",
         "camara",
-        "cargador"
+        "cargador",
+        "cable",
+        "lector",
+        "unidad de disco",
+        "disc drive",
+        "lector de disco",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía"
       ],
-      "precio_mercado": 400.0,
-      "max_compra": 290.0
+      "precio_mercado": 430.0,
+      "max_compra": 320.0
     },
     {
       "id": "ps5_estandar",
       "nombre": "PlayStation 5 (Chasis clásico)",
       "keywords_incluir": [
-        "playstation 5",
         "ps5"
       ],
       "keywords_excluir": [
@@ -226,18 +334,46 @@
         "dualsense",
         "soporte",
         "placas",
+        "cubiertas",
         "juego",
         "juegos",
         "game",
-        "auriculares",
+        "volante",
         "portal",
+        "auriculares",
         "pulse",
         "vr",
         "camara",
         "cargador",
-        "volante",
-        "disco",
-        "lector"
+        "cable",
+        "lector de disco",
+        "unidad de disco",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía"
       ],
       "precio_mercado": 350.0,
       "max_compra": 250.0
@@ -248,106 +384,340 @@
       "id": "iphone_13",
       "nombre": "iPhone 13",
       "regex": "\\biphone\\s*13\\b(?!\\s*(pro|mini))",
-      "precio_mercado": 520.0,
-      "max_compra": 370.0
+      "precio_mercado": 480.0,
+      "max_compra": 350.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 480.0,
+          "max_compra": 350.0
+        },
+        "256gb": {
+          "precio_mercado": 540.0,
+          "max_compra": 390.0
+        },
+        "512gb": {
+          "precio_mercado": 600.0,
+          "max_compra": 430.0
+        }
+      }
     },
     {
       "id": "iphone_13_pro",
       "nombre": "iPhone 13 Pro",
       "regex": "\\biphone\\s*13\\s*pro\\b(?!\\s*max)",
-      "precio_mercado": 650.0,
-      "max_compra": 470.0
+      "precio_mercado": 580.0,
+      "max_compra": 420.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 580.0,
+          "max_compra": 420.0
+        },
+        "256gb": {
+          "precio_mercado": 640.0,
+          "max_compra": 460.0
+        },
+        "512gb": {
+          "precio_mercado": 700.0,
+          "max_compra": 500.0
+        },
+        "1tb": {
+          "precio_mercado": 760.0,
+          "max_compra": 540.0
+        }
+      }
     },
     {
       "id": "iphone_13_pro_max",
       "nombre": "iPhone 13 Pro Max",
       "regex": "\\biphone\\s*13\\s*pro\\s*max\\b",
-      "precio_mercado": 700.0,
-      "max_compra": 500.0
+      "precio_mercado": 640.0,
+      "max_compra": 460.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 640.0,
+          "max_compra": 460.0
+        },
+        "256gb": {
+          "precio_mercado": 700.0,
+          "max_compra": 500.0
+        },
+        "512gb": {
+          "precio_mercado": 760.0,
+          "max_compra": 550.0
+        },
+        "1tb": {
+          "precio_mercado": 820.0,
+          "max_compra": 600.0
+        }
+      }
     },
     {
       "id": "iphone_14",
       "nombre": "iPhone 14",
       "regex": "\\biphone\\s*14\\b(?!\\s*(pro|plus))",
-      "precio_mercado": 600.0,
-      "max_compra": 430.0
+      "precio_mercado": 550.0,
+      "max_compra": 390.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 550.0,
+          "max_compra": 390.0
+        },
+        "256gb": {
+          "precio_mercado": 620.0,
+          "max_compra": 440.0
+        },
+        "512gb": {
+          "precio_mercado": 680.0,
+          "max_compra": 480.0
+        }
+      }
     },
     {
       "id": "iphone_14_plus",
       "nombre": "iPhone 14 Plus",
       "regex": "\\biphone\\s*14\\s*plus\\b",
-      "precio_mercado": 650.0,
-      "max_compra": 470.0
+      "precio_mercado": 600.0,
+      "max_compra": 430.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 600.0,
+          "max_compra": 430.0
+        },
+        "256gb": {
+          "precio_mercado": 660.0,
+          "max_compra": 470.0
+        },
+        "512gb": {
+          "precio_mercado": 720.0,
+          "max_compra": 510.0
+        }
+      }
     },
     {
       "id": "iphone_14_pro",
       "nombre": "iPhone 14 Pro",
       "regex": "\\biphone\\s*14\\s*pro\\b(?!\\s*max)",
-      "precio_mercado": 800.0,
-      "max_compra": 580.0
+      "precio_mercado": 720.0,
+      "max_compra": 520.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 720.0,
+          "max_compra": 520.0
+        },
+        "256gb": {
+          "precio_mercado": 790.0,
+          "max_compra": 570.0
+        },
+        "512gb": {
+          "precio_mercado": 860.0,
+          "max_compra": 620.0
+        },
+        "1tb": {
+          "precio_mercado": 920.0,
+          "max_compra": 670.0
+        }
+      }
     },
     {
       "id": "iphone_14_pro_max",
       "nombre": "iPhone 14 Pro Max",
       "regex": "\\biphone\\s*14\\s*pro\\s*max\\b",
-      "precio_mercado": 850.0,
-      "max_compra": 610.0
+      "precio_mercado": 780.0,
+      "max_compra": 560.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 780.0,
+          "max_compra": 560.0
+        },
+        "256gb": {
+          "precio_mercado": 850.0,
+          "max_compra": 610.0
+        },
+        "512gb": {
+          "precio_mercado": 920.0,
+          "max_compra": 670.0
+        },
+        "1tb": {
+          "precio_mercado": 990.0,
+          "max_compra": 720.0
+        }
+      }
     },
     {
       "id": "iphone_15",
       "nombre": "iPhone 15",
       "regex": "\\biphone\\s*15\\b(?!\\s*(pro|plus))",
-      "precio_mercado": 700.0,
-      "max_compra": 500.0
+      "precio_mercado": 680.0,
+      "max_compra": 490.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 680.0,
+          "max_compra": 490.0
+        },
+        "256gb": {
+          "precio_mercado": 750.0,
+          "max_compra": 540.0
+        },
+        "512gb": {
+          "precio_mercado": 820.0,
+          "max_compra": 590.0
+        }
+      }
     },
     {
       "id": "iphone_15_plus",
       "nombre": "iPhone 15 Plus",
       "regex": "\\biphone\\s*15\\s*plus\\b",
-      "precio_mercado": 750.0,
-      "max_compra": 540.0
+      "precio_mercado": 740.0,
+      "max_compra": 530.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 740.0,
+          "max_compra": 530.0
+        },
+        "256gb": {
+          "precio_mercado": 810.0,
+          "max_compra": 580.0
+        },
+        "512gb": {
+          "precio_mercado": 880.0,
+          "max_compra": 630.0
+        }
+      }
     },
     {
       "id": "iphone_15_pro",
       "nombre": "iPhone 15 Pro",
       "regex": "\\biphone\\s*15\\s*pro\\b(?!\\s*max)",
-      "precio_mercado": 950.0,
-      "max_compra": 680.0
+      "precio_mercado": 860.0,
+      "max_compra": 620.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 860.0,
+          "max_compra": 620.0
+        },
+        "256gb": {
+          "precio_mercado": 930.0,
+          "max_compra": 670.0
+        },
+        "512gb": {
+          "precio_mercado": 1000.0,
+          "max_compra": 720.0
+        },
+        "1tb": {
+          "precio_mercado": 1080.0,
+          "max_compra": 780.0
+        }
+      }
     },
     {
       "id": "iphone_15_pro_max",
       "nombre": "iPhone 15 Pro Max",
       "regex": "\\biphone\\s*15\\s*pro\\s*max\\b",
-      "precio_mercado": 1000.0,
-      "max_compra": 720.0
+      "precio_mercado": 980.0,
+      "max_compra": 700.0,
+      "almacenamiento": {
+        "256gb": {
+          "precio_mercado": 980.0,
+          "max_compra": 700.0
+        },
+        "512gb": {
+          "precio_mercado": 1070.0,
+          "max_compra": 770.0
+        },
+        "1tb": {
+          "precio_mercado": 1150.0,
+          "max_compra": 830.0
+        }
+      }
     },
     {
       "id": "iphone_16",
       "nombre": "iPhone 16",
       "regex": "\\biphone\\s*16\\b(?!\\s*(pro|plus))",
-      "precio_mercado": 800.0,
-      "max_compra": 580.0
+      "precio_mercado": 820.0,
+      "max_compra": 600.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 820.0,
+          "max_compra": 600.0
+        },
+        "256gb": {
+          "precio_mercado": 890.0,
+          "max_compra": 650.0
+        },
+        "512gb": {
+          "precio_mercado": 960.0,
+          "max_compra": 700.0
+        }
+      }
     },
     {
       "id": "iphone_16_plus",
       "nombre": "iPhone 16 Plus",
       "regex": "\\biphone\\s*16\\s*plus\\b",
-      "precio_mercado": 850.0,
-      "max_compra": 610.0
+      "precio_mercado": 880.0,
+      "max_compra": 640.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 880.0,
+          "max_compra": 640.0
+        },
+        "256gb": {
+          "precio_mercado": 950.0,
+          "max_compra": 690.0
+        },
+        "512gb": {
+          "precio_mercado": 1020.0,
+          "max_compra": 740.0
+        }
+      }
     },
     {
       "id": "iphone_16_pro",
       "nombre": "iPhone 16 Pro",
       "regex": "\\biphone\\s*16\\s*pro\\b(?!\\s*max)",
-      "precio_mercado": 1100.0,
-      "max_compra": 790.0
+      "precio_mercado": 1050.0,
+      "max_compra": 770.0,
+      "almacenamiento": {
+        "128gb": {
+          "precio_mercado": 1050.0,
+          "max_compra": 770.0
+        },
+        "256gb": {
+          "precio_mercado": 1130.0,
+          "max_compra": 830.0
+        },
+        "512gb": {
+          "precio_mercado": 1220.0,
+          "max_compra": 890.0
+        },
+        "1tb": {
+          "precio_mercado": 1300.0,
+          "max_compra": 950.0
+        }
+      }
     },
     {
       "id": "iphone_16_pro_max",
       "nombre": "iPhone 16 Pro Max",
       "regex": "\\biphone\\s*16\\s*pro\\s*max\\b",
-      "precio_mercado": 1150.0,
-      "max_compra": 830.0
+      "precio_mercado": 1180.0,
+      "max_compra": 860.0,
+      "almacenamiento": {
+        "256gb": {
+          "precio_mercado": 1180.0,
+          "max_compra": 860.0
+        },
+        "512gb": {
+          "precio_mercado": 1280.0,
+          "max_compra": 930.0
+        },
+        "1tb": {
+          "precio_mercado": 1380.0,
+          "max_compra": 1000.0
+        }
+      }
     },
     {
       "id": "iphone_17",
@@ -377,10 +747,54 @@
         "cargador",
         "teclado",
         "hub",
-        "adaptador"
+        "adaptador",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía",
+        "mdm",
+        "bloqueo mdm",
+        "firmware",
+        "pantalla rota"
       ],
-      "precio_mercado": 900.0,
-      "max_compra": 650.0
+      "precio_mercado": 850.0,
+      "max_compra": 620.0,
+      "almacenamiento": {
+        "256gb": {
+          "precio_mercado": 850.0,
+          "max_compra": 620.0
+        },
+        "512gb": {
+          "precio_mercado": 1050.0,
+          "max_compra": 760.0
+        },
+        "1tb": {
+          "precio_mercado": 1200.0,
+          "max_compra": 880.0
+        }
+      }
     },
     {
       "id": "macbook_air_m3",
@@ -394,10 +808,54 @@
         "cargador",
         "teclado",
         "hub",
-        "adaptador"
+        "adaptador",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía",
+        "mdm",
+        "bloqueo mdm",
+        "firmware",
+        "pantalla rota"
       ],
-      "precio_mercado": 1100.0,
-      "max_compra": 790.0
+      "precio_mercado": 1000.0,
+      "max_compra": 730.0,
+      "almacenamiento": {
+        "256gb": {
+          "precio_mercado": 1000.0,
+          "max_compra": 730.0
+        },
+        "512gb": {
+          "precio_mercado": 1200.0,
+          "max_compra": 880.0
+        },
+        "1tb": {
+          "precio_mercado": 1380.0,
+          "max_compra": 1010.0
+        }
+      }
     },
     {
       "id": "macbook_pro_m1_pro",
@@ -411,10 +869,50 @@
         "cargador",
         "teclado",
         "hub",
-        "adaptador"
+        "adaptador",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía",
+        "mdm",
+        "bloqueo mdm",
+        "firmware",
+        "pantalla rota"
       ],
-      "precio_mercado": 1400.0,
-      "max_compra": 1010.0
+      "precio_mercado": 1300.0,
+      "max_compra": 950.0,
+      "almacenamiento": {
+        "512gb": {
+          "precio_mercado": 1300.0,
+          "max_compra": 950.0
+        },
+        "1tb": {
+          "precio_mercado": 1500.0,
+          "max_compra": 1100.0
+        }
+      }
     },
     {
       "id": "macbook_pro_m2",
@@ -428,10 +926,50 @@
         "cargador",
         "teclado",
         "hub",
-        "adaptador"
+        "adaptador",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía",
+        "mdm",
+        "bloqueo mdm",
+        "firmware",
+        "pantalla rota"
       ],
-      "precio_mercado": 1600.0,
-      "max_compra": 1150.0
+      "precio_mercado": 1500.0,
+      "max_compra": 1100.0,
+      "almacenamiento": {
+        "512gb": {
+          "precio_mercado": 1500.0,
+          "max_compra": 1100.0
+        },
+        "1tb": {
+          "precio_mercado": 1750.0,
+          "max_compra": 1280.0
+        }
+      }
     },
     {
       "id": "macbook_pro_m3",
@@ -445,10 +983,50 @@
         "cargador",
         "teclado",
         "hub",
-        "adaptador"
+        "adaptador",
+        "piezas",
+        "despiece",
+        "averiada",
+        "averiado",
+        "roto",
+        "rota",
+        "fallo",
+        "defectuoso",
+        "defectuosa",
+        "no funciona",
+        "no enciende",
+        "luz azul",
+        "luz blanca",
+        "sin imagen",
+        "sin señal",
+        "sin senal",
+        "bloqueada",
+        "bloqueado",
+        "baneada",
+        "baneado",
+        "ban",
+        "para reparar",
+        "reparar",
+        "solo caja",
+        "caja vacia",
+        "caja vacía",
+        "mdm",
+        "bloqueo mdm",
+        "firmware",
+        "pantalla rota"
       ],
-      "precio_mercado": 1800.0,
-      "max_compra": 1300.0
+      "precio_mercado": 1750.0,
+      "max_compra": 1280.0,
+      "almacenamiento": {
+        "512gb": {
+          "precio_mercado": 1750.0,
+          "max_compra": 1280.0
+        },
+        "1tb": {
+          "precio_mercado": 2000.0,
+          "max_compra": 1460.0
+        }
+      }
     }
   ]
 }

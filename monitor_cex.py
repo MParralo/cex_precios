@@ -219,10 +219,33 @@ def guardar_json(ruta, datos):
         json.dump(datos, f, ensure_ascii=False, indent=2)
 
 
+def extraer_almacenamiento(texto):
+    """Extrae capacidad de almacenamiento en formato normalizado (ej: '128gb', '256gb', '512gb', '1tb')."""
+    texto_low = texto.lower()
+    m_tb = re.search(r'\b([1-4])\s*(?:tb|tera|teras)\b', texto_low)
+    if m_tb:
+        return f"{m_tb.group(1)}tb"
+    m_gb = re.search(r'\b(64|128|256|512)\s*(?:gb|gigas|g)?\b', texto_low)
+    if m_gb:
+        return f"{m_gb.group(1)}gb"
+    return None
+
+
+EXCLUSIONES_DEFECTUOSOS = [
+    "piezas", "despiece", "averiada", "averiado", "roto", "rota",
+    "fallo", "defectuoso", "defectuosa", "no funciona", "no enciende",
+    "luz azul", "luz blanca", "sin imagen", "sin señal", "sin senal",
+    "bloqueada", "bloqueado", "baneada", "baneado", "ban", "icloud", "bypass",
+    "mdm", "firmware", "pantalla rota", "lineas en pantalla", "sin face id",
+    "para reparar", "reparar", "solo caja", "caja vacia", "caja vacía",
+    "sin bateria", "sin placa"
+]
+
+
 def evaluar_tecnologia_top(ficha, cfg):
     """
     Evalúa si el producto es de interés (iPhone 13+, MacBook Silicon, Nintendo Switch, PS5)
-    y si su precio de venta en CeX está por debajo del techo de compra garantizada (chollo).
+    valorando el almacenamiento y excluyendo productos defectuosos, con bloqueos o para despiece.
     """
     nombre = ficha.get("nombre", "")
     nombre_low = nombre.lower()
@@ -230,55 +253,80 @@ def evaluar_tecnologia_top(ficha, cfg):
     if not precio_num or precio_num <= 0:
         return {"interesante": False, "motivo": "Sin precio numérico"}
 
+    # Filtro estricto anti-rotos / despiece / bloqueos iCloud-MDM
+    if any(bad in nombre_low for bad in EXCLUSIONES_DEFECTUOSOS):
+        return {"interesante": False, "motivo": "Descartado por palabras de defecto/despiece"}
+
+    capacidad = extraer_almacenamiento(nombre_low)
+    # Normalizar variantes de playstation 5 a 'ps5' para consistencia con palabras clave
+    nombre_norm = re.sub(r'\b(?:playstation\s*5|playstation5|ps\s*5)\b', 'ps5', nombre_low)
+
     # 1. iPhones (13 al 18)
     for item in cfg.get("iphones", []):
         if re.search(item["regex"], nombre_low):
-            max_compra = item["max_compra"]
-            mercado = item["precio_mercado"]
+            escala = item.get("almacenamiento", {})
+            if capacidad and capacidad in escala:
+                max_compra = escala[capacidad]["max_compra"]
+                mercado = escala[capacidad]["precio_mercado"]
+                modelo_nombre = f"{item['nombre']} {capacidad.upper()}"
+            else:
+                max_compra = item["max_compra"]
+                mercado = item["precio_mercado"]
+                modelo_nombre = item["nombre"]
+
             if precio_num <= max_compra:
                 margen = mercado - precio_num
                 return {
                     "interesante": True,
                     "tipo": "IPHONE",
-                    "modelo": item["nombre"],
+                    "modelo": modelo_nombre,
                     "precio": precio_num,
                     "precio_mercado": mercado,
                     "max_compra": max_compra,
                     "margen": margen,
-                    "motivo": f"{item['nombre']} a {precio_num:.0f}€ ≤ techo {max_compra:.0f}€ (Margen: +{margen:.0f}€)",
+                    "motivo": f"{modelo_nombre} a {precio_num:.0f}€ ≤ techo {max_compra:.0f}€ (Margen: +{margen:.0f}€)",
                 }
             return {
                 "interesante": False,
-                "motivo": f"{item['nombre']} a {precio_num:.0f}€ > techo {max_compra:.0f}€",
+                "motivo": f"{modelo_nombre} a {precio_num:.0f}€ > techo {max_compra:.0f}€",
             }
 
     # 2. MacBooks Apple Silicon (2022+)
     for item in cfg.get("macbooks_apple_silicon", []):
         if all(k in nombre_low for k in item["keywords_incluir"]) and not any(k in nombre_low for k in item["keywords_excluir"]):
+            # Descartar Intel y procesadores obsoletos
             if any(bad in nombre_low for bad in ["intel", "core i5", "core i7", "core i3", "2015", "2016", "2017", "2018", "2019", "2020 intel"]):
                 continue
-            max_compra = item["max_compra"]
-            mercado = item["precio_mercado"]
+            escala = item.get("almacenamiento", {})
+            if capacidad and capacidad in escala:
+                max_compra = escala[capacidad]["max_compra"]
+                mercado = escala[capacidad]["precio_mercado"]
+                modelo_nombre = f"{item['nombre']} {capacidad.upper()}"
+            else:
+                max_compra = item["max_compra"]
+                mercado = item["precio_mercado"]
+                modelo_nombre = item["nombre"]
+
             if precio_num <= max_compra:
                 margen = mercado - precio_num
                 return {
                     "interesante": True,
                     "tipo": "MACBOOK",
-                    "modelo": item["nombre"],
+                    "modelo": modelo_nombre,
                     "precio": precio_num,
                     "precio_mercado": mercado,
                     "max_compra": max_compra,
                     "margen": margen,
-                    "motivo": f"{item['nombre']} a {precio_num:.0f}€ ≤ techo {max_compra:.0f}€ (Margen: +{margen:.0f}€)",
+                    "motivo": f"{modelo_nombre} a {precio_num:.0f}€ ≤ techo {max_compra:.0f}€ (Margen: +{margen:.0f}€)",
                 }
             return {
                 "interesante": False,
-                "motivo": f"{item['nombre']} a {precio_num:.0f}€ > techo {max_compra:.0f}€",
+                "motivo": f"{modelo_nombre} a {precio_num:.0f}€ > techo {max_compra:.0f}€",
             }
 
     # 3. Consolas cotizadas (Nintendo Switch, PS5)
     for item in cfg.get("consolas", []):
-        if all(k in nombre_low for k in item["keywords_incluir"]) and not any(k in nombre_low for k in item["keywords_excluir"]):
+        if all(k in nombre_norm for k in item["keywords_incluir"]) and not any(k in nombre_norm for k in item["keywords_excluir"]):
             max_compra = item["max_compra"]
             mercado = item["precio_mercado"]
             if precio_num <= max_compra:
