@@ -4,7 +4,7 @@
   "alertar_cambios_precio": false,
   "oro_18k": {
     "activo": true,
-    "max_eur_gramo": 80.0,
+    "max_eur_gramo": 100.0,
     "min_gramos": 0.5,
     "solo_oro_sin_piedras": true,
     "keywords_excluir_piedras": [
